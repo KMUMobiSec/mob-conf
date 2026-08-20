@@ -1,0 +1,31 @@
+{
+  "conferences": [
+    {
+      "year": "2025",
+      "title": "제1회 IFIP WG 8.4 전자비즈니스 정보시스템 진화에 관한 국제 심포지엄",
+      "dates": "2025년 12월 16~18일",
+      "location": "일본 삿포로",
+      "venue": "호텔 에미시아 삿포로",
+      "status": "past",
+      "website": "https://ebision.ifip-wg84.org/2025",
+      "image": "/assets/venue/2025/venue.jpg",
+      "description": "제1회 EBISION 심포지엄은 전 세계의 연구자, 실무자, 학생들이 모여 전자비즈니스 정보시스템의 진화를 탐구하였습니다. MobiSec 2025와 공동 개최되어 AI 기반 비즈니스 혁신, 양자 컴퓨팅, 6G 네트워크, 블록체인, 사이버보안 등 새로운 주제에 대한 독창적 연구 논문, 기조 강연 및 토론이 이루어졌습니다.",
+      "proceedings": "Springer IFIP AICT 시리즈",
+      "topics": [
+        "인공지능 및 데이터 기반 비즈니스 혁신",
+        "양자 안전 및 양자 기반 EBIS",
+        "6G 네트워크 및 초연결 전자비즈니스 생태계",
+        "클라우드 네이티브 플랫폼 및 멀티 클라우드 복원력",
+        "블록체인, 탈중앙화 금융 및 Web 3.0 경제",
+        "EBIS의 사이버보안 및 디지털 신뢰"
+      ],
+      "organizedBy": "IFIP WG 8.4",
+      "inConjunction": "MobiSec 2025"
+    }
+  ],
+  "statistics": {
+    "totalEditions": 1,
+    "countries": 1,
+    "description": "EBISION은 연구자, 학계 및 산업 전문가들이 모여 전자비즈니스 정보시스템을 발전시키고 디지털 대전환을 탐구합니다."
+  }
+}

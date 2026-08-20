@@ -1,0 +1,15 @@
+{
+  "conferenceName": "EBISION 2026",
+  "conferenceFullTitle": "제2회 IFIP WG 8.4 전자비즈니스 정보시스템 진화에 관한 국제 심포지엄",
+  "dates": "2026년 7월 8일~10일",
+  "venue": "국민대학교",
+  "location": "대한민국 서울",
+  "collaborators": [
+    {
+      "name": "IFIP WG 8.4",
+      "subtitle": "전자비즈니스 정보시스템",
+      "role": "주최",
+      "logo": "/assets/logo/ifip-logo.png"
+    }
+  ]
+}

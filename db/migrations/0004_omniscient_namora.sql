@@ -1,0 +1,1 @@
+ALTER TABLE "nominations" ADD COLUMN "emails_sent_count" integer DEFAULT 0 NOT NULL;

@@ -1,0 +1,54 @@
+session_day,session_date,session_start_time,session_end_time,session_duration,session_chair,session_room,session_type,session_speakers,session_id,session_title,session_topic,paper_title,paper_authors,paper_presenter,paper_start_time,paper_end_time
+Tuesday,2025-12-16,09:00,10:30,1h 30m,,symphony-4f,session,,Session 1,Session 1,Artificial Intelligence,,,,,
+Tuesday,2025-12-16,09:00,10:30,1h 30m,,symphony-4f,session,,Session 1,Session 1,Artificial Intelligence,"Understanding Consumer Complaint Dynamics in the Electronic Vehicle Market: A Text-Mining Approach.","Elena Kim; Jaewon Choi",,09:00,09:18
+Tuesday,2025-12-16,09:00,10:30,1h 30m,,symphony-4f,session,,Session 1,Session 1,Artificial Intelligence,"Human-Centered E-Business Systems based on Situation Awareness: a contextual framework driven by Artificial Intelligence.","Francesco Colace; Muhammad Khan; Angelo Lorusso; Domenico Santaniello; Allan Tucker",,09:18,09:36
+Tuesday,2025-12-16,09:00,10:30,1h 30m,,symphony-4f,session,,Session 1,Session 1,Artificial Intelligence,"Optimizing YOLO for Accurate Car Parts Segmentation in Automotive Industry Applications.","Fx Hendra Prasetya; Kung-Ming Lan; Kun-Lin Tsai; Chao-Tung Yang",,09:36,09:54
+Tuesday,2025-12-16,09:00,10:30,1h 30m,,symphony-4f,session,,Session 1,Session 1,Artificial Intelligence,"Enhancing Explainable Artificial Intelligence in Healthcare through Blockchain-Enabled Immutable Federated Machine Learning.","Muammar Shahrear Famous; Samia Sayed; Rashed Mazumder; Risala T. Khan; M. Shamim Kaiser; Mohammad Shahadat Hossain; Karl Andersson; Mufti Mahmud",,09:54,10:12
+Tuesday,2025-12-16,09:00,10:30,1h 30m,,symphony-4f,session,,Session 1,Session 1,Artificial Intelligence,"Data-Driven Innovation in Cybersecurity for E-Business Information Systems: A Case Study on CVE Report Generation via LLM.","Arcangelo Castiglione; Francesco Colace; Marco Fusco; Antonio Oricchio; Domenico Santaniello; Carmine Valentino",,10:12,10:30
+Tuesday,2025-12-16,10:30,10:45,15m,,common,break,,,Break,Break (15M),,,,,
+Tuesday,2025-12-16,10:45,12:00,1h 15m,,symphony-4f,session,,Session 2,Session 2,Application,,,,,
+Tuesday,2025-12-16,10:45,12:00,1h 15m,,symphony-4f,session,,Session 2,Session 2,Application,"Exploring the Role of Digital Management Capability in Shaping Ethical Leadership and its Impact on ESG: A Dynamic Capabilities Micro-Foundations Perspective.","Ka Wai Chung; Kam Pui Liu; William Yeoh",,10:45,11:03
+Tuesday,2025-12-16,10:45,12:00,1h 15m,,symphony-4f,session,,Session 2,Session 2,Application,"Resolving Ambiguity in Pointing Gestures using Contextual Reasoning from Large Language Models.","Sumin Yeon; Minjae Lee; Jiho Bae; Sejik Park; Illhwan Ha; Suwon Lee",,11:03,11:21
+Tuesday,2025-12-16,10:45,12:00,1h 15m,,symphony-4f,session,,Session 2,Session 2,Application,"A Preliminary Study of Retrieval-Augmented Generation for Sensitive Web Path Discovery in Web-based Information Systems.","Kinsey K.S. Ng; Farah Yan; Kevin Hung",,11:21,11:39
+Tuesday,2025-12-16,12:00,13:40,1h 40m,,common,lunch,,,Lunch,Lunch - Complement of MobiSec conference,,,,,
+Tuesday,2025-12-16,13:40,14:00,20m,,common,ceremony,,,Opening Ceremony,,,,,,
+Tuesday,2025-12-16,14:00,15:00,1h,,common,keynote,Prof. Yongdae Kim,Keynote 1,Keynote 1,"Cellular Metasploit: A Penetration Testing Framework for Cellular Networks",,,,,
+Tuesday,2025-12-16,15:00,15:15,15m,,common,break,,,Break,Break (15M),,,,,
+Tuesday,2025-12-16,15:15,16:15,1h,,common,panel,,,Panel Discussion,TBD,,,,,
+Tuesday,2025-12-16,16:15,16:30,15m,,common,break,,,Break,Break (15M),,,,,
+Tuesday,2025-12-16,16:30,18:00,1h 30m,,symphony-4f,session,,Session 3,Session 3,Cyber Security,,,,,
+Tuesday,2025-12-16,16:30,18:00,1h 30m,,symphony-4f,session,,Session 3,Session 3,Cyber Security,"Cost-Aligned AI for Fraud Detection: Federated Learning and Threshold Mapping under Non-IID Data.","Kun-Lin Tsai; Chui-Wei Chua; Fang-Yie Leu; Chao-Tung Yang",,16:30,16:48
+Tuesday,2025-12-16,16:30,18:00,1h 30m,,symphony-4f,session,,Session 3,Session 3,Cyber Security,"Survey on Electric Vehicle Charging Stations System and Security Perspectives.","Seungbin Lee; Soowang Lee; Joohyeon Lee; Kyeong A Kang; Jiyoon Kim",,16:48,17:06
+Tuesday,2025-12-16,16:30,18:00,1h 30m,,symphony-4f,session,,Session 3,Session 3,Cyber Security,"Toward a Zero-Trust Architecture for 6G-Enabled E-Business Ecosystem.","Hoseok Kwon; Bonam Kim; Ilsun You",,17:06,17:24
+Tuesday,2025-12-16,16:30,18:00,1h 30m,,symphony-4f,session,,Session 3,Session 3,Cyber Security,"Beyond RSRP: UE-Side Detection of Multi-Stage Fake Base Station Attacks through NAS/RRC Layer in 5G Networks.","Chaeyeon You; Vincent Abella; Hoseok Kwon; I Wayan Adi Juliawan Pawana; Bonam Kim; Ilsun You",,17:24,17:42
+Tuesday,2025-12-16,16:30,18:00,1h 30m,,symphony-4f,session,,Session 3,Session 3,Cyber Security,"A Tool for Learning About Outdated Software Vulnerabilities and End-of-Life.","Md Amiruzzaman; Linh Ngo; Ashik Ahmed Bhuiyan",,17:42,18:00
+Wednesday,2025-12-17,09:00,10:30,1h 30m,,symphony-4f,session,,Session 4,Session 4,Industrial & Innovation Session,,,,,
+Wednesday,2025-12-17,10:30,10:45,15m,,common,break,,,Break,Break (15 min),,,,,
+Wednesday,2025-12-17,10:45,12:00,1h 15m,,symphony-4f,special,,Session 5,Session 5,E-BISION Award,,,,,
+Wednesday,2025-12-17,12:00,13:30,1h 30m,,common,lunch,,,Lunch,Lunch - Complement of MobiSec conference,,,,,
+Wednesday,2025-12-17,13:30,14:30,1h,,common,keynote,Prof. Junji Shikata,Keynote 2,Keynote 2,"Post-Quantum Advanced Cryptography and its Application to B5G",,,,,
+Wednesday,2025-12-17,14:30,15:00,30m,,common,break,,,Break,Break (30M),,,,,
+Wednesday,2025-12-17,15:00,16:15,1h 15m,,symphony-4f,session,,Session 6,Session 6,Emerging Technology,,,,,
+Wednesday,2025-12-17,15:00,16:15,1h 15m,,symphony-4f,session,,Session 6,Session 6,Emerging Technology,"ShockShot: Enhancing Gunfire Immersion with Real-Time Sensory Feedback.","S Boyou; Choji; Ungsik Kum; Sumin Yeon; Wonchan Choi; Sang-Min Choi; Suwon Lee",,15:00,15:18
+Wednesday,2025-12-17,15:00,16:15,1h 15m,,symphony-4f,session,,Session 6,Session 6,Emerging Technology,"ARCinema: Enhancing Cinematic Memories and Emotions Through Augmented Reality with Miniature Dioramas.","Wonchan Choi; Eojin Ryu; Minjae Lee; Suwon Lee",,15:18,15:36
+Wednesday,2025-12-17,15:00,16:15,1h 15m,,symphony-4f,session,,Session 6,Session 6,Emerging Technology,"Introducing JavaScript Mining as a Method of Payment and its Hidden Cost.","Fajar Purwana; Adi Juliavan Pawana; Addi Panca Saputra Iskandar",,15:36,15:54
+Wednesday,2025-12-17,15:00,16:15,1h 15m,,symphony-4f,session,,Session 6,Session 6,Emerging Technology,"Voices in Motion: Sentiment Intensity and Thematic Evolution Across Game Release Stages.","Elena Kim; Jaewon Choi",,15:54,16:12
+Wednesday,2025-12-17,16:15,16:30,15m,,common,break,,,Break,Break (15M),,,,,
+Wednesday,2025-12-17,16:30,18:00,1h 30m,,common,poster,,,Poster Session 1&2 (Offline),,,,,,
+Wednesday,2025-12-17,19:00,21:00,2h,,common,banquet,,,Banquet,Banquet - Complement of MobiSec conference,,,,,
+Thursday,2025-12-18,09:00,10:45,1h 45m,,symphony-4f,session,,Session 7,Session 7,E-Business,,,,,
+Thursday,2025-12-18,09:00,10:45,1h 45m,,symphony-4f,session,,Session 7,Session 7,E-Business,"Towards Explainable Fraud Detection in Emerging eSIM and Mobile Payment Ecosystems.","Jhury Kevin Lastre; Vincent Abella; Bonam Kim; Ilsun You",,09:00,09:18
+Thursday,2025-12-18,09:00,10:45,1h 45m,,symphony-4f,session,,Session 7,Session 7,E-Business,"Do Reviews Help with Cold-Start in Sequential Recommender Systems?","Min-Gyu Jang; Sang-Min Choi",,09:18,09:36
+Thursday,2025-12-18,09:00,10:45,1h 45m,,symphony-4f,session,,Session 7,Session 7,E-Business,"Selective Sequence Sampling via (m, k)-Firm Policy for Sequential Recommendation.","Hye-Jin Jeong; Sang-Min Choi",,09:36,09:54
+Thursday,2025-12-18,09:00,10:45,1h 45m,,symphony-4f,session,,Session 7,Session 7,E-Business,"A Framework based on Recommender Systems as Enabler of Cultural Heritage E-Business.","Mario Casillo; Arcangelo Castiglione; Mario Molinara; Pietro Giuseppe Sormani; Carmine Valentino",,09:54,10:12
+Thursday,2025-12-18,09:00,10:45,1h 45m,,symphony-4f,session,,Session 7,Session 7,E-Business,"Knowledge-driven E-Business in cultural heritage: a framework for design and evaluation.","Angelo Lorusso; Federico Marsulcello; Henry Muccini; Gustavo Cirrotti; Alfredo Troiano",,10:12,10:30
+Thursday,2025-12-18,09:00,10:45,1h 45m,,symphony-4f,session,,Session 7,Session 7,E-Business,"Ontology-Grounded Fact-Checking for E-Commerce: A Neuro-Symbolic, Claim-Centric Approach.","Mario Casillo; Liliana Ceccare; Angelo Gaeta; Marco Lombardi; Angelo Lorusso; Giusy Strollo",,10:30,10:48
+Thursday,2025-12-18,10:45,11:00,15m,,common,break,,,Break,Break (15M),,,,,
+Thursday,2025-12-18,10:30,12:00,1h 30m,,symphony-4f,session,,Session 8,Session 8,Network,,,,,
+Thursday,2025-12-18,10:30,12:00,1h 30m,,symphony-4f,session,,Session 8,Session 8,Network,"Optimization of Energy Consumption in Battery-Operated Real-Time Systems.","Swathi Konduru; Ashik Ahmed Bhuiyan; Md Amiruzzaman",,11:00,11:18
+Thursday,2025-12-18,10:30,12:00,1h 30m,,symphony-4f,session,,Session 8,Session 8,Network,"Security and Privacy in Wi-Fi Networks: From Legacy Protocols to Next-Gen Defenses.","Aditya Jha; Hariharasitaraman S.; Radheshyam Singh; Gaurav Choudhary; Nicola Dragoni",,11:18,11:36
+Thursday,2025-12-18,10:30,12:00,1h 30m,,symphony-4f,session,,Session 8,Session 8,Network,"A Context-Aware Framework for Adaptive Service Orchestration in Digital Tourism Ecosystems","Mario Casillo; Muhammad Khan; Marco Lombardi; Marco Fusco; Angelo Lorusso; Domenico Santaniello; Pietro Giuseppe Sormani",,11:36,11:54
+Thursday,2025-12-18,12:00,13:30,1h 30m,,common,break,,,Break,Break (1H 30M),,,,,
+Thursday,2025-12-18,13:30,15:30,2h,,common,workshop,,,AirGap Project Workshop,,,,,,
+Thursday,2025-12-18,15:30,17:00,1h 30m,,common,forum,,,E-Business Information Systems & Cyber Security Insight Hour,,,,,,
+Friday,2025-12-19,09:00,11:00,2h,,common,roundtable,,,"Roundtable on Research Challenges in the 6G, Quantum, AI, and E-Business Information Systems, etc.",,,,,,

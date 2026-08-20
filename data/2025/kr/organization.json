@@ -1,0 +1,86 @@
+[
+  {
+    "title": "총괄 위원장",
+    "members": [{ "name": "유일선", "affiliation": "국민대학교, 대한민국" }]
+  },
+  {
+    "title": "프로그램 위원장",
+    "members": [
+      { "name": "Francesco Colace", "affiliation": "살레르노 대학교, 이탈리아" },
+      { "name": "Kun-Lin Tsai", "affiliation": "동해대학교, 대만" }
+    ]
+  },
+  {
+    "title": "조직 위원장",
+    "members": [
+      { "name": "김지윤", "affiliation": "경상국립대학교, 대한민국" },
+      { "name": "Gaurav Choudhary", "affiliation": "덴마크 공과대학교, 코펜하겐" }
+    ]
+  },
+  {
+    "title": "특별 고문",
+    "members": [
+      { "name": "Andreas Holzinger", "affiliation": "BOKU 비엔나 대학교, 오스트리아" },
+      { "name": "Edgar Weippl", "affiliation": "비엔나 대학교, 오스트리아" }
+    ]
+  },
+  {
+    "title": "홍보 위원장",
+    "members": [{ "name": "Domenico Santaniello", "affiliation": "살레르노 대학교, 이탈리아" }]
+  },
+  {
+    "title": "출판 위원장",
+    "members": [
+      { "name": "I Wayan Adi Juliawan Pawana", "affiliation": "우다야나 대학교, 인도네시아" }
+    ]
+  },
+  {
+    "title": "웹 위원장",
+    "members": [
+      { "name": "Vincent Abella", "affiliation": "국민대학교, 대한민국" },
+      { "name": "Jhury Kevin Lastre", "affiliation": "국민대학교, 대한민국" },
+      { "name": "Iskandar Adi Panca Saputra", "affiliation": "국민대학교, 대한민국" }
+    ]
+  },
+  {
+    "title": "프로그램 위원회",
+    "members": [
+      { "name": "Md Amiruzzaman", "affiliation": "웨스트 체스터 대학교, 미국" },
+      { "name": "Mario Casillo", "affiliation": "살레르노 대학교, 이탈리아" },
+      { "name": "Yen-Lin Chen", "affiliation": "국립타이베이과기대학교, 대만" },
+      { "name": "최재원", "affiliation": "순천향대학교, 대한민국" },
+      { "name": "최상민", "affiliation": "경상국립대학교, 대한민국" },
+      { "name": "John Chui", "affiliation": "홍콩메트로폴리탄대학교, 홍콩" },
+      { "name": "Jialiang Gu", "affiliation": "홍콩교육대학교, 홍콩" },
+      { "name": "한윤희", "affiliation": "한국기술교육대학교, 대한민국" },
+      { "name": "Narit Hnoohom", "affiliation": "마히돌대학교, 태국" },
+      { "name": "홍민", "affiliation": "순천향대학교, 대한민국" },
+      { "name": "Kevin Hung", "affiliation": "홍콩메트로폴리탄대학교, 홍콩" },
+      { "name": "Anuchit Jitpattanakul", "affiliation": "KMUTNB, 태국" },
+      { "name": "I Putu Agus Eka Darma Udayana", "affiliation": "인도네시아 비즈니스 기술 연구소" },
+      { "name": "Jacky Wai Keung", "affiliation": "홍콩시립대학교, 홍콩" },
+      { "name": "김중헌", "affiliation": "고려대학교, 대한민국" },
+      { "name": "Jean Lai", "affiliation": "홍콩침례대학교, 홍콩" },
+      { "name": "Jeng-Wei Lin", "affiliation": "국립치난대학교, 대만" },
+      { "name": "Linawati", "affiliation": "우다야나 대학교, 인도네시아" },
+      { "name": "Angelo Lorusso", "affiliation": "살레르노 대학교, 이탈리아" },
+      { "name": "Massimo Mecella", "affiliation": "로마 사피엔차 대학교, 이탈리아" },
+      { "name": "Sakorn Mekruksavanich", "affiliation": "파야오 대학교, 태국" },
+      { "name": "Mert Nakip", "affiliation": "IITIS, 폴란드 과학 아카데미, 폴란드" },
+      { "name": "Zhuzhong Qian", "affiliation": "난징대학교, 중국" },
+      { "name": "Malek Ben Salem", "affiliation": "AILeap, 미국" },
+      { "name": "Gede Sukadarmika", "affiliation": "우다야나 대학교, 인도네시아" },
+      { "name": "Feilong Tang", "affiliation": "상하이교통대학교, 중국" },
+      { "name": "Alfredo Troiano", "affiliation": "NetCom Group S.p.A., 이탈리아" },
+      { "name": "Zhen-Yu Wu", "affiliation": "국립가오슝과기대학교, 대만" },
+      { "name": "Chao-Tung Yang", "affiliation": "동해대학교, 대만" },
+      { "name": "Farah Yan", "affiliation": "홍콩메트로폴리탄대학교, 홍콩" },
+      { "name": "William Yeoh", "affiliation": "홍콩메트로폴리탄대학교, 홍콩" },
+      { "name": "Meng Yu", "affiliation": "거버너스 주립대학교, 미국" },
+      { "name": "Xingjun Zhang", "affiliation": "시안교통대학교, 중국" },
+      { "name": "Fajar Purnama", "affiliation": "우다야나 대학교, 인도네시아" },
+      { "name": "Lely Meilina", "affiliation": "우다야나 대학교, 인도네시아" },
+      { "name": "신대민", "affiliation": "금융보안원, 대한민국" }
+    ]
+  }
+]

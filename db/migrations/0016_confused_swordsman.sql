@@ -1,0 +1,1 @@
+CREATE INDEX "registrations_year_checked_in_at_idx" ON "registrations" USING btree ("year","checked_in_at");

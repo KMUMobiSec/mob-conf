@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/Lavelliane/xylvir-light/discussions
+    about: Use discussions for questions and general help
+  - name: 📚 Documentation
+    url: https://github.com/Lavelliane/xylvir-light#readme
+    about: Check our documentation first
+

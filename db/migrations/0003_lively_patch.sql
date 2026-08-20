@@ -1,0 +1,1 @@
+ALTER TABLE "nominations" ADD COLUMN "winner_notified_at" timestamp with time zone;

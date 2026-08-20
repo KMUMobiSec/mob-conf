@@ -1,0 +1,14 @@
+{"type":"progress","payload":{"code":0,"message":"es10b_get_euicc_challenge_and_info","data":"smdpp.test.rsp.sysmocom.de"}}
+{"type":"progress","payload":{"code":0,"message":"es9p_initiate_authentication","data":"smdpp.test.rsp.sysmocom.de"}}
+[DEBUG] [HTTP] [TX] url: https://smdpp.test.rsp.sysmocom.de/gsma/rsp2/es9plus/initiateAuthentication, data: {"smdpAddress":"smdpp.test.rsp.sysmocom.de","euiccChallenge":"dNGXCkQuLQlTgH4CHcHIcQ==","euiccInfo1":"vyA1ggMCAwCpFgQU9UFyvfmKldZcvriKOKHBHYAKhcOqFgQU9UFyvfmKldZcvriKOKHBHYAKhcM="}
+[DEBUG] [HTTP] [RX] rcode: 502, data: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.22.1</center>
+</body>
+</html>
+
+{"type":"progress","payload":{"code":0,"message":"es10b_cancel_session","data":"smdpp.test.rsp.sysmocom.de"}}
+{"type":"progress","payload":{"code":0,"message":"es9p_cancel_session","data":"smdpp.test.rsp.sysmocom.de"}}
+{"type":"lpa","payload":{"code":-1,"message":"es9p_initiate_authentication","data":"HTTP status code error"}}

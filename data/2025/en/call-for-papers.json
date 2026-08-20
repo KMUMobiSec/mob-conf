@@ -1,0 +1,94 @@
+{
+  "title": "Call for Papers",
+  "description": "The 2025 IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution (EBISION 2025) invites researchers, practitioners, and students to submit original research papers, case studies, and position papers that advance the field of E-Business Information Systems.",
+  "topics": [
+    "Artificial Intelligence and Data-Driven Business Innovation",
+    "Quantum-Safe and Powered EBIS",
+    "6G Networks and Ultra-Connected E-Business Ecosystems",
+    "Cloud-Native Platforms and Multi-Cloud Resilience",
+    "Blockchain, Decentralized Finance, and Web 3.0 Economies",
+    "Robotics, Automation, and Smart Service Infrastructures",
+    "Human-Centered and Consumer-Oriented EBIS Design",
+    "Digital Culture and Global Trust Frameworks",
+    "Case Studies and Success Stories in Diverse Industries",
+    "Cyber-Physical Integration for EBIS",
+    "Sustainability and Green E-Business Systems",
+    "E-Business Governance, Policy, and Regulation",
+    "Resilient and Adaptive EBIS Architectures",
+    "Cybersecurity and Digital Trust in EBIS",
+    "Future Research Paradigms for EBIS Evolution"
+  ],
+  "importantDates": {
+    "originalPapers": [
+      {
+        "title": "Paper Submission Deadline",
+        "date": "September 30, 2025 (KST/JST)",
+        "color": "green"
+      },
+      {
+        "title": "Acceptance Notification",
+        "date": "October 31, 2025 (KST/JST)",
+        "color": "yellow"
+      },
+      {
+        "title": "Final Version Deadline",
+        "date": "November 14, 2025 (KST/JST)",
+        "color": "blue"
+      }
+    ]
+  },
+  "submissionGuidelines": {
+    "paperCategories": ["Original Research Papers"],
+    "requirements": [
+      "Authors are invited to submit original papers. Submissions must not substantially overlap with work that any of the authors have published elsewhere, or that is simultaneously under review for another conference with proceedings.",
+      "An accepted paper must be registered before the registration deadline and presented at the symposium. Failure to register by the deadline will result in automatic withdrawal of the paper from the proceedings and the program.",
+      "Submissions must be anonymous. No author names, affiliations, acknowledgments, or obvious self-references should be included.",
+      {
+        "text": "The submission file must be in PDF format, prepared using the EasyChair LaTeX class file (US letter size) [Available at ",
+        "link": {
+          "text": "easychair.zip",
+          "href": "https://easychair.org/publications/easychair.zip",
+          "target": "_blank"
+        },
+        "textAfter": "] or the EasyChair Microsoft Word template [Available at ",
+        "link2": {
+          "text": "easychair.docx",
+          "href": "https://easychair.org/publications/easychair.docx",
+          "target": "_blank"
+        },
+        "textEnd": "]."
+      },
+      "The length of the submission must be at least 5 pages and not exceed 20 pages in EasyChair style, excluding the bibliography and clearly marked appendices.",
+      "Submission of a paper implies that, should the paper be accepted, at least one of the authors will register and present the paper at the symposium."
+    ]
+  },
+  "proceedings": {
+    "title": "Proceedings & Post Publications",
+    "items": [
+      "The proceedings of EBISION 2025 will be made available to all registered attendees.",
+      "During the symposium, all accepted papers will appear in the preliminary online proceedings (non-official publication) for participant access.",
+      "The proceedings of the above-mentioned event will be published in the IFIP Advances in Information and Communication Technology (IFIP AICT) series, in accordance with the contract between Springer Nature Switzerland AG and International Federation for Information Processing.",
+      "The remaining papers will also be invited to submit extended and revised versions for possible publication in SCIE- or Scopus-indexed journals (pending)."
+    ]
+  },
+  "callToAction": {
+    "title": "Ready to Submit?",
+    "description": "Join leading researchers and practitioners in advancing E-Business Information Systems research.",
+    "buttons": [
+      {
+        "text": "Author Instructions",
+        "type": "outline",
+        "link": "/author-instruction"
+      },
+      {
+        "text": "Submit Your Paper",
+        "type": "secondary",
+        "link": "/2025/call-for-papers"
+      }
+    ]
+  },
+  "contact": {
+    "email": "cyberchair.ebision@gmail.com",
+    "message": "Questions about submissions? Contact us at"
+  }
+}

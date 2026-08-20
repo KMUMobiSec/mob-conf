@@ -1,0 +1,6 @@
+# Tailwind CSS files with custom directives
+app/globals.css
+
+# Generated files
+lib/generated/**
+

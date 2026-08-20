@@ -1,0 +1,31 @@
+{
+  "conferences": [
+    {
+      "year": "2025",
+      "title": "The 1st IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution",
+      "dates": "December 16–18, 2025",
+      "location": "Sapporo, Japan",
+      "venue": "Hotel Emisia Sapporo",
+      "status": "past",
+      "website": "https://ebision.ifip-wg84.org/2025",
+      "image": "/assets/venue/2025/venue.jpg",
+      "description": "The inaugural EBISION symposium brought together researchers, practitioners, and students from around the world to explore the evolution of E-Business Information Systems. Held in conjunction with MobiSec 2025, the event featured original research papers, keynote sessions, and discussions on emerging topics including AI-driven business innovation, quantum computing, 6G networks, blockchain, and cybersecurity.",
+      "proceedings": "Springer IFIP AICT Series",
+      "topics": [
+        "Artificial Intelligence and Data-Driven Business Innovation",
+        "Quantum-Safe and Powered EBIS",
+        "6G Networks and Ultra-Connected E-Business Ecosystems",
+        "Cloud-Native Platforms and Multi-Cloud Resilience",
+        "Blockchain, Decentralized Finance, and Web 3.0 Economies",
+        "Cybersecurity and Digital Trust in EBIS"
+      ],
+      "organizedBy": "IFIP WG 8.4",
+      "inConjunction": "MobiSec 2025"
+    }
+  ],
+  "statistics": {
+    "totalEditions": 1,
+    "countries": 1,
+    "description": "EBISION brings together researchers, academics, and industry professionals to advance E-Business Information Systems and explore the digital great transformation."
+  }
+}

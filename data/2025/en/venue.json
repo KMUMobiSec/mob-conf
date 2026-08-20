@@ -1,0 +1,20 @@
+{
+  "venue": "Hotel Emisia Sapporo",
+  "street": "Atsubetsu Chuo 2-5",
+  "city": "Sapporo",
+  "ward": "Atsubetsu-ku",
+  "prefecture": "Hokkaido",
+  "postalCode": "004-0052",
+  "country": "Japan",
+  "coordinates": {
+    "latitude": 43.0389,
+    "longitude": 141.4764
+  },
+  "description": "Hotel Emisia Sapporo is a premier conference hotel located in the Atsubetsu district of Sapporo, Hokkaido, Japan. The venue provided excellent facilities for the inaugural EBISION symposium held in conjunction with MobiSec 2025.",
+  "websiteUrl": "https://www.hotel-emisia.com/",
+  "transportation": "Located near Shin-Sapporo Station on the JR Chitose Line and Sapporo Municipal Subway Tozai Line, providing convenient access from New Chitose Airport (approximately 30 minutes by JR rapid train).",
+  "image": {
+    "src": "/assets/venue/2025/venue.jpg",
+    "alt": "EBISION 2025 — Hotel Emisia Sapporo"
+  }
+}

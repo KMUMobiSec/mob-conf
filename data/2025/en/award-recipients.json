@@ -1,0 +1,82 @@
+{
+  "recipients": [
+    {
+      "category": "Young Researcher Award",
+      "recipient": "Gaurav Choudhary",
+      "affiliation": "Technical University of Denmark, Kongens Lyngby, Denmark",
+      "recognition": "Remarkable contributions and dedicated research efforts in the field of E-Business Information Systems as a Young Researcher"
+    },
+    {
+      "category": "Young Researcher Award",
+      "recipient": "Sang-Min Choi",
+      "affiliation": "Gyeongsang National University, Jinju, South Korea",
+      "recognition": "Remarkable contributions and dedicated research efforts in the field of E-Business Information Systems as a Young Researcher"
+    },
+    {
+      "category": "Distinguished Lecturer Award",
+      "recipient": "William Yeoh",
+      "affiliation": "Hong Kong Metropolitan University, Hong Kong SAR, China",
+      "recognition": "Exemplary teaching, mentorship, and dedication to advancing education in the field of E-Business Information Systems"
+    },
+    {
+      "category": "Distinguished Lecturer Award",
+      "recipient": "Jaewon Choi",
+      "affiliation": "Soonchunhyang University, Asan, South Korea",
+      "recognition": "Exemplary teaching, mentorship, and dedication to advancing education in the field of E-Business Information Systems"
+    },
+    {
+      "category": "Promising Graduate Student Award",
+      "recipient": "Seungbin Lee",
+      "affiliation": "Gyeongsang National University, Jinju, South Korea",
+      "recognition": "Research achievements and academic potential demonstrated in the field of E-Business Information Systems as an emerging graduate student"
+    },
+    {
+      "category": "Promising Graduate Student Award",
+      "recipient": "Younghyo Cho",
+      "affiliation": "Seoul National University of Science and Technology, Seoul, South Korea",
+      "recognition": "Research achievements and academic potential demonstrated in the field of E-Business Information Systems as an emerging graduate student"
+    },
+    {
+      "category": "Promising Graduate Student Award",
+      "recipient": "Hye-Yeon Shim",
+      "affiliation": "Sungshin Women's University, Seoul, South Korea",
+      "recognition": "Research achievements and academic potential demonstrated in the field of E-Business Information Systems as an emerging graduate student"
+    },
+    {
+      "category": "Industry Pioneer Award",
+      "recipient": "ICTK Co., Ltd.",
+      "technology": "Pioneering Quantum-Resilient Hardware Security with VIA PUF™",
+      "recognition": "Pioneering leadership and innovative contributions demonstrated through the development and industrial deployment of cutting-edge technology in the field of E-Business Information Systems"
+    },
+    {
+      "category": "Industry Pioneer Award",
+      "recipient": "ELUON",
+      "technology": "Cloud Native-based Ultra-lightweight Private 5G Core Network Solution",
+      "recognition": "Pioneering leadership and innovative contributions demonstrated through the development and industrial deployment of cutting-edge technology in the field of E-Business Information Systems"
+    },
+    {
+      "category": "Best Paper Award",
+      "authors": ["Kun-Lin Tsai", "Chu-Wei Chu", "Fang-Yie Leu", "Chao-Tung Yang"],
+      "affiliation": "Tunghai University, Taichung, Taiwan",
+      "paperTitle": "Cost-Aligned AI for Fraud Detection: Federated Learning and Threshold Mapping under Non-IID Data"
+    },
+    {
+      "category": "Best Paper Award",
+      "authors": ["Min-Gyu Jang", "Sang-Min Choi"],
+      "affiliation": "Gyeongsang National University, Jinju, South Korea",
+      "paperTitle": "Do Reviews Help with Cold-Start in Sequential Recommender Systems?"
+    },
+    {
+      "category": "Best Student Paper Award",
+      "authors": ["Jhury Kevin Lastre", "Vincent Abella", "Bonam Kim", "Ilsun You"],
+      "affiliation": "Kookmin University, Seoul, South Korea",
+      "paperTitle": "Foundations for Explainable Fraud Detection in Emerging eSIM and Mobile Payment Ecosystems"
+    },
+    {
+      "category": "Best Student Paper Award",
+      "authors": ["Kinsey K.S. Ng", "Farah Yan", "Kevin Hung"],
+      "affiliation": "Hong Kong Metropolitan University, Hong Kong SAR, China",
+      "paperTitle": "A Preliminary Study of Retrieval-Augmented Generation for Sensitive Web Path Discovery in Web-based Information Systems"
+    }
+  ]
+}

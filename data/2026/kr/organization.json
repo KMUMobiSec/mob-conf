@@ -1,0 +1,126 @@
+[
+  {
+    "title": "총괄 위원장",
+    "members": [{ "name": "Ilsun You", "affiliation": "Kookmin University, South Korea" }]
+  },
+  {
+    "title": "총괄 공동부위원장",
+    "members": [
+      { "name": "Hyunchul Ahn", "affiliation": "Kookmin University, South Korea" },
+      { "name": "Kun-Lin Tsai", "affiliation": "TungHai University, Taiwan" }
+    ]
+  },
+  {
+    "title": "프로그램위원회 공동위원장",
+    "members": [
+      { "name": "William Yeoh", "affiliation": "Hong Kong Metropolitan University, Hong Kong" },
+      { "name": "Jiyoon Kim", "affiliation": "Gyeongsang National University, South Korea" },
+      { "name": "Gaurav Choudhary", "affiliation": "Technical University of Denmark, Denmark" }
+    ]
+  },
+  {
+    "title": "현지 조직 공동위원장",
+    "members": [
+      { "name": "Han Yoon", "affiliation": "Kookmin University, South Korea" },
+      { "name": "Sang Min Yoon", "affiliation": "Kookmin University, South Korea" }
+    ]
+  },
+  {
+    "title": "홍보 위원장",
+    "members": [
+      {
+        "name": "I Wayan Adi Juliawan Pawana",
+        "affiliation": "Udayana University, Indonesia"
+      }
+    ]
+  },
+  {
+    "title": "포스터 위원장",
+    "members": [
+      {
+        "name": "Philip V. Astillo",
+        "affiliation": "University of San Carlos, Philippines"
+      },
+      {
+        "name": "Sohyun Park",
+        "affiliation": "Sungshin Women's University, South Korea"
+      }
+    ]
+  },
+  {
+    "title": "웹 위원장",
+    "members": [
+      {
+        "name": "Jhury Kevin Lastre",
+        "affiliation": "Kookmin University, South Korea"
+      },
+      {
+        "name": "Vincent Abella",
+        "affiliation": "Kookmin University, South Korea"
+      }
+    ]
+  },
+  {
+    "title": "자문위원회",
+    "members": [
+      { "name": "Yuh-Shyan Chen", "affiliation": "National Taipei University, Taiwan" },
+      { "name": "Chun-I Fan", "affiliation": "National Sun Yat-sen University, Taiwan" },
+      { "name": "Fang-Yie Leu", "affiliation": "TungHai University, Taiwan" },
+      { "name": "Okyeon Yi", "affiliation": "Kookmin University, South Korea" },
+      { "name": "Wontae Lee", "affiliation": "Kookmin University, South Korea" },
+      { "name": "Myungkeun Yoon", "affiliation": "Kookmin University, South Korea" }
+    ]
+  },
+  {
+    "title": "프로그램 위원회",
+    "members": [
+      { "name": "Md Amiruzzaman", "affiliation": "West Chester University, USA" },
+      { "name": "Philip V. Astillo", "affiliation": "University of San Carlos, Philippines" },
+      { "name": "Arcangelo Castiglione", "affiliation": "University of Salerno, Italy" },
+      { "name": "Tzung-Shi Chen", "affiliation": "National University of Tainan, Taiwan" },
+      {
+        "name": "Yen-Lin Chen",
+        "affiliation": "National Taipei University of Technology, Taiwan"
+      },
+      { "name": "John Chui", "affiliation": "Hong Kong Metropolitan University, Hong Kong" },
+      {
+        "name": "Jialiang Gu",
+        "affiliation": "Education University of Hong Kong, Hong Kong"
+      },
+      { "name": "Jianfeng Guan", "affiliation": "BUPT, China" },
+      { "name": "Sajad Homayoun", "affiliation": "Aalborg University, Denmark" },
+      { "name": "Ruei-Hau Hsu", "affiliation": "National Sun Yat-sen University, Taiwan" },
+      { "name": "Kevin Hung", "affiliation": "Hong Kong Metropolitan University, Hong Kong" },
+      { "name": "Huisu Jang", "affiliation": "Soongsil University, South Korea" },
+      { "name": "Sanghoon Jeon", "affiliation": "Kookmin University, South Korea" },
+      { "name": "Anuchit Jitpattanakul", "affiliation": "KMUTNB, Thailand" },
+      { "name": "Arijit Karati", "affiliation": "National Sun Yat-sen University, Taiwan" },
+      { "name": "Smith Khare", "affiliation": "University of Southern Denmark, Denmark" },
+      { "name": "Dowon Kim", "affiliation": "KISA, South Korea" },
+      { "name": "Jean Lai", "affiliation": "Hong Kong Baptist University, Hong Kong" },
+      { "name": "Jeng-Wei Lin", "affiliation": "National Chi Nan University, Taiwan" },
+      { "name": "Fabio Martinelli", "affiliation": "CNR-ICAR, Italy" },
+      { "name": "Sakorn Mekruksavanich", "affiliation": "University of Phayao, Thailand" },
+      { "name": "Mert Nakip", "affiliation": "IITIS, Polish Academy of Sciences, Poland" },
+      { "name": "Hoonyong Park", "affiliation": "Autocrypt Co., Ltd, South Korea" },
+      { "name": "Seongmin Park", "affiliation": "KISA, South Korea" },
+      { "name": "Sathit Prasomphan", "affiliation": "KMUTNB, Thailand" },
+      { "name": "Mubashrah Saddiqa", "affiliation": "University of Southern Denmark, Denmark" },
+      { "name": "Daemin Shin", "affiliation": "Financial Security Institute, South Korea" },
+      {
+        "name": "Vikas Kumar Sihag",
+        "affiliation": "Sardar Patel University of Police, India"
+      },
+      { "name": "Radheshyam Singh", "affiliation": "FORCE Technology, Copenhagen, Denmark" },
+      {
+        "name": "Prashant Surana",
+        "affiliation": "Indian Institute of Technology, Roorkee, India"
+      },
+      { "name": "Feilong Tang", "affiliation": "Shanghai Jiaotong University, China" },
+      { "name": "Noriki Uchida", "affiliation": "Fukuoka Institute of Technology, Japan" },
+      { "name": "Farah Yan", "affiliation": "Hong Kong Metropolitan University, Hong Kong" },
+      { "name": "Chao-Tung Yang", "affiliation": "TungHai University, Taiwan" },
+      { "name": "Meng Yu", "affiliation": "Governors State University, USA" }
+    ]
+  }
+]

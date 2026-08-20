@@ -1,0 +1,20 @@
+{
+  "venue": "호텔 에미시아 삿포로",
+  "street": "아쓰베쓰 주오 2-5",
+  "city": "삿포로",
+  "ward": "아쓰베쓰구",
+  "prefecture": "홋카이도",
+  "postalCode": "004-0052",
+  "country": "일본",
+  "coordinates": {
+    "latitude": 43.0389,
+    "longitude": 141.4764
+  },
+  "description": "호텔 에미시아 삿포로는 일본 홋카이도 삿포로의 아쓰베쓰 지역에 위치한 프리미어 컨퍼런스 호텔입니다. MobiSec 2025와 함께 개최된 제1회 EBISION 심포지엄을 위한 우수한 시설을 제공하였습니다.",
+  "websiteUrl": "https://www.hotel-emisia.com/",
+  "transportation": "JR 치토세선과 삿포로 시영 지하철 도자이선의 신삿포로역 근처에 위치하여 신치토세 공항에서 JR 쾌속열차로 약 30분 소요됩니다.",
+  "image": {
+    "src": "/assets/venue/2025/venue.jpg",
+    "alt": "EBISION 2025 — 호텔 에미시아 삿포로"
+  }
+}

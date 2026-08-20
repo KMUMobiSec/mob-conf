@@ -1,0 +1,1 @@
+ALTER TABLE "nominations" ADD COLUMN "is_winner" boolean DEFAULT false NOT NULL;

@@ -1,0 +1,15 @@
+{
+  "conferenceName": "EBISION 2026",
+  "conferenceFullTitle": "The 2nd IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution",
+  "dates": "July 8–10, 2026",
+  "venue": "Kookmin University",
+  "location": "Seoul, South Korea",
+  "collaborators": [
+    {
+      "name": "IFIP WG 8.4",
+      "subtitle": "E-Business Information Systems",
+      "role": "Organizer",
+      "logo": "/assets/logo/ifip-logo.png"
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "info": {
+    "date": "July 8 (Wed) – 10 (Fri), 2026",
+    "venue": "Kookmin University, Seoul, Korea",
+    "type": "Official Flagship Event of IFIP WG 8.4",
+    "organizer": "IFIP WG 8.4 / Kookmin University"
+  },
+  "cooperation": [
+    "KMU Global Research Center for ICT Convergence Security",
+    "AI·SW Graduate School, Kookmin University",
+    "Innovative Education Research Center for Future Automobiles and Mobility, Kookmin University",
+    "Department of AI Convergence Engineering, Gyeongsang National University",
+    "KIISC Research Group on 6G Security"
+  ],
+  "schedule": [
+    {
+      "label": "Day 1",
+      "date": "July 8",
+      "weekday": "Wednesday",
+      "items": [
+        {
+          "time": "09:00 – 10:30",
+          "title": "Paper Sessions",
+          "type": "paper",
+          "detail": "Rooms 1, 2, 3",
+          "tracks": [
+            {
+              "name": "Digital Transformation",
+              "no": "1a",
+              "chair": "Hyunchul Ahn (Kookmin University, South Korea)"
+            },
+            {
+              "name": "Education & Social Networks",
+              "no": "1b",
+              "chair": "HoonYong Park (AUTOCRYPT Co., Ltd.)"
+            },
+            {
+              "name": "Multimedia",
+              "no": "1c",
+              "chair": "Sanghoon Jeon (Kookmin University, South Korea)"
+            }
+          ]
+        },
+        {
+          "time": "10:30 – 11:00",
+          "title": "Coffee Break",
+          "type": "break"
+        },
+        {
+          "time": "11:00 – 12:30",
+          "title": "Invited Session 1",
+          "type": "invited",
+          "detail": "3 talks · 30 min each",
+          "chair": "William Yeh (Hong Kong Metropolitan University, Hong Kong)",
+          "chairNo": "2"
+        },
+        {
+          "time": "12:30 – 14:00",
+          "title": "Lunch Break",
+          "type": "break"
+        },
+        {
+          "time": "14:00 – 14:30",
+          "title": "Opening Ceremony",
+          "type": "ceremony"
+        },
+        {
+          "time": "14:30 – 15:30",
+          "title": "Keynote 1",
+          "type": "keynote",
+          "speaker": "Prof. Tei-Wei Kuo (Delta Electronics, Taiwan)",
+          "topic": "Empowering AI to Drive the Next Era of Intelligent Industry",
+          "chair": "Fang-Yie Leu (TungHai University, Taiwan)",
+          "chairNo": "3"
+        },
+        {
+          "time": "15:30 – 16:00",
+          "title": "Coffee Break",
+          "type": "break"
+        },
+        {
+          "time": "16:00 – 18:00",
+          "title": "Industrial Session 1",
+          "type": "industrial",
+          "detail": "6 talks · 20 min each",
+          "chair": "Seonghan Shin (AIST, Japan)",
+          "chairNo": "4"
+        },
+        {
+          "time": "19:00 – 21:00",
+          "title": "Invited Speakers & Organizers' Reception",
+          "type": "social"
+        }
+      ]
+    },
+    {
+      "label": "Day 2",
+      "date": "July 9",
+      "weekday": "Thursday",
+      "items": [
+        {
+          "time": "09:00 – 10:30",
+          "title": "Paper Sessions",
+          "type": "paper",
+          "detail": "Rooms 1, 2, 3 · 4 papers per room",
+          "tracks": [
+            {
+              "name": "Infrastructure",
+              "no": "5a",
+              "chair": "Nicola Dragoni (Technical University of Denmark, Denmark)"
+            },
+            {
+              "name": "Cybersecurity",
+              "no": "5b",
+              "chair": "Seonghan Shin (AIST, Japan)"
+            },
+            {
+              "name": "Artificial Intelligence (1)",
+              "no": "5c",
+              "chair": "Hyunchul Ahn (Kookmin University, South Korea)"
+            }
+          ]
+        },
+        {
+          "time": "10:30 – 11:00",
+          "title": "Coffee Break",
+          "type": "break"
+        },
+        {
+          "time": "11:00 – 12:30",
+          "title": "Invited Session 2",
+          "type": "invited",
+          "detail": "3 talks · 30 min each",
+          "chair": "Fang-Yie Leu (TungHai University, Taiwan)",
+          "chairNo": "6"
+        },
+        {
+          "time": "12:30 – 14:00",
+          "title": "Lunch Break",
+          "type": "break"
+        },
+        {
+          "time": "14:00 – 15:00",
+          "title": "Keynote 2",
+          "type": "keynote",
+          "speaker": "Prof. Nicola Dragoni (Technical University of Denmark, Denmark)",
+          "topic": "From Logs to Cyber Threat Intelligence: Mining the Behavior of Cyber Threats",
+          "chair": "Karl Andersson (Luleå University of Technology, Sweden)",
+          "chairNo": "7"
+        },
+        {
+          "time": "15:00 – 16:00",
+          "title": "Keynote 3",
+          "type": "keynote",
+          "speaker": "Prof. Antonio Skarmeta (University of Murcia, Spain)",
+          "topic": "Data Space and Secure Data Sharing in the Context of Digital Transformation",
+          "chair": "Hanaoka Goichiro (AIST, Japan)",
+          "chairNo": "8"
+        },
+        {
+          "time": "16:00 – 16:30",
+          "title": "Coffee Break",
+          "type": "break"
+        },
+        {
+          "time": "16:30 – 18:00",
+          "title": "Poster Session",
+          "type": "poster",
+          "detail": "41 papers",
+          "chairs": [
+            "Sohyun Park (Sungshin Women's University, South Korea)",
+            "Sang Min Yoon (Kookmin University, South Korea)",
+            "Jongsung Kim (Kookmin University, South Korea)"
+          ]
+        },
+        {
+          "time": "19:30 – 21:00",
+          "title": "Banquet",
+          "type": "social"
+        }
+      ]
+    },
+    {
+      "label": "Day 3",
+      "date": "July 10",
+      "weekday": "Friday",
+      "items": [
+        {
+          "time": "09:00 – 10:30",
+          "title": "Paper Sessions",
+          "type": "paper",
+          "detail": "Rooms 1, 2, 3 · 4 papers per room",
+          "tracks": [
+            {
+              "name": "Networks",
+              "no": "9a",
+              "chair": "Jiyoon Kim (Gyeongsang National University, South Korea)"
+            },
+            {
+              "name": "Cryptography",
+              "no": "9b",
+              "chair": "Kunlin Tsai (TungHai University, Taiwan)"
+            },
+            {
+              "name": "Artificial Intelligence (2)",
+              "no": "9c",
+              "chair": "I Wayan Adi Juliawan Pawana (Udayana University, Indonesia)"
+            }
+          ]
+        },
+        {
+          "time": "10:30 – 11:00",
+          "title": "Coffee Break",
+          "type": "break"
+        },
+        {
+          "time": "11:00 – 12:30",
+          "title": "Paper Sessions",
+          "type": "paper",
+          "detail": "Rooms 1, 2, 3 · 4 papers per room",
+          "tracks": [
+            {
+              "name": "E-Business",
+              "no": "10a",
+              "chair": "William Yeh (Hong Kong Metropolitan University, Hong Kong)"
+            },
+            {
+              "name": "FinTech",
+              "no": "10b",
+              "chair": "Sohyun Park (Sungshin Women's University, South Korea)"
+            },
+            {
+              "name": "Virtual Session",
+              "no": "10c",
+              "chair": "Adi Panca Saputra Iskandar (Udayana University, Indonesia)"
+            }
+          ]
+        },
+        {
+          "time": "12:30 – 14:00",
+          "title": "IFIP WG 8.4 Meeting",
+          "type": "meeting"
+        },
+        {
+          "time": "14:00 – 16:00",
+          "title": "Horizon Europe Consortium Assembly",
+          "type": "assembly"
+        }
+      ]
+    }
+  ],
+  "highlights": {
+    "keynotes": [
+      {
+        "name": "Tei-Wei Kuo",
+        "org": "Delta Electronics / National Taiwan University",
+        "topic": "Empowering AI to Drive the Next Era of Intelligent Industry"
+      },
+      {
+        "name": "Nicola Dragoni",
+        "org": "Technical University of Denmark",
+        "topic": "From Logs to Cyber Threat Intelligence"
+      },
+      {
+        "name": "Antonio F. Skarmeta",
+        "org": "University of Murcia",
+        "topic": "Data Space & Secure Data Sharing"
+      }
+    ],
+    "invited": [
+      {
+        "name": "Okyeon Yi",
+        "topic": "Quantum Security & AI Fusion"
+      },
+      {
+        "name": "Karl Andersson",
+        "topic": "MedFedChain · Federated Learning"
+      },
+      {
+        "name": "Hsing-Chung Chen",
+        "topic": "Blockchain Trust Chain"
+      },
+      {
+        "name": "Emmanouel Varvarigos",
+        "topic": "Cybersecurity Learning App"
+      },
+      {
+        "name": "Shih-Hao Hung",
+        "topic": "RDMA-Based GPU Communications"
+      },
+      {
+        "name": "SeongHan Shin",
+        "topic": "Hybrid EDHOC Post-Quantum"
+      }
+    ],
+    "industrial": {
+      "note": "6 Talks · 20 Minutes Each",
+      "description": "Sharing the latest technologies and real-world applications in industrial security, AI, data, and mobility.",
+      "companies": [
+        "KT Corporation",
+        "ZenmuTech",
+        "Penta Security",
+        "Sangfor Technologies",
+        "AI DataBrushing Technology",
+        "AUTOCRYPT"
+      ]
+    }
+  },
+  "description": "EBISION 2026 is a three-day international academic event featuring paper presentations, posters, keynote speeches, invited sessions, industrial sessions, the IFIP WG 8.4 meeting, and international collaboration programs."
+}

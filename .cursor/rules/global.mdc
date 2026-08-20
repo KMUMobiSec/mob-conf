@@ -1,0 +1,445 @@
+---
+alwaysApply: true
+---
+# Xylvir Development Rules
+
+This document defines the architecture, structure, and coding standards for the Xylvir project. Follow these rules for consistency.
+
+---
+
+## Project Structure
+
+```
+xylvir-light/
+├── app/
+│   ├── (public)/          # Public routes (login, register)
+│   ├── (protected)/       # Protected routes (dashboard)
+│   └── api/               # API routes (Hono handlers)
+├── components/
+│   ├── ui/                # shadcn/ui components
+│   └── providers/         # React providers (query, etc)
+├── server/
+│   ├── handlers/          # Error handlers
+│   ├── middleware/        # Hono middleware
+│   ├── routes/            # Hono API routes
+│   ├── services/          # Business logic & utilities
+│   └── validators/        # Zod validation schemas
+├── lib/
+│   ├── auth/              # Better Auth config
+│   ├── generated/         # Generated Prisma Client
+│   ├── prisma.ts          # Prisma client singleton
+│   └── utils.ts           # Utilities
+├── env/                   # Environment variable schemas
+├── prisma/                # Database schema & migrations
+└── hooks/                 # Global React hooks
+```
+
+---
+
+## Next.js Rules
+
+### Route Groups
+
+- Use `(public)` for unauthenticated routes (login, register)
+- Use `(protected)` for authenticated routes (dashboard)
+- Route groups are ignored in URLs
+
+### Page & Layout Patterns
+
+- **Keep minimal and server-only**: `page.tsx` and `layout.tsx` should be minimal Server Components
+- **Client logic in components**: Import client components from `_components/` folders
+- **No business logic**: Pages only orchestrate rendering
+
+Example:
+```tsx
+// ✅ Good - Minimal server page
+import { TodoList } from "./_components";
+
+export default function TodosPage() {
+  return <TodoList />;
+}
+
+// ❌ Bad - Client logic in page
+"use client"
+export default function TodosPage() {
+  const [state, setState] = useState()
+  // ...
+}
+```
+
+### Feature-Based Architecture
+
+Structure features in protected routes like this:
+
+```
+app/(protected)/dashboard/todos/
+├── page.tsx                # Minimal server page
+├── _types/                 # TypeScript types
+│   └── index.ts
+├── _hooks/                 # React Query hooks
+│   ├── index.ts           # Central export
+│   ├── api.ts             # API fetch functions
+│   ├── queries.ts         # Query hooks
+│   └── mutations.ts       # Mutation hooks
+└── _components/           # Feature components
+    ├── index.ts           # Central export
+    ├── todo-list.tsx
+    ├── todo-item.tsx
+    └── todo-form.tsx
+```
+
+### Data Fetching
+
+- **Use React Query** for all data fetching
+- **Organize by feature**: queries and mutations in feature `_hooks/` folder
+- **Query keys factory**: Define reusable query keys
+
+Example:
+```tsx
+// _hooks/queries.ts
+export const todoKeys = {
+  all: ["todos"] as const,
+  lists: () => [...todoKeys.all, "list"] as const,
+  list: (filters?) => [...todoKeys.lists(), filters] as const,
+  detail: (id: string) => [...todoKeys.all, "detail", id] as const,
+};
+```
+
+### Components
+
+- Use `"use client"` only when necessary (hooks, interactivity)
+- Default to Server Components
+- Import from `@/` using path aliases
+- Use `cn()` utility for conditional classes
+
+### Middleware
+
+- File: `middleware.ts` in root (not `proxy.ts`)
+- Handle route protection and redirects
+- Keep logic minimal, delegate to auth library
+
+---
+
+## Hono.js Rules
+
+### Routes
+
+- **File**: `server/routes/<feature>/<feature>.route.ts`
+- **Export**: Default export as Hono router
+- **Apply middleware**: Use `.use()` for route-level middleware
+- **Mount in main**: Add to `app/api/[[...routes]]/route.ts`
+
+Example:
+```ts
+// server/routes/todo/todo.route.ts
+import { Hono } from "hono";
+import { authMiddleware } from "@/server/middleware/auth.middleware";
+
+const router = new Hono<{ Variables: AuthType }>();
+router.use("/*", authMiddleware);
+
+router.get("/", async (c) => { /* ... */ });
+
+export default router;
+```
+
+### Services
+
+- **File**: `server/services/<feature>.service.ts`
+- **Pattern**: Export object with methods
+- **Purpose**: Business logic, database operations
+- **No HTTP logic**: Services are pure logic, no request/response handling
+
+Example:
+```ts
+// server/services/todo.service.ts
+export const todoService = {
+  async getAll(userId: string) { /* ... */ },
+  async create(userId: string, data: CreateTodoInput) { /* ... */ },
+};
+```
+
+### Validators
+
+- **File**: `server/validators/<feature>.validators.ts`
+- **Export**: Named exports for schemas and types
+- **Reusable**: Extract common validators (dateString, etc)
+- **Type inference**: Export `z.infer<typeof schema>` types
+
+Example:
+```ts
+// server/validators/todo.validators.ts
+export const createTodoSchema = z.object({ /* ... */ });
+export type CreateTodoInput = z.infer<typeof createTodoSchema>;
+```
+
+### Middleware
+
+- **File**: `server/middleware/<name>.middleware.ts`
+- **Use**: `createMiddleware()` from `hono/factory`
+- **Auth**: Use `authMiddleware` for protected routes
+- **Logger**: Applied globally in main route file
+
+### Handlers
+
+- **File**: `server/handlers/<name>.handler.ts`
+- **Purpose**: Reusable request/response handlers
+- **Error handler**: Use HTTPException for custom errors
+- **Export**: Named exports
+
+### Error Handling
+
+- **Use HTTPException**: For expected errors (401, 404, etc)
+- **Throw early**: Don't return null/undefined, throw exceptions
+- **Global handler**: Catches all errors in main route file
+
+Example:
+```ts
+import { HTTPException } from "hono/http-exception";
+
+if (!todo) {
+  throw new HTTPException(404, { message: "Todo not found" });
+}
+```
+
+### HTTP Methods
+
+Export all HTTP methods used:
+```ts
+export const GET = handle(app);
+export const POST = handle(app);
+export const PATCH = handle(app);
+export const DELETE = handle(app);
+```
+
+---
+
+## Database (Prisma)
+
+### Schema
+
+- **Models**: PascalCase (User, Todo)
+- **Fields**: camelCase (userId, createdAt)
+- **Table mapping**: Use `@@map("table_name")` for snake_case tables
+- **Relations**: Always define both sides
+- **Indexes**: Add for foreign keys and frequently queried fields
+
+### Client
+
+- **Custom output**: `lib/generated/prisma`
+- **Singleton pattern**: Use `lib/prisma.ts` global instance
+- **Connection pooling**: Use `@prisma/adapter-pg` with `pg` Pool
+- **Import from**: `@/lib/generated/prisma/client`
+
+### Migrations
+
+```bash
+pnpm db:generate    # Generate client after schema changes
+pnpm db:migrate     # Create and run migrations
+```
+
+---
+
+## TypeScript
+
+### Imports
+
+- **Order**: External → Internal → Types → Styles
+- **Path aliases**: Always use `@/` prefix
+- **Type imports**: Use `import type` for types only
+- **Named exports**: Prefer named over default exports (except pages/layouts)
+
+Example:
+```ts
+import { Hono } from "hono";                      // External
+import { authMiddleware } from "@/server/...";   // Internal
+import type { AuthType } from "@/lib/auth";      // Types
+```
+
+### Types
+
+- **Location**: Feature-specific types in `_types/index.ts`
+- **Shared types**: In `lib/types.ts` or service files
+- **Export from validators**: `z.infer<typeof schema>`
+- **Prisma types**: Import from `@/lib/generated/prisma/client`
+
+### Environment Variables
+
+- **Client vars**: `env/client.ts` - Must start with `NEXT_PUBLIC_`
+- **Server vars**: `env/server.ts` - All other vars
+- **Validation**: Use Zod schemas via `@t3-oss/env-nextjs`
+- **Import**: `import { env } from "@/env/client"` or `@/env/server`
+
+---
+
+## Code Style
+
+### General
+
+- **Indentation**: 2 spaces
+- **Quotes**: Double quotes
+- **Semicolons**: Required
+- **Line width**: 100 characters
+- **Formatter**: Biome (not Prettier)
+
+### React
+
+- **Components**: Functional components with hooks
+- **Props**: Explicit interface definitions
+- **Naming**: PascalCase for components, camelCase for functions
+- **Client directive**: `"use client"` at top of file when needed
+
+### Async Operations
+
+- **Use better-all**: For parallel async with dependencies
+- **Avoid Promise.all**: When tasks have interdependencies
+
+Example:
+```ts
+import { all } from "better-all";
+
+const { user, posts, comments } = await all({
+  async user() { return fetchUser() },
+  async posts() { return fetchPosts() },
+  async comments() { return fetchComments(await this.$.user.id) }
+});
+```
+
+---
+
+## Logging
+
+### Logger Service
+
+Use `logger` from `@/server/services/logger.service`:
+
+```ts
+logger.info("Server started");
+logger.error("Failed to connect", error);
+logger.success("Migration completed");
+logger.http(method, path, status, duration);  // Auto via middleware
+```
+
+### Colors
+
+- **INFO**: Blue
+- **ERROR**: Red
+- **WARN**: Yellow
+- **SUCCESS**: Green
+- **HTTP methods**: Color-coded by type
+- **Status codes**: Color-coded by range
+
+---
+
+## Git Workflow
+
+### Commits
+
+Use **Conventional Commits** format:
+```
+<type>(<scope>): <subject>
+
+feat(auth): add password reset
+fix(api): resolve timeout issue
+docs: update README
+refactor(ui): simplify button component
+```
+
+### Pre-commit
+
+Husky runs automatically:
+1. Formats code with Biome
+2. Lints and fixes issues
+3. Validates commit message
+
+### Commands
+
+```bash
+pnpm commit       # Interactive commit tool
+pnpm check        # Format, lint, organize imports
+```
+
+---
+
+## File Naming
+
+- **Components**: `kebab-case.tsx` (todo-item.tsx)
+- **Pages/Layouts**: `page.tsx`, `layout.tsx`
+- **Services**: `<feature>.service.ts`
+- **Validators**: `<feature>.validators.ts`
+- **Middleware**: `<name>.middleware.ts`
+- **Routes**: `<feature>.route.ts`
+- **Types**: `index.ts` in `_types/` folder
+- **Hooks**: Descriptive names in `_hooks/` folder
+
+---
+
+## Don't
+
+- ❌ Don't use CommonJS (`module.exports`) - Use ESM
+- ❌ Don't use ESLint - Use Biome
+- ❌ Don't use Prettier - Use Biome
+- ❌ Don't use `any` type - Use proper types
+- ❌ Don't use non-null assertions (`!`) - Use optional chaining
+- ❌ Don't put business logic in route handlers - Use services
+- ❌ Don't put validation in routes - Use validators
+- ❌ Don't skip git hooks - Let them ensure quality
+
+---
+
+## Do
+
+- ✅ Use ESM modules (`export`, `import`)
+- ✅ Use Biome for all code quality checks
+- ✅ Use TypeScript strict mode
+- ✅ Use path aliases (`@/`)
+- ✅ Use feature-based organization
+- ✅ Use services for business logic
+- ✅ Use validators for Zod schemas
+- ✅ Use HTTPException for API errors
+- ✅ Use logger service for logging
+- ✅ Use React Query for data fetching
+- ✅ Use better-all for complex async operations
+- ✅ Write meaningful commit messages
+- ✅ Keep components small and focused
+
+---
+
+## Quick Reference
+
+### Adding a new feature
+
+1. Create Prisma model in `prisma/schema.prisma`
+2. Create service in `server/services/<feature>.service.ts`
+3. Create validators in `server/validators/<feature>.validators.ts`
+4. Create route in `server/routes/<feature>/<feature>.route.ts`
+5. Mount route in `app/api/[[...routes]]/route.ts`
+6. Create feature folder in `app/(protected)/dashboard/<feature>/`
+7. Add `_types`, `_hooks`, `_components` folders
+8. Build UI with React Query hooks
+
+### Adding a new API endpoint
+
+1. Add validator in `server/validators/<feature>.validators.ts`
+2. Add service method in `server/services/<feature>.service.ts`
+3. Add route handler in `server/routes/<feature>/<feature>.route.ts`
+4. Add API call in `app/(protected)/.../hooks/api.ts`
+5. Add query/mutation hook in `_hooks/queries.ts` or `mutations.ts`
+
+---
+
+## Tech Stack Reference
+
+- **Framework**: Next.js 16 (App Router)
+- **API**: Hono.js
+- **Database**: PostgreSQL + Prisma
+- **Auth**: Better Auth
+- **Validation**: Zod
+- **Data Fetching**: React Query
+- **Styling**: Tailwind CSS v4
+- **UI**: shadcn/ui (Radix UI)
+- **Linting**: Biome
+- **Git Hooks**: Husky
+- **Logging**: Chalk
+- **Async**: better-all
+

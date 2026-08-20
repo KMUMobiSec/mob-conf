@@ -1,0 +1,21 @@
+{
+  "conferenceName": "EBISION 2025",
+  "conferenceFullTitle": "The 1st IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution",
+  "dates": "December 16–18, 2025",
+  "venue": "Hotel Emisia Sapporo",
+  "location": "Sapporo, Japan",
+  "collaborators": [
+    {
+      "name": "IFIP WG 8.4",
+      "subtitle": "E-Business Information Systems",
+      "role": "Organizer",
+      "logo": "/assets/logo/ifip-logo.png"
+    },
+    {
+      "name": "MobiSec 2025",
+      "subtitle": "The International Conference on Mobile Internet Security",
+      "role": "In conjunction with",
+      "logo": "/assets/logo/mobisec-logo.png"
+    }
+  ]
+}

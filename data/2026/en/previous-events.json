@@ -2,14 +2,14 @@
   "conferences": [
     {
       "year": "2025",
-      "title": "The 1st KIISC International Conference on Mobile Internet Security",
+      "title": "The 9th KIISC International Conference on Mobile Internet Security",
       "dates": "December 16–18, 2025",
       "location": "Sapporo, Japan",
       "venue": "Hotel Emisia Sapporo",
       "status": "past",
       "website": "https://mobisec-conference.com/2025",
       "image": "/assets/venue/2025/venue.jpg",
-      "description": "The inaugural MOBISEC conference brought together researchers, practitioners, and students from around the world to explore the evolution of Mobile Internet Security. The event featured original research papers, keynote sessions, and discussions on emerging topics including AI-driven business innovation, quantum computing, 6G networks, blockchain, and cybersecurity.",
+      "description": "MOBISEC 2025 (the 9th edition) brought together researchers, practitioners, and students from around the world to explore the evolution of Mobile Internet Security. The event featured original research papers, keynote sessions, and discussions on emerging topics including AI-driven business innovation, quantum computing, 6G networks, blockchain, and cybersecurity.",
       "proceedings": "Official Post-Conference Proceedings",
       "topics": [
         "Artificial Intelligence and Data-Driven Business Innovation",

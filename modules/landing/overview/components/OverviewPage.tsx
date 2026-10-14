@@ -34,26 +34,27 @@ const OverviewPage = async ({ year }: { year: ValidYear }) => {
         <div className="max-w-8xl mx-auto flex flex-col gap-10">
           <div className={`${glassCard} p-6 sm:p-8 flex flex-col gap-6`}>
             <p className="body text-foreground">
-              We are living in an era of digital great transformation, where revolutionary advances
-              in technology are reshaping every dimension of mobile connectivity. Artificial
-              intelligence, quantum computing, 6G mobile communications, cloud ecosystems, robotics,
-              blockchain, and Web 3.0 are no longer distant visions but emerging realities that are
-              redefining how mobile networks, devices, and services must be secured.
+              During the past two decades, mobile internet technologies have been dramatically
+              growing while leading to a paradigm shift in our life. Despite their revolution,
+              mobile internet technologies open doors to various security threats, which should be
+              addressed to keep mobile Internet environments secure and trustworthy.
             </p>
             <p className="body text-foreground">
-              These developments demand a paradigm shift in Mobile Internet Security—a shift that
-              must be approached through truly multidisciplinary perspectives, spanning not only
-              technology and organizations but also society, culture, consumers, and global
-              infrastructures.
+              Even worse, the latest technologies (e.g., 6G Networks, Quantum Computing, Generative
+              AI, and so forth) continuously have introduced new security challenges. Therefore, it
+              is of paramount importance to study mobile internet security.
             </p>
             <p className="body text-foreground">
-              As the flagship event of KIISC (Korea Institute of Information Security and
-              Cryptology), MOBISEC {year} provides an international forum to explore this paradigm
-              shift, share insights across disciplines, and envision the next stage of mobile
-              internet security's evolution. The conference encourages contributions that highlight
-              both theoretical advancements and practical success stories, demonstrating how
-              innovations can be effectively translated into sustainable impact across industries,
-              economies, and societies.
+              The purpose of MOBISEC {year} is to bring together the academic and industry working
+              on different aspects, exchange ideas, and explore new research directions for
+              addressing the challenges in mobile internet security and application of cyber
+              security. MOBISEC {year} also aims to publish high quality papers, which are closely
+              related to various theories and practical applications in mobility management and
+              cyber security to highlight the state-of-art research. In spite of focusing on
+              security aspects, this conference welcomes papers which are related to mobile internet
+              technologies and emerging issues in cyberspace. We expect that MOBISEC {year} will be
+              a trigger for further research and technology improvements related to this important
+              subject.
             </p>
           </div>
 

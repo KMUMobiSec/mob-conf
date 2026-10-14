@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/admin/banquet-survey/export": [
       "./assets/fonts/ibm-plex/**",
-      "./public/assets/email/ebision-logo-email.png",
+      "./public/assets/email/mobisec-logo-email.png",
     ],
   },
 };

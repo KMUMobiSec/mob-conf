@@ -31,9 +31,9 @@ const MUTED = "#737373"; // --muted-foreground (rgba(0,0,0,.55))
 const FAINT = "#9a9a9a";
 const LINE = "#e3e3e3"; // --border (rgba(0,0,0,.12) on white)
 const SURFACE = "#FAFAFA"; // --background
-const GREEN = "#578429"; // --primary
+const GREEN = "#1F377E"; // --primary
 const GREEN_DARK = "#3D5E1D"; // --chart-1
-const GREEN_MID = "#7AB356"; // --chart-3
+const GREEN_MID = "#5976CF"; // --chart-3
 const GREEN_SOFT = "#EDF4E8"; // --accent
 const GREEN_LINE = "#A3D182"; // --chart-4
 

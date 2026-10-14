@@ -1,20 +1,20 @@
 {
-  "venue": "Kookmin University",
-  "street": "77 Jeongneung-ro",
-  "city": "Seoul",
-  "ward": "Seongbuk-gu",
+  "venue": "Splendor Hotel",
+  "street": "1049 Jianxing Road",
+  "city": "Taichung",
+  "ward": "West District",
   "prefecture": "",
-  "postalCode": "02707",
-  "country": "South Korea",
+  "postalCode": "403",
+  "country": "Taiwan",
   "coordinates": {
-    "latitude": 37.6114792,
-    "longitude": 126.9964154
+    "latitude": 24.1469,
+    "longitude": 120.6839
   },
-  "description": "Kookmin University is a prestigious private university located in Seoul, South Korea. Founded in 1946, it is recognized for its strong programs in engineering, design, and information technology, situated in the scenic Bukhansan area of northern Seoul.",
-  "websiteUrl": "https://english.kookmin.ac.kr/",
-  "transportation": "Located in the Seongbuk-gu district of Seoul, easily accessible via Seoul Metro Line 4 (Gireum Station) and various bus routes. Incheon International Airport is approximately 90 minutes away by airport limousine bus or AREX express train.",
+  "description": "Splendor Hotel Taichung is a premier conference hotel in the heart of Taichung, Taiwan, offering modern meeting facilities alongside easy access to the city's cultural and business districts.",
+  "websiteUrl": "https://www.splendor-taichung.com.tw/",
+  "transportation": "Located in central Taichung, within easy reach of Taichung HSR Station by shuttle or taxi, and close to Taichung Chiang Kai-Shek Memorial Park and the National Museum of Natural Science. Taichung International Airport is approximately 30 minutes away by car.",
   "image": {
     "src": "/assets/venue/2026/venue.jpg",
-    "alt": "MOBISEC 2026 — Kookmin University"
+    "alt": "MOBISEC 2026 — Splendor Hotel, Taichung"
   }
 }

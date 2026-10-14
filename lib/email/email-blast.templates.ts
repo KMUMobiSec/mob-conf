@@ -1,7 +1,7 @@
 import { escapeHtml } from "./winner-notification.templates";
 
 // Shared brand tokens, matching the other MOBISEC transactional templates.
-const BRAND = "#578429";
+const BRAND = "#1F377E";
 const INK = "#121212";
 const MUTED = "#646b72";
 const BORDER = "#e3e6e8";

@@ -1,74 +1,86 @@
 {
   "title": "Call for Papers",
-  "description": "The 2nd KIISC International Conference on Mobile Internet Security (MOBISEC 2026) invites researchers, practitioners, and students to submit original research papers, case studies, and position papers that advance the field of Mobile Internet Security.",
+  "description": "MobiSec 2026, the 10th KIISC International Conference on Mobile Internet Security, invites researchers, practitioners, and students to submit original research papers that advance the field of mobile internet security.",
   "topics": [
-    "Artificial Intelligence and Data-Driven Business Innovation",
-    "Quantum-Safe and Powered EBIS",
-    "6G Networks and Ultra-Connected E-Business Ecosystems",
-    "Cloud-Native Platforms and Multi-Cloud Resilience",
-    "Blockchain, Decentralized Finance, and Web 3.0 Economies",
-    "Robotics, Automation, and Smart Service Infrastructures",
-    "Human-Centered and Consumer-Oriented EBIS Design",
-    "Digital Culture and Global Trust Frameworks",
-    "Case Studies and Success Stories in Diverse Industries",
-    "Cyber-Physical Integration for EBIS",
-    "Sustainability and Green E-Business Systems",
-    "E-Business Governance, Policy, and Regulation",
-    "Resilient and Adaptive EBIS Architectures",
-    "Cybersecurity and Digital Trust in EBIS",
-    "IoT Security for EBIS",
-    "Future Research Paradigms for EBIS Evolution"
+    "Security for 5G/6G and Next-Generation Mobile Networks",
+    "Quantum Security",
+    "Mobile, Wireless, and Cellular System Security",
+    "Network/Edge/Cloud Security and Infrastructure Protection",
+    "Data Security and Privacy in Edge and Distributed Environments",
+    "(Post-Quantum) Cryptography, Lightweight/Advanced Encryption, and Side-Channel Countermeasures",
+    "Security for IoT and Cyber-Physical Systems",
+    "Embedded Systems and Hardware Security",
+    "Trusted Execution Environments and Trustworthy Computing",
+    "Security for AI Systems and Applications of AI in Security (e.g., AI-Driven Threat Detection)",
+    "Digital Forensics and Malware Analysis in Mobile Ecosystems",
+    "Secure Access Control, Authentication, and Authorization",
+    "Secure Protocol Design and Real-World Protocol Analysis",
+    "Blockchain and Distributed Ledger Security",
+    "Supply Chain Security and Digital Platform Ecosystem Resilience",
+    "Automated Tools for Software/Binary Vulnerability Analysis",
+    "Operating System, Storage, and File System Security",
+    "Web and Application Security",
+    "HCI Security and Privacy (e.g., for Wearables and Smart Devices)",
+    "Security for Unmanned Systems (Vehicles, Drones, Ships)",
+    "Denial-of-Service Attacks and Botnet Defense",
+    "Exploit Techniques, Vulnerability Research, and Practical Cryptanalysis",
+    "Privacy-Preserving Technologies (e.g., Anonymity, Anti-Censorship Tools)",
+    "Security Policy, Management, and Governance Models",
+    "Safety and Security Issues in Digital Transformation and Industry 4.0/5.0 Platforms",
+    "Emerging Trends and Challenges in Mobile Internet and Application Security",
+    "Case Studies and Practical Security Applications in Real-World Environments",
+    "Others and Emerging New Topics in Mobile Internet Security"
   ],
   "importantDates": {
     "originalPapers": [
       {
         "title": "Paper Submission Deadline",
-        "date": "April 25, 2026 (KST/JST)",
+        "date": "October 3, 2026 (KST/JST)",
         "color": "green"
       },
       {
         "title": "Acceptance Notification",
-        "date": "May 23, 2026 (KST/JST)",
+        "date": "October 28, 2026 (KST/JST)",
         "color": "yellow"
       },
       {
         "title": "Final Version Deadline",
-        "date": "May 31, 2026 (KST/JST)",
+        "date": "November 8, 2026 (KST/JST)",
         "color": "blue"
       }
     ],
     "posterPapers": [
       {
         "title": "Submission Deadline",
-        "date": "May 11, 2026",
+        "date": "October 23, 2026 (KST/JST)",
         "color": "green"
       },
       {
         "title": "Acceptance Notification",
-        "date": "May 20, 2026",
+        "date": "October 31, 2026 (KST/JST)",
         "color": "yellow"
       },
       {
         "title": "Final Version",
-        "date": "May 31, 2026",
+        "date": "November 8, 2026 (KST/JST)",
         "color": "blue"
       }
     ]
   },
   "submissionGuidelines": {
-    "paperCategories": ["Original Research Papers", "Poster Papers"],
+    "paperCategories": ["Regular Paper", "Poster Paper"],
     "requirements": [
-      "Authors are invited to submit original papers. Submissions must not substantially overlap with work that any of the authors have published elsewhere, or that is simultaneously under review for another conference with proceedings.",
-      "An accepted paper must be registered before the registration deadline and presented at the conference. Failure to register by the deadline will result in automatic withdrawal of the paper from the proceedings and the program.",
-      "Submissions must be anonymous. No author names, affiliations, acknowledgments, or obvious self-references should be included.",
+      "Authors are invited to submit original papers: they must not substantially duplicate work that any of the authors have published elsewhere or have submitted in parallel to any other conferences that have proceedings.",
+      "An accepted paper must be registered before the registration deadline and presented at the conference. Failure to register before the deadline will result in automatic withdrawal of the paper from the conference proceedings and the program.",
+      "The submission must be anonymous, with no author names, affiliations, acknowledgements, or obvious references.",
       {
-        "text": "The submission file must be in PDF format, prepared using the EasyChair LaTeX class file (US letter size) [Available at ",
+        "text": "The submission file is in PDF or PS file format produced via the EasyChair LaTeX Class file (US letter size) [Available at ",
         "link": {
           "text": "easychair.zip",
           "href": "https://easychair.org/publications/easychair.zip",
           "target": "_blank"
         },
-        "textAfter": "] or the EasyChair Microsoft Word template [Available at ",
+        "textAfter": "] or the EasyChair Microsoft Word file [Available at ",
         "link2": {
           "text": "easychair.docx",
           "href": "https://easychair.org/publications/easychair.docx",
@@ -76,13 +88,14 @@
         },
         "textEnd": "]."
       },
-      "The length of the submission must be at least 5 pages and not exceed 20 pages in EasyChair style, excluding the bibliography and clearly marked appendices.",
-      "Submission of a paper implies that, should the paper be accepted, at least one of the authors will register and present the paper at the conference."
+      "The length of the submission should be at least 5 pages long, not exceed 20 pages in the EasyChair style, excluding the bibliography and clearly marked appendices.",
+      "Submission of a paper implies that, should the paper be accepted, at least one of the authors will register and present the paper at the conference.",
+      "During submission, authors need to select \"MobiSec 2026 - Main Track\" for their paper."
     ]
   },
   "proceedings": {
     "title": "Proceedings & Post Publications",
-    "attendeeNote": "Proceedings materials are provided to all registered attendees.",
+    "attendeeNote": "All accepted papers will be made available to participants in the preliminary online proceedings (non-official publication) during the conference.",
     "stages": [
       {
         "badge": "Non-official",
@@ -91,29 +104,13 @@
       },
       {
         "badge": "Official",
-        "heading": "Official post-conference proceedings",
-        "text": "Authors are invited to extend and submit their papers to our official post-proceedings volume with our academic publishing partners (details to be announced)."
+        "heading": "Springer CCIS post-conference proceedings",
+        "text": "Following our tradition, a selected set of high-quality papers presented at MobiSec 2026 will be invited for publication in the Springer Communications in Computer and Information Science (CCIS) series (indexed by Scopus), after appropriate revision and expansion."
       }
     ],
-    "specialIssuesTitle": "Journal outlets — special issue & topical collection",
-    "specialIssuesIntro": "Authors may also be invited to submit extended work to the following SCIE-indexed journals:",
-    "specialIssues": [
-      {
-        "kind": "Special Issue",
-        "topic": "AI-Driven Security and Intelligent Architectures for Innovative Internet Services (IIS) in Next-Generation Computing Environments",
-        "journal": "Computers, Materials & Continua",
-        "indexing": "SCIE, JCR Q3",
-        "url": "https://www.techscience.com/cmc/special_detail/innovative-internet-services"
-      },
-      {
-        "kind": "Topical Collection",
-        "topic": "Cryptography and Security in IoT and Sensor Networks",
-        "journal": "MDPI Sensors",
-        "indexing": "SCIE, JCR Q2",
-        "url": "https://www.mdpi.com/journal/sensors/topical_collections/cryptography_security",
-        "pdf": "/assets/files/2026/mobisec-cryptography-security-2026.pdf"
-      }
-    ]
+    "specialIssuesTitle": "Other publication opportunities",
+    "specialIssuesIntro": "Other accepted papers may also be considered for publication, in extended and revised form, in reputable SCIE- or Scopus-indexed journals.",
+    "specialIssues": []
   },
   "callToAction": {
     "title": "Ready to Submit?",
@@ -128,11 +125,6 @@
         "text": "Submit Your Paper",
         "type": "secondary",
         "link": "https://easychair.org/conferences/?conf=mobisec2026"
-      },
-      {
-        "text": "Register & Pay",
-        "type": "secondary",
-        "link": "https://public.thinkonweb.com/sites/mobisec2026"
       }
     ]
   },

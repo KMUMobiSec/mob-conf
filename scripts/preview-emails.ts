@@ -19,7 +19,7 @@ import {
 } from "../lib/email/registration-check-in.templates";
 
 const root = process.cwd();
-const logoBase64 = readFileSync(join(root, "public/assets/email/ebision-logo-email.png")).toString(
+const logoBase64 = readFileSync(join(root, "public/assets/email/mobisec-logo-email.png")).toString(
   "base64",
 );
 const logoUrl = `data:image/png;base64,${logoBase64}`;

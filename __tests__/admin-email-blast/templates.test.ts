@@ -7,7 +7,7 @@ describe("renderEmailBlastHtml", () => {
       year: 2026,
       subject: "Hi <there> & welcome",
       bodyHtml: "<p>Body content</p>",
-      logoUrl: "https://mobisec-conference.com/assets/email/ebision-logo-email.png",
+      logoUrl: "https://mobisec-conference.com/assets/email/mobisec-logo-email.png",
     });
 
     expect(html).toContain("<p>Body content</p>");
@@ -16,7 +16,7 @@ describe("renderEmailBlastHtml", () => {
     expect(html).toContain("Hi &lt;there&gt; &amp; welcome");
     expect(html).not.toContain("Hi <there>");
     // Logo is rendered when a URL is provided.
-    expect(html).toContain("https://mobisec-conference.com/assets/email/ebision-logo-email.png");
+    expect(html).toContain("https://mobisec-conference.com/assets/email/mobisec-logo-email.png");
   });
 
   it("omits the logo image when no URL is provided", () => {

@@ -1,185 +1,19 @@
 {
   "keynotes": [
     {
-      "name": "Tei-Wei Kuo",
-      "role": "CTO, Delta Electronics",
-      "org": "Professor Emeritus, National Taiwan University",
-      "credential": "Fellow of ACM, IEEE & US National Academy of Inventors",
+      "name": "Yi-Bing Lin",
+      "role": "Chair Professor",
+      "org": "China Medical University, Taichung, Taiwan",
+      "credential": "Fellow of IEEE, ACM, AAAS & IET",
       "country": "Taiwan",
       "countryCode": "TW",
-      "image": "/assets/speakers/2026/keynote-kuo.jpg",
-      "imagePosition": "center 42%",
-      "talkTitle": "Empowering AI to Drive the Next Era of Intelligent Industry",
-      "summary": "Empowering AI at scale across energy infrastructure, advanced computing, and Edge AI to drive sustainable, intelligent industry.",
-      "abstract": "As the world undergoes a paradigm shift from the digital era to the age of intelligent systems, Artificial Intelligence is evolving from tools in natural language processing into a fundamental driver of innovation. Empowering AI at scale requires a robust foundation spanning energy infrastructure, advanced computing, edge intelligence, and domain expertise—from the power grid that fuels AI systems to the chips that enable intelligent decision-making.\nThis keynote explores how these advances are transforming sustainable energy systems, intelligent automation, and Edge AI, highlighting the technologies and opportunities shaping the next era of intelligent industry.",
-      "bio": "Dr. Kuo received his bachelor and Ph.D. degrees in Computer Science from National Taiwan University and University of Texas at Austin in 1986 and 1994, respectively. He is CTO of Delta Electronics, which is a global leader in power and thermal solutions with annual revenue approximately USD 18 billions in 2025, and was a Distinguished Professor in Computer Science and Information Engineering and an Interim President of National Taiwan University (2017.10-2019.01). His research interest includes flash-memory storage systems, non-volatile memory systems, and embedded systems. Dr. Kuo is Fellow of ACM, IEEE, and US National Academy of Inventors, and Chair of ACM SIGAPP. He received numerous recognitions, including Academic Award of Taiwan Ministry of Education, Humboldt Research Award, Distinguished Research Award of Taiwan National Science and Technology Council, Outstanding Technical Achievement and Leadership Award from IEEE TCRTS, and many best paper awards, including those from ACM/IEEE CODES 2019, 2022, 2024. He is founding EiC of ACM Transactions on Cyber-Physical Systems (2015-2021) and General Chair of ESWEEK (2025)."
-    },
-    {
-      "name": "Nicola Dragoni",
-      "role": "Professor of Secure Pervasive Computing",
-      "org": "Technical University of Denmark (DTU)",
-      "credential": "Deputy Director & Head of Cybersecurity Engineering, DTU Compute",
-      "country": "Denmark",
-      "countryCode": "DK",
-      "image": "/assets/speakers/2026/keynote-dragoni-v2.jpg",
-      "talkTitle": "From Logs to Cyber Threat Intelligence: Mining the Behavior of Cyber Threats",
-      "summary": "Using process mining to bridge raw security logs and behavioral models — detecting, simulating, and reasoning about cyber attacks.",
-      "abstract": "As digital systems continue to grow in scale, heterogeneity, and interconnectedness, cybersecurity has become a fundamentally dynamic challenge. Modern systems, such as IoT generate vast amounts of event data in the form of logs, yet transforming this data into actionable insight about system behavior and cyber threats remains a major obstacle. This keynote introduces the idea of using process mining as a data-driven approach to understanding and governing digital behavior, bridging the gap between raw security logs and meaningful behavioral models. After introducing the foundations of process mining, the keynote explores how process mining techniques can be leveraged in cybersecurity.\nIn particular, we show how process mining enables the formal modeling of both benign system behavior and adversarial activity, allowing to reason about attacks as structured processes unfolding over time. Such models provide a basis for detecting deviations, identifying both known and previously unseen attack patterns, and systematically analyzing attacker strategies. Drawing on real-world security data, the keynote illustrates how process mining can be applied in practice to model, detect, simulate, analyze, and reason about cyber attacks.",
-      "bio": "Nicola Dragoni is Professor of Secure Pervasive Computing at Technical University of Denmark (DTU), within DTU Compute - Department of Applied Mathematics and Computer Science - where he also serves as Deputy Director and as Head of the Cybersecurity Engineering section. Nicola Dragoni received an M.Sc. (cum laude) and a Ph.D. in Computer Science from the University of Bologna, Italy. His main research activities focus on cybersecurity in pervasive computing, with latest focus on cybersecurity for the Internet of Things and cyber defence. Nicola Dragoni has authored or co-authored more than 170 peer-reviewed publications in leading international journals and conference proceedings. He has edited 3 journal special issues and 1 book. Nicola Dragoni has been actively involved in numerous national and international research projects, securing funding for multiple Ph.D. and postdoctoral researchers. Nicola Dragoni is also a widely recognised speaker and has delivered invited talks at major international academic conferences and industry events."
-    },
-    {
-      "name": "Antonio F. Skarmeta",
-      "role": "Full Professor & CTO, Odin Solutions",
-      "org": "University of Murcia",
-      "credential": "IPv6 Forum Fellow",
-      "country": "Spain",
-      "countryCode": "ES",
-      "image": "/assets/speakers/2026/keynote-skarmeta.jpg",
-      "talkTitle": "Data Space and Secure Data Sharing in the Context of Digital Transformation",
-      "summary": "How data spaces enable sovereign, secure data sharing across sectors — featuring the TITAN and NEREIDAS projects.",
-      "abstract": "Data Space has emerged in recent years as new paradigm, with the aim of enabling secure data sharing across economic sectors, moving from a centralized approach to a decentralized and federated data ecosystem. Data Spaces are briefly defined as ecosystems where organizations are able to securely share data coming from different sources, ensuring data sovereignty, supported by a governance model. Data Spaces transform the way that companies and organizations share and manage data and this may suppose a change in the architectural paradigm for the next generation of businesses and stakeholders interactions in different sectors. In this talk we will give a presentation of the Data Spaces approach, how projects like TITAN and NEREIDAS as taking the approach to define different scenario of secure data sharing and confidential computing for their data ecosystems.",
-      "bio": "Dr. Antonio Skarmeta received the M.S. degree in Computer Science from the University of Granada and B.S. (Hons.) and the Ph.D. degrees in Computer Science from the University of Murcia, Spain. Since 2009 he is Full Professor at the same department and University. Antonio F. Skarmeta has worked on different research projects in the national and international area in the networking, security and IoT and 5G area. His main interest is in the integration of 5G, security services, identity, IoT and Smart Cities. He has been the head of the research group ANTS since its creation on 1995. Currently, he coordinates the EU project TITAN in the area of Data Space and Data Sharing, and also the Spanish Demonstration Center for Data Spaces in Marine Science, NEREIDAS. He has published over 200 international papers and is a member of several program committees. He has also participated in several standardization fora like IETF, ISO and ETSI and being nominated as IPv6 Forum Fellow. He is also CTO of the spinoff company Odin Solution S.L. (OdinS) in the area of IoT and Smart Infrastructure."
+      "image": "/assets/speakers/2026/keynote-lin.jpg",
+      "talkTitle": "AI based IC Design with Security",
+      "summary": "An AI-driven, multi-agent circuit design pipeline built on the GB300 architecture, with security measures against hardware Trojans, side-channel attacks, and IP piracy.",
+      "abstract": "This keynote presents a framework for AI-driven circuit design leveraging GB300 computing architecture. Massive open-source codebases, semiconductor textbooks, and project files from platforms like GitHub feed advanced models that employ supervised fine-tuning, knowledge distillation, and reinforcement learning through a multi-agent architecture. Agents function as architectural planners, code writers, and debugging experts, iteratively generating designs tested via Icarus Verilog and Yosys. The pipeline integrates evolutionary computing and incorporates security measures against hardware Trojans, side-channel attacks, and IP piracy.",
+      "bio": "Professor Lin holds a Ph.D. in Computer Science from the University of Washington (1990). After serving as Research Scientist at Bell Communications Research until 1995, he joined National Chiao Tung University and recently transitioned to China Medical University, where he serves as Chair Professor. He has authored nearly 500 journal papers, over 200 conference papers, and 60+ patents across multiple countries. He holds fellow status with IEEE, ACM, AAAS, and IET, and received the TWAS Prize in Engineering Sciences (2011) and the K.T. Li Honorary Scholar Award (2023)."
     }
   ],
-  "invited": [
-    {
-      "name": "Okyeon Yi",
-      "role": "Professor of Information Security & Cryptography",
-      "org": "Kookmin University",
-      "country": "Korea",
-      "countryCode": "KR",
-      "image": "/assets/speakers/2026/invited-yi.jpg",
-      "imagePosition": "center 30%",
-      "talkTitle": "A Paradigm Shift to Quantum Security and AI Fusion",
-      "summary": "Former KIISC president leading national PQC / QKD quantum-security programs for hyper-connected environments.",
-      "bio": "Professor Okyeon Yi is a leading expert in Information Security and Cryptography at Kookmin University, where he serves as a professor in the Faculty of Information Security, Cryptography, and Mathematics. He holds a Ph.D. in Mathematics from the University of Kentucky. With an extensive career spanning academia and national research, he previously served as the president of the Korea Crypto Forum and the Korea Institute of Information Security & Cryptology (KIISC).\nHis research focuses on the cutting edge of 5G/6G security, quantum cryptography, and practical cryptographic equipment. As a prominent research director, he currently spearheads major government-supported initiatives focused on developing PQC, QCM, and QKD-based quantum security technologies for hyper-connected environments. Beyond academia, Professor Yi has made significant contributions to national security and industrial standardization, serving as a long-time digital investigation advisor to the Supreme Prosecutors' Office. He has successfully developed and commercialized numerous verified cryptographic modules and security solutions for critical national infrastructure, including smart grids, military facilities, and public safety networks."
-    },
-    {
-      "name": "Karl Andersson",
-      "role": "Professor & Head of Cyber Security; Faculty Dean",
-      "org": "Luleå University of Technology",
-      "country": "Sweden",
-      "countryCode": "SE",
-      "image": "/assets/speakers/2026/invited-andersson.jpg",
-      "talkTitle": "MedFedChain: An Adaptive Differential Privacy and Blockchain-Orchestrated Federated Learning Framework for Secure Multi-Institutional Electronic Health Record Analytics",
-      "summary": "IEEE/ACM Senior Member working on 5G/6G, IoT and data centers; Dean of the Faculty of Science and Technology.",
-      "bio": "After receiving his master degree in Computer Science and Technology from the Royal Institute of Technology, Stockholm, Sweden, Prof. Karl Andersson started his professional career as a consultant, project manager, business developer, and branch manager within the Capgemini Group. Returning to academia as a PhD Student he obtained his PhD degree after defending his thesis \"On Access Network Selection Models and Mobility Support in Heterogeneous Wireless Networks\". After visiting Columbia University in the City of New York as a postdoctoral researcher and National Institute of Information and Communications Technology, Tokyo, Japan as a JSPS Fellow, Prof. Andersson is today Professor and Head of Subject, Cyber Security at Luleå University of Technology (LTU), Skellefteå, Sweden. During 2017-2023, he was leading Centre for Distance-spanning Technology at LTU specialising in research centred around fifth and sixth generation mobile networks (5G/6G), Internet of Things (IoT), and datacenters. Moreover, since 1 January 2022, he is Dean for Faculty of Science and Technology at Luleå University of Technology. Prof. Andersson is a senior member of the IEEE and a senior member of ACM."
-    },
-    {
-      "name": "Hsing-Chung Chen",
-      "role": "Distinguished Professor & Director, Research Center for Information Security",
-      "org": "Asia University",
-      "country": "Taiwan",
-      "countryCode": "TW",
-      "image": "/assets/speakers/2026/invited-chen.jpg",
-      "talkTitle": "Trust Chain Framework with Anti-counterfeit Traceable Version Function for the Customized System-Module-IC Based on Blockchain Technologies",
-      "summary": "Stanford/Elsevier World Top 2% Scientist 2021–2025; co-founder of the IEEE Taipei Blockchain Group.",
-      "bio": "Prof. Hsing-Chung Chen (IEEE Senior Member) received the Ph.D. degree in Electronic Engineering from National Chung Cheng University, Taiwan, in 2007. He is currently a Distinguished Professor in the Department of Computer Science and Information Engineering and Director of the Research Center for Information Security at Asia University, Taiwan. Since 2014, he has also served as a Research Consultant with the Department of Medical Research at China Medical University Hospital, Taiwan.\nProf. Chen is a co-founder of the IEEE Taipei Blockchain Group and currently serves as Deputy Secretary-General of the E-Security Analysis and Management Association (E-SAM). He has been recognized in the Stanford University/Elsevier World Ranking of the Top 2% Scientists for five consecutive years (2021–2025). To date, Prof. Chen has published more than 96 SCI/EI-indexed journal papers, 133 international conference papers, 13 academic e-books, and 6 patents, including 2 U.S. patents. His research interests include information and communication security, software supply chain security, blockchain technology, post-quantum cryptography, Internet of Things (IoT) security, artificial intelligence, explainable AI (XAI), medical signal and image processing, and applied cryptography."
-    },
-    {
-      "name": "Emmanouel (Manos) Varvarigos",
-      "role": "Professor of ECE & Vice Rector for Research",
-      "org": "National Technical University of Athens",
-      "country": "Greece",
-      "countryCode": "GR",
-      "image": "/assets/speakers/2026/invited-varvarigos.jpg",
-      "talkTitle": "Cyberly: A Gamified Android Application for Learning Basic Cybersecurity Concepts",
-      "summary": "MIT Ph.D. in optical networking, cloud/edge computing and smart grids; Vice Rector for Research at NTUA.",
-      "bio": "Dr. Emmanouel (Manos) Varvarigos received his Diploma from the National Technical University of Athens (NTUA) in 1988, and later earned his M.S. and Ph.D. degrees from MIT in 1990 and 1992, respectively. After starting his career as a researcher at Bell Communications Research in 1990, he served as a faculty member at the University of California, Santa Barbara, and Delft University of Technology. In 1999, he became a Professor at the University of Patras, where he directed the Communication Networks Lab. Over nearly two decades, from 2004 to 2021, he also served as the Scientific Director of the Network Technologies Sector at CTI, overseeing the Greek School Network, the country's largest public network. In 2015, he returned to his alma mater, NTUA, as a Professor of Electrical and Computer Engineering. Since November 2023, he has been serving as the Vice Rector for Research, Innovation, and Extroversion at NTUA. His extensive research spans protocols and algorithms, all-optical networking, cloud/edge computing, data center interconnects, and smart energy grids."
-    },
-    {
-      "name": "Shih-Hao Hung",
-      "role": "Professor & Director, High-Performance Computing Center",
-      "org": "National Taiwan University",
-      "country": "Taiwan",
-      "countryCode": "TW",
-      "image": "/assets/speakers/2026/invited-hung.jpg",
-      "talkTitle": "Design of a Low-Latency RDMA-Based Publish/Subscribe Framework for Inter-Machine GPU Communications",
-      "summary": "30+ years in HPC, AI systems and quantum-computing simulation; University of Michigan Ph.D.",
-      "bio": "Dr. Shih-Hao Hung is a Professor of Computer Science and Information Engineering and Director of the High-Performance and Scientific Computing Center at National Taiwan University (NTU). He also serves as a researcher at the National Center for High-Performance Computing (NCHC) and a technology consultant for Foxconn/Ingrasys. He earned his BS degree in Electrical Engineering from NTU and Ph.D. in Computer Science and Engineering from the University of Michigan. With over 30 years of experience in High-Performance Computing (HPC), Dr. Hung's expertise spans multi-core system architecture, parallel software, AI systems, information security, and quantum computing simulation. He previously worked as a Staff Engineer at Sun Microsystems, and served as the Chair of NTU CSIE and Deputy Director General of NCHC, where he led national efforts to build three TOP500 supercomputers. Dr. Hung's research contributions have earned him the 2022 FutureTech Award from the National Science and Technology Council and multiple Best Paper Awards from international conferences like ACM RACS and ICS. His collaborative work on breakthrough healthcare AI pipelines was published in the prestigious journal Nature Communications."
-    },
-    {
-      "name": "SeongHan Shin",
-      "role": "Senior Researcher",
-      "org": "National Institute of Advanced Industrial Science and Technology (AIST)",
-      "country": "Japan",
-      "countryCode": "JP",
-      "image": "/assets/speakers/2026/invited-shin.jpg",
-      "imagePosition": "center 25%",
-      "talkTitle": "A Hybrid EDHOC Protocol Post-Quantum Secure against Key Compromise Impersonation",
-      "summary": "University of Tokyo Ph.D. specializing in cryptography and wireless security at Japan's AIST.",
-      "bio": "Dr. SeongHan Shin received his Ph.D. degree from the University of Tokyo, Japan, in 2005. In 2006, he joined the National Institute of Advanced Industrial Science and Technology (AIST), Japan. His research interests include information security, cryptography, and wireless security."
-    }
-  ],
-  "industrial": [
-    {
-      "company": "KT Corporation",
-      "companyShort": "KT",
-      "speaker": "Minhwan Choi",
-      "country": "Korea",
-      "countryCode": "KR",
-      "image": "/assets/speakers/2026/ind-kt-choi.jpg",
-      "talkTitle": "From Device to Data: A Four-Layer Network Security Vision for the AI & Quantum Era",
-      "summary": "Edge-to-core defense across Device, Access, Node & Data — SBOM/CVE, QKD/PQC, AI-XDR and confidential computing.",
-      "abstract": "As AI-driven attacks and quantum computing reshape the threat landscape, telecom operators must rethink network security across every segment of their infrastructure. KT proposes a four-layer defense strategy that secures the entire network from edge to core: Device, Access, Node, and Data. At the Device layer, firmware-based SBOM analysis and continuous CVE management strengthen supply-chain integrity for subscriber and access equipment. The Access layer combines AI-assisted wireless protocol vulnerability diagnosis with QKD- and PQC-based transmission security. The Node layer evolves from perimeter defense to an AI-XDR architecture that integrates EDR/NDR alerts and telemetry for behavior-based threat detection across all network assets. Finally, the Data layer leverages confidential computing and homomorphic encryption to protect data throughout its lifecycle in the data centers and cloud environments. Grounded in five core principles — End-to-end visibility, AI-driven detection, Zero Trust, Quantum-Safe security, and Continuous security innovation — this session presents KT's vision for securing future networks through proactive cybersecurity in the AI and quantum era."
-    },
-    {
-      "company": "ZenmuTech, Inc.",
-      "companyShort": "ZENMU",
-      "speaker": "Shimpei Kunii",
-      "country": "Japan",
-      "countryCode": "JP",
-      "image": "/assets/speakers/2026/ind-zenmu-kunii.jpg",
-      "talkTitle": "Core Technology: ZENMU-AONT (XCTRT)",
-      "summary": "An extended CTRT construction for AES-256 powering ZENMU Virtual Drive & Engine for enterprise PC and IoT data protection.",
-      "abstract": "In this talk, I introduce ZenmuTech's work on XCTRT/ZENMU-AONT, from cryptographic research to practical deployment. The presentation outlines XCTRT/ZENMU-AONT, an extended CTRT construction for AES-256, and shows how these technologies are used in services such as ZENMU Virtual Drive and ZENMU Engine. It also highlights real-world use cases, including enterprise PC data protection and applications to IoT devices."
-    },
-    {
-      "company": "Penta Security Inc.",
-      "companyShort": "PENTA",
-      "speaker": "Peter Kim",
-      "country": "Korea",
-      "countryCode": "KR",
-      "image": "/assets/speakers/2026/ind-penta-kim.jpg",
-      "talkTitle": "Personal Data Protection Law and Database Encryption",
-      "summary": "How database encryption helps institutions meet tightening GDPR/HIPAA mandates and secure data against breaches.",
-      "abstract": "From the EU's GDPR to the USA's HIPAA, nearly every country now enforces its own personal data protection regulations — and as privacy grows in importance, these mandates are becoming more stringent by the day. Among the many approaches to safeguarding data, database encryption remains one of the most robust ways to secure sensitive information against external breaches. This session explores how encryption technology can help public and private sector institutions uphold the highest standards of data security and regulatory compliance, drawing on Penta Security's vision of protecting sensitive data across both sectors."
-    },
-    {
-      "company": "Sangfor Technologies",
-      "companyShort": "SANGFOR",
-      "speaker": "Sungwook Kim",
-      "country": "China",
-      "countryCode": "CN",
-      "image": "/assets/speakers/2026/ind-sangfor-kim.jpg",
-      "talkTitle": "Resilient Digital Infrastructure in the AI Era: Achieving Simplicity, Security, and Sustainability",
-      "summary": "Memory Tiering for cost-efficient AI infrastructure and an integrated SDDC unifying compute, storage, security & DR.",
-      "abstract": "As AI adoption accelerates, enterprise infrastructure is under growing pressure from rising memory costs and increasing operational complexity. In this session, Sangfor will present Memory Tiering as a practical and cost-efficient approach to improving resource efficiency for AI infrastructure. We will also explore how its integrated SDDC platform simplifies operations by unifying virtualization, storage, security, and disaster recovery into a resilient digital infrastructure."
-    },
-    {
-      "company": "AI DataBrushing Technology Co., Ltd.",
-      "companyShort": "DBT",
-      "speaker": "Yui Chen & Chia-Yen Lu",
-      "country": "Taiwan",
-      "countryCode": "TW",
-      "images": [
-        "/assets/speakers/2026/ind-databrush-chen-sq.jpg",
-        "/assets/speakers/2026/ind-databrush-lu-sq.jpg"
-      ],
-      "talkTitle": "S.A.F.E.-AI: From Small Samples to Trusted AI",
-      "summary": "A data-readiness & assurance framework defining AI goals, data/risk boundaries and accountability for reliable deployment.",
-      "abstract": "Defense and other high-stakes AI systems often operate with limited samples, sensitive data, restricted sharing, and limited room for repeated testing. Reliable AI deployment therefore depends not only on model performance, but also on data usability, clear security boundaries, defined responsibilities, and reviewable decision processes.\nS.A.F.E.-AI is a data readiness and assurance framework that helps teams clarify AI goals, data, system, and risk boundaries, role accountability, and next-step actions before AI development or deployment. This presentation introduces the framework, its operating mechanisms, and its application to PoC planning, data preparation, governance, secure development, and deployment planning."
-    },
-    {
-      "company": "AUTOCRYPT Co., Ltd.",
-      "companyShort": "AUTOCRYPT",
-      "speaker": "Hoonyong Park",
-      "country": "Korea",
-      "countryCode": "KR",
-      "image": "/assets/speakers/2026/ind-autocrypt-park.jpg",
-      "talkTitle": "Automotive Cybersecurity in the Connected Mobility Era: From In-Vehicle Systems to Infrastructure",
-      "summary": "An industry view across in-vehicle protection, V2X, EV-charging security, PKI and regulatory compliance.",
-      "abstract": "The scope of automotive cybersecurity is expanding beyond individual ECUs and in-vehicle networks. Connected and software-defined vehicles now interact with road infrastructure, EV charging systems, cloud services, and certificate-based trust services, creating security requirements across both vehicle and infrastructure environments. This presentation provides an industry perspective on key cybersecurity domains shaping modern mobility, including in-vehicle protection, V2X security, EV charging security, PKI and certificate management, cybersecurity testing, and regulatory compliance. Rather than focusing on a single product or technology, the presentation discusses how these areas are connected and why a broader security view is becoming important for the connected mobility ecosystem."
-    }
-  ]
+  "invited": [],
+  "industrial": []
 }

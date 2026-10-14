@@ -195,11 +195,19 @@ export function Navbar() {
           <nav className="flex lg:hidden items-center justify-between w-full px-4 py-3">
             <Link href={`/${year}`} aria-label="Go to homepage">
               <Image
-                src="/assets/logo/ebision-logo.svg"
+                src="/assets/logo/mobisec-logo.png"
                 alt="MOBISEC Logo"
                 width={120}
-                height={40}
-                className="h-8 w-auto"
+                height={90}
+                className="h-8 w-auto dark:hidden"
+                priority
+              />
+              <Image
+                src="/assets/logo/mobisec-logo-white.png"
+                alt="MOBISEC Logo"
+                width={120}
+                height={90}
+                className="hidden h-8 w-auto dark:block"
                 priority
               />
             </Link>
@@ -283,11 +291,18 @@ export function Navbar() {
                 <NavigationMenuLink asChild>
                   <Link href={`/${year}`} aria-label="Go to homepage">
                     <Image
-                      src="/assets/logo/ebision-logo.svg"
+                      src="/assets/logo/mobisec-logo.png"
                       alt="MOBISEC Logo"
                       width={120}
-                      height={40}
-                      className="h-8 w-auto"
+                      height={90}
+                      className="h-8 w-auto dark:hidden"
+                    />
+                    <Image
+                      src="/assets/logo/mobisec-logo-white.png"
+                      alt="MOBISEC Logo"
+                      width={120}
+                      height={90}
+                      className="hidden h-8 w-auto dark:block"
                     />
                   </Link>
                 </NavigationMenuLink>

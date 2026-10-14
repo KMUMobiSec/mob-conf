@@ -5,7 +5,7 @@ import { Font } from "@react-pdf/renderer";
 // react-pdf embeds TTF/OTF only, so we ship IBM Plex as TTFs vendored from @fontsource via
 // `pnpm pdf-fonts:build`. Registration is server-side (Node route handler) and runs once on import.
 const FONT_DIR = path.join(process.cwd(), "assets/fonts/ibm-plex");
-const LOGO_CANDIDATE = path.join(process.cwd(), "public/assets/email/ebision-logo-email.png");
+const LOGO_CANDIDATE = path.join(process.cwd(), "public/assets/email/mobisec-logo-email.png");
 
 const SANS = [
   { file: "ibm-plex-sans-300.ttf", weight: 300 },

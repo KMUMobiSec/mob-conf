@@ -3,15 +3,14 @@ import "server-only";
 import { publicBaseUrl } from "@/lib/routes/base-url";
 
 /**
- * Absolute URL to the small, email-optimized brand logo (120x120, ~9KB), or
+ * Absolute URL to the small, email-optimized brand logo (367x276, ~29KB), or
  * undefined when no public base URL is configured. Email clients downscale this
- * to the ~30px header chip; the full 2000x2000 source is far too heavy to embed
- * and rendered poorly in some clients.
+ * to the ~30px header chip.
  */
 export function emailLogoUrl(): string | undefined {
   const baseUrl = publicBaseUrl();
   if (!baseUrl) return undefined;
-  return `${baseUrl.replace(/\/$/, "")}/assets/email/ebision-logo-email.png`;
+  return `${baseUrl.replace(/\/$/, "")}/assets/email/mobisec-logo-email.png`;
 }
 
 const PLAZA_VENUE_IMAGE = "THE_PLAZA.jpg";

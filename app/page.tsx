@@ -31,12 +31,20 @@ export default function RootPage() {
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-6">
           <Image
-            src="/assets/logo/ebision-logo.svg"
+            src="/assets/logo/mobisec-logo.png"
             alt="MOBISEC Logo"
             width={160}
-            height={60}
+            height={120}
             priority
-            className="h-14 w-auto"
+            className="h-14 w-auto dark:hidden"
+          />
+          <Image
+            src="/assets/logo/mobisec-logo-white.png"
+            alt="MOBISEC Logo"
+            width={160}
+            height={120}
+            priority
+            className="hidden h-14 w-auto dark:block"
           />
           <div className="flex flex-col gap-2">
             <p className="tag text-primary">KIISC</p>

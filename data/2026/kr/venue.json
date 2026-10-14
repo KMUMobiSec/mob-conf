@@ -1,20 +1,20 @@
 {
-  "venue": "국민대학교",
-  "street": "정릉로 77",
-  "city": "서울",
-  "ward": "성북구",
+  "venue": "Splendor Hotel",
+  "street": "1049 Jianxing Road",
+  "city": "타이중",
+  "ward": "West District",
   "prefecture": "",
-  "postalCode": "02707",
-  "country": "대한민국",
+  "postalCode": "403",
+  "country": "대만",
   "coordinates": {
-    "latitude": 37.6114792,
-    "longitude": 126.9964154
+    "latitude": 24.1469,
+    "longitude": 120.6839
   },
-  "description": "국민대학교는 대한민국 서울에 위치한 명문 사립대학교입니다. 1946년에 설립되었으며, 공학, 디자인, 정보기술 분야의 우수한 프로그램으로 인정받고 있습니다. 서울 북부의 아름다운 북한산 지역에 자리잡고 있습니다.",
-  "websiteUrl": "https://www.kookmin.ac.kr/",
-  "transportation": "서울 성북구에 위치하며, 서울 지하철 4호선(길음역) 및 다양한 버스 노선으로 쉽게 접근할 수 있습니다. 인천국제공항에서 공항 리무진 버스 또는 AREX 직통열차로 약 90분 소요됩니다.",
+  "description": "스플렌더 호텔 타이중은 대만 타이중 시내 중심에 위치한 최고급 컨퍼런스 호텔로, 현대적인 회의 시설과 함께 도시의 문화 및 비즈니스 지구에 쉽게 접근할 수 있습니다.",
+  "websiteUrl": "https://www.splendor-taichung.com.tw/",
+  "transportation": "타이중 시내 중심에 위치하며, 셔틀 또는 택시로 타이중 고속철도역에서 쉽게 접근할 수 있고, 타이중 중산공원 및 국립자연과학박물관과도 가깝습니다. 타이중 국제공항까지는 차량으로 약 30분 거리입니다.",
   "image": {
     "src": "/assets/venue/2026/venue.jpg",
-    "alt": "MOBISEC 2026 — 국민대학교"
+    "alt": "MOBISEC 2026 — 스플렌더 호텔, 타이중"
   }
 }

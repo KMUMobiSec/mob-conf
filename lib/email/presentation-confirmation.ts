@@ -15,7 +15,7 @@ export interface PresentationConfirmationInput {
   videoUrl?: string | null;
 }
 
-const BRAND = "#578429"; // forest green
+const BRAND = "#1F377E"; // forest green
 const INK = "#121212";
 const MUTED = "#646b72";
 const BORDER = "#e3e6e8";

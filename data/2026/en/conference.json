@@ -1,14 +1,14 @@
 {
   "conferenceName": "MOBISEC 2026",
-  "conferenceFullTitle": "The 2nd KIISC International Conference on Mobile Internet Security",
-  "dates": "July 8–10, 2026",
-  "venue": "Kookmin University",
-  "location": "Seoul, South Korea",
+  "conferenceFullTitle": "The 10th KIISC International Conference on Mobile Internet Security",
+  "dates": "December 15–17, 2026",
+  "venue": "Splendor Hotel",
+  "location": "Taichung, Taiwan",
   "collaborators": [
     {
       "name": "KIISC",
       "subtitle": "Mobile Internet Security",
-      "role": "Organizer",
+      "role": "Hosted By",
       "logo": "/assets/logo/mobisec-logo.png"
     }
   ]

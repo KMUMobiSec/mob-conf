@@ -359,10 +359,10 @@ export function ScannerTab({
         {/* Branded header above the camera */}
         <div className="flex flex-col items-center gap-4 text-center">
           <Image
-            src="/assets/logo/ebision-logo-nobg.png"
+            src="/assets/logo/mobisec-logo-white.png"
             alt="MOBISEC"
             width={200}
-            height={200}
+            height={150}
             priority
             className="h-20 w-auto drop-shadow-lg sm:h-24"
           />

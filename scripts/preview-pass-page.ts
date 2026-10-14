@@ -23,7 +23,7 @@ const sample = {
 
 const MUTED = "rgba(0,0,0,0.55)";
 const BORDER = "rgba(0,0,0,0.12)";
-const BRAND = "#578429";
+const BRAND = "#1F377E";
 
 const icon = (paths: string) =>
   `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="${BRAND}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 auto;">${paths}</svg>`;

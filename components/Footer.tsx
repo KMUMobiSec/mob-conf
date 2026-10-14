@@ -92,11 +92,18 @@ const Footer = async ({ year }: { year: ValidYear }) => {
           {/* Logo and Conference Info */}
           <div className="flex flex-col md:items-start items-center md:text-left text-center gap-4">
             <Image
-              src="/assets/logo/ebision-logo.svg"
+              src="/assets/logo/mobisec-logo.png"
               alt="MOBISEC Logo"
               width={120}
-              height={40}
-              className="h-10 w-auto"
+              height={90}
+              className="h-10 w-auto dark:hidden"
+            />
+            <Image
+              src="/assets/logo/mobisec-logo-white.png"
+              alt="MOBISEC Logo"
+              width={120}
+              height={90}
+              className="hidden h-10 w-auto dark:block"
             />
             <div className="flex flex-col gap-1">
               <p className="small-heading text-foreground">{conf.conferenceName}</p>

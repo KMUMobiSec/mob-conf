@@ -158,7 +158,7 @@
    LIGHT THEME — 60/30/10 color distribution
    Background (60%):   #FAFAFA (Warm white)
    Card Surface (30%): #FFFFFF (Pure white)
-   Brand Accent (10%): #578429 (Forest green)
+   Brand Accent (10%): #1F377E (MOBISEC blue)
 
    Text:
    - Primary:          #121212 (Near-black)
@@ -177,8 +177,8 @@
 	/* Popover */
 	--popover: #FFFFFF;
 	--popover-foreground: #121212;
-	/* Primary: green accent (10%) */
-	--primary: #578429;
+	/* Primary: blue accent (10%) */
+	--primary: #1F377E;
 	--primary-foreground: #FFFFFF;
 	/* Secondary */
 	--secondary: #F0F0F0;
@@ -187,29 +187,29 @@
 	--muted: #F0F0F0;
 	--muted-foreground: rgba(0, 0, 0, 0.55);
 	/* Accent */
-	--accent: #EDF4E8;
+	--accent: #E8ECF8;
 	--accent-foreground: #121212;
 	/* Disabled text */
 	--disabled-foreground: rgba(0, 0, 0, 0.38);
 	--destructive: #B3261E;
 	--border: rgba(0, 0, 0, 0.12);
 	--input: rgba(0, 0, 0, 0.12);
-	--ring: #578429;
-	/* Charts: green progression (dark → light) */
-	--chart-1: #3D5E1D;
-	--chart-2: #578429;
-	--chart-3: #7AB356;
-	--chart-4: #A3D182;
-	--chart-5: #D4ECBE;
+	--ring: #1F377E;
+	/* Charts: blue progression (dark → light) */
+	--chart-1: #14244F;
+	--chart-2: #1F377E;
+	--chart-3: #5976CF;
+	--chart-4: #93ACE3;
+	--chart-5: #D6E0F5;
 	/* Sidebar */
 	--sidebar: #F0F0F0;
 	--sidebar-foreground: #121212;
-	--sidebar-primary: #578429;
+	--sidebar-primary: #1F377E;
 	--sidebar-primary-foreground: #FFFFFF;
-	--sidebar-accent: #EDF4E8;
+	--sidebar-accent: #E8ECF8;
 	--sidebar-accent-foreground: #121212;
 	--sidebar-border: rgba(0, 0, 0, 0.12);
-	--sidebar-ring: #578429;
+	--sidebar-ring: #1F377E;
 
 	/* Elevation surfaces (for glass/overlay effects) */
 	--surface-1: rgba(250, 250, 250, 0.8);
@@ -217,14 +217,14 @@
 	--surface-3: rgba(240, 240, 240, 0.5);
 	--surface-4: rgba(232, 232, 232, 0.4);
 
-	/* Primary accent opacity scale — rgb(87, 132, 41) */
-	--primary-5: rgba(87, 132, 41, 0.05);
-	--primary-10: rgba(87, 132, 41, 0.10);
-	--primary-20: rgba(87, 132, 41, 0.20);
-	--primary-30: rgba(87, 132, 41, 0.30);
-	--primary-40: rgba(87, 132, 41, 0.40);
-	--primary-50: rgba(87, 132, 41, 0.50);
-	--primary-60: rgba(87, 132, 41, 0.60);
+	/* Primary accent opacity scale — rgb(31, 55, 126) */
+	--primary-5: rgba(31, 55, 126, 0.05);
+	--primary-10: rgba(31, 55, 126, 0.10);
+	--primary-20: rgba(31, 55, 126, 0.20);
+	--primary-30: rgba(31, 55, 126, 0.30);
+	--primary-40: rgba(31, 55, 126, 0.40);
+	--primary-50: rgba(31, 55, 126, 0.50);
+	--primary-60: rgba(31, 55, 126, 0.60);
 
 	/* Contrast overlay scale (for borders, dividers, subtle backgrounds) */
 	--white-3: rgba(0, 0, 0, 0.03);
@@ -239,7 +239,7 @@
 	--shadow-glass: 0 6px 28px rgba(0, 0, 0, 0.08);
 	--shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.5);
 	--shadow-inset-subtle: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-	--shadow-glow: 0 0 20px rgba(87, 132, 41, 0.15), 0 0 40px rgba(87, 132, 41, 0.08);
+	--shadow-glow: 0 0 20px rgba(31, 55, 126, 0.15), 0 0 40px rgba(31, 55, 126, 0.08);
 
 	/* Room status indicator (dot) colors */
 	--status-available: oklch(0.60 0.18 145);
@@ -269,7 +269,7 @@
    DARK THEME — 60/30/10 color distribution
    Background (60%):   #121212 (Matte black)
    Card Surface (30%): #2C2C2C (Dark gunmetal)
-   Brand Accent (10%): #7AB356 (Light forest green)
+   Brand Accent (10%): #5976CF (Light MOBISEC blue)
 
    Text:
    - Primary:          #FFFFFF (100% white)
@@ -288,8 +288,8 @@
 	/* Popover: standard popup elevation */
 	--popover: #323232;
 	--popover-foreground: #FFFFFF;
-	/* Primary: light green accent (10%) */
-	--primary: #7AB356;
+	/* Primary: light blue accent (10%) */
+	--primary: #5976CF;
 	--primary-foreground: #FFFFFF;
 	/* Secondary: card surface level */
 	--secondary: #2C2C2C;
@@ -297,30 +297,30 @@
 	/* Muted: secondary text */
 	--muted: #2C2C2C;
 	--muted-foreground: rgba(255, 255, 255, 0.70);
-	/* Accent: hover/highlight surface — dark green tint */
-	--accent: #1E2A18;
+	/* Accent: hover/highlight surface — dark blue tint */
+	--accent: #1A2240;
 	--accent-foreground: #FFFFFF;
 	/* Disabled text */
 	--disabled-foreground: rgba(255, 255, 255, 0.43);
 	--destructive: #CF6679;
 	--border: rgba(255, 255, 255, 0.12);
 	--input: rgba(255, 255, 255, 0.12);
-	--ring: #7AB356;
-	/* Charts: green progression (light → dark) */
-	--chart-1: #A3D182;
-	--chart-2: #7AB356;
-	--chart-3: #578429;
-	--chart-4: #3D5E1D;
-	--chart-5: #243812;
+	--ring: #5976CF;
+	/* Charts: blue progression (light → dark) */
+	--chart-1: #D6E0F5;
+	--chart-2: #93ACE3;
+	--chart-3: #5976CF;
+	--chart-4: #1F377E;
+	--chart-5: #14244F;
 	/* Sidebar */
 	--sidebar: #1A1A1A;
 	--sidebar-foreground: #FFFFFF;
-	--sidebar-primary: #7AB356;
+	--sidebar-primary: #5976CF;
 	--sidebar-primary-foreground: #FFFFFF;
-	--sidebar-accent: #1E2A18;
+	--sidebar-accent: #1A2240;
 	--sidebar-accent-foreground: #FFFFFF;
 	--sidebar-border: rgba(255, 255, 255, 0.12);
-	--sidebar-ring: #7AB356;
+	--sidebar-ring: #5976CF;
 
 	/* Elevation surfaces (for glass/overlay effects) */
 	--surface-1: rgba(18, 18, 18, 0.8);
@@ -328,14 +328,14 @@
 	--surface-3: rgba(50, 50, 50, 0.5);
 	--surface-4: rgba(60, 60, 60, 0.4);
 
-	/* Primary accent opacity scale — rgb(122, 179, 86) */
-	--primary-5: rgba(122, 179, 86, 0.05);
-	--primary-10: rgba(122, 179, 86, 0.10);
-	--primary-20: rgba(122, 179, 86, 0.20);
-	--primary-30: rgba(122, 179, 86, 0.30);
-	--primary-40: rgba(122, 179, 86, 0.40);
-	--primary-50: rgba(122, 179, 86, 0.50);
-	--primary-60: rgba(122, 179, 86, 0.60);
+	/* Primary accent opacity scale — rgb(89, 118, 207) */
+	--primary-5: rgba(89, 118, 207, 0.05);
+	--primary-10: rgba(89, 118, 207, 0.10);
+	--primary-20: rgba(89, 118, 207, 0.20);
+	--primary-30: rgba(89, 118, 207, 0.30);
+	--primary-40: rgba(89, 118, 207, 0.40);
+	--primary-50: rgba(89, 118, 207, 0.50);
+	--primary-60: rgba(89, 118, 207, 0.60);
 
 	/* Contrast overlay scale (for borders, dividers, subtle backgrounds) */
 	--white-3: rgba(255, 255, 255, 0.03);
@@ -350,7 +350,7 @@
 	--shadow-glass: 0 6px 28px rgba(0, 0, 0, 0.4);
 	--shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 	--shadow-inset-subtle: inset 0 1px 0 rgba(255, 255, 255, 0.06);
-	--shadow-glow: 0 0 20px rgba(122, 179, 86, 0.3), 0 0 40px rgba(122, 179, 86, 0.15);
+	--shadow-glow: 0 0 20px rgba(89, 118, 207, 0.3), 0 0 40px rgba(89, 118, 207, 0.15);
 
 	/* Room status badge backgrounds & foregrounds (dark) */
 	--status-available-bg: oklch(0.30 0.08 145);

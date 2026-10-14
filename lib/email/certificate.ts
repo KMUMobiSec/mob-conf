@@ -9,8 +9,8 @@ import { getResendClient } from "./resend";
 // external URL only works when NEXT_PUBLIC_BASE_URL is a public https origin (it defaults to
 // localhost in dev, which no inbox can load) and is subject to image-proxy blocking; an inline
 // attachment renders in every client, in dev and prod alike. Loaded once at module init.
-const LOGO_CID = "ebision-logo";
-const LOGO_PATH = path.join(process.cwd(), "public/assets/email/ebision-logo-email.png");
+const LOGO_CID = "mobisec-logo";
+const LOGO_PATH = path.join(process.cwd(), "public/assets/email/mobisec-logo-email.png");
 const LOGO_BUFFER: Buffer | null = existsSync(LOGO_PATH) ? readFileSync(LOGO_PATH) : null;
 
 function certificateFromAddress(): string {
@@ -36,12 +36,12 @@ export interface SendCertificateEmailInput {
 export async function sendCertificateEmail(input: SendCertificateEmailInput): Promise<void> {
   const resend = getResendClient();
 
-  // Inline logo attachment referenced as `cid:ebision-logo` in the HTML. Omitted (with the header
+  // Inline logo attachment referenced as `cid:mobisec-logo` in the HTML. Omitted (with the header
   // falling back to text-only) if the asset is missing.
   const logoAttachment = LOGO_BUFFER
     ? [
         {
-          filename: "ebision-logo.png",
+          filename: "mobisec-logo.png",
           content: LOGO_BUFFER,
           contentId: LOGO_CID,
           contentType: "image/png",

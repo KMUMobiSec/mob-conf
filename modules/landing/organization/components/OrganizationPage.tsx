@@ -14,12 +14,19 @@ interface Organization {
 
 const glassCard = "bg-card/60 backdrop-blur-xl border border-border/60 rounded-lg shadow-sm";
 
-const collaborators = [
-  "KMU Global Research Center for ICT Convergence Security",
-  "AI·SW Graduate School, Kookmin University",
-  "Innovative Education Research Center for Future Automobiles and Mobility, Kookmin University",
-  "Department of AI Convergence Engineering, Gyeongsang National University",
+const organizedBy = [
   "KIISC Research Group on 6G Security",
+  "ETRI",
+  "Tunghai University",
+  "Asia University",
+];
+
+const collaborators = [
+  "KIISC Research Group on 6G Security",
+  "ETRI",
+  "Tunghai University",
+  "Asia University",
+  "Kookmin University",
 ];
 
 const getInitials = (name: string) =>
@@ -87,13 +94,17 @@ const OrganizationPage = async ({ year }: { year: ValidYear }) => {
             </div>
             <div className={`${glassCard} p-6 sm:p-8 flex flex-col gap-2`}>
               <p className="tag text-primary">{t("organizedBy")}</p>
-              <p className="subheading text-foreground">KIISC and Kookmin University</p>
+              <div className="flex flex-col gap-1">
+                {organizedBy.map((org) => (
+                  <p key={org} className="subheading text-foreground">
+                    {org}
+                  </p>
+                ))}
+              </div>
             </div>
             <div className={`${glassCard} p-6 sm:p-8 flex flex-col gap-2`}>
               <p className="tag text-primary">{t("sponsoredBy")}</p>
-              <p className="subheading text-foreground">
-                Penta Security Inc. and Sangfor Technologies Inc.
-              </p>
+              <p className="subheading text-foreground">—</p>
             </div>
           </div>
 

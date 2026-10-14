@@ -47,11 +47,7 @@ const PROCEEDINGS_CONFIG: Record<
     papersDir: "public/data/2025/mobisec-papers",
     coverImage: "/proceedings/mobisec-2025.png",
   },
-  2026: {
-    csvPath: "public/data/2026/program-book-table.csv",
-    papersDir: "public/data/2026/mobisec-papers",
-    coverImage: "/proceedings/mobisec-2026.jpg",
-  },
+  2026: null,
 };
 
 function parseCSV(content: string): Record<string, string>[] {

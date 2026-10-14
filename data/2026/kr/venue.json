@@ -1,7 +1,7 @@
 {
   "venue": "Splendor Hotel",
-  "street": "1049 Jianxing Road",
-  "city": "타이중",
+  "street": "No. 1049, Jianxing Rd.",
+  "city": "타이중시",
   "ward": "West District",
   "prefecture": "",
   "postalCode": "403",
@@ -10,9 +10,9 @@
     "latitude": 24.1469,
     "longitude": 120.6839
   },
-  "description": "스플렌더 호텔 타이중은 대만 타이중 시내 중심에 위치한 최고급 컨퍼런스 호텔로, 현대적인 회의 시설과 함께 도시의 문화 및 비즈니스 지구에 쉽게 접근할 수 있습니다.",
+  "description": "스플렌더 호텔 타이중은 대만 타이중 시내 중심, Taiwan Blvd와 Jianxing Rd가 만나는 지점에 위치한 최고급 컨퍼런스 호텔로, 현대적인 회의 시설과 함께 도시의 문화 및 비즈니스 지구에 쉽게 접근할 수 있습니다.",
   "websiteUrl": "https://www.splendor-taichung.com.tw/",
-  "transportation": "타이중 시내 중심에 위치하며, 셔틀 또는 택시로 타이중 고속철도역에서 쉽게 접근할 수 있고, 타이중 중산공원 및 국립자연과학박물관과도 가깝습니다. 타이중 국제공항까지는 차량으로 약 30분 거리입니다.",
+  "transportation": "타이중 시내 중심 Taiwan Blvd와 Jianxing Rd 교차로에 위치하며, 셔틀 또는 택시로 타이중 고속철도역에서 쉽게 접근할 수 있고, 타이중 중산공원 및 국립자연과학박물관과도 가깝습니다. 타이중 국제공항(RMQ)까지는 차량으로 약 30분 거리입니다.",
   "image": {
     "src": "/assets/venue/2026/venue.jpg",
     "alt": "MOBISEC 2026 — 스플렌더 호텔, 타이중"

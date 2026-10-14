@@ -9,7 +9,8 @@
       "name": "KIISC",
       "subtitle": "Mobile Internet Security",
       "role": "Hosted By",
-      "logo": "/assets/logo/mobisec-logo.png"
+      "logo": "/assets/logo/kiisc-logo-black.png",
+      "logoDark": "/assets/logo/kiisc-logo-white.png"
     }
   ]
 }

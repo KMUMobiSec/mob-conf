@@ -12,7 +12,10 @@
     "upcoming": "Upcoming",
     "questionsTitle": "Questions?",
     "readyToSubmit": "Ready to Submit Your Paper?",
-    "readyToContribute": "Ready to Contribute?"
+    "readyToContribute": "Ready to Contribute?",
+    "registrationComingSoonTitle": "Registration",
+    "registrationComingSoonDescription": "Registration for MOBISEC {year} has not opened yet. Details will be announced soon.",
+    "close": "Close"
   },
   "Navbar": {
     "home": "Home",

@@ -75,6 +75,20 @@ const Venue = async ({ year }: { year: ValidYear }) => {
               {t("gettingThere")}
             </h5>
             <p className="body text-muted-foreground">{venueLocation.transportation}</p>
+            <div className="w-full h-48 sm:h-56 rounded-lg overflow-hidden border border-border">
+              <iframe
+                src={`https://maps.google.com/maps?saddr=${encodeURIComponent("Taichung International Airport")}&daddr=${encodeURIComponent(
+                  `${venueLocation.venue}, ${venueLocation.street}, ${venueLocation.ward}, ${venueLocation.city}`,
+                )}&output=embed`}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`${t("gettingThere")} — Taichung Airport → ${venueLocation.venue}`}
+              />
+            </div>
           </div>
 
           {/* Map */}

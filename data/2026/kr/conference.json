@@ -9,7 +9,8 @@
       "name": "KIISC",
       "subtitle": "모바일 인터넷 보안",
       "role": "주최",
-      "logo": "/assets/logo/mobisec-logo.png"
+      "logo": "/assets/logo/kiisc-logo-black.png",
+      "logoDark": "/assets/logo/kiisc-logo-white.png"
     }
   ]
 }

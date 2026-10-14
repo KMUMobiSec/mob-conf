@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
+import { RegistrationComingSoon } from "@/components/ui/RegistrationComingSoon";
 import { CURRENT_YEAR, type ValidYear, YEAR_CONFIG } from "@/constants/config";
 import { loadData } from "@/lib/data";
 import CallForPapers from "./CallForPapers";
@@ -14,6 +15,7 @@ interface Collaborator {
   subtitle: string;
   role: string;
   logo: string;
+  logoDark?: string;
 }
 
 interface ConferenceData {
@@ -41,7 +43,6 @@ const HomePage = async ({ year }: { year: ValidYear }) => {
   } catch {
     stats = [];
   }
-  const registrationUrl = YEAR_CONFIG[year].registrationUrl;
   const featuredSpeakersEnabled = !YEAR_CONFIG[year].disabledRoutes.includes("featuredSpeakers");
   return (
     <div className="flex flex-col">
@@ -67,14 +68,16 @@ const HomePage = async ({ year }: { year: ValidYear }) => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
-              {registrationUrl && (
-                <Button asChild size="lg">
-                  <a href={registrationUrl} target="_blank" rel="noopener noreferrer">
-                    {tCommon("register")}
-                    <ArrowRight className="h-4 w-4" />
-                  </a>
+              <RegistrationComingSoon
+                title={tCommon("registrationComingSoonTitle")}
+                description={tCommon("registrationComingSoonDescription", { year })}
+                closeLabel={tCommon("close")}
+              >
+                <Button size="lg">
+                  {tCommon("register")}
+                  <ArrowRight className="h-4 w-4" />
                 </Button>
-              )}
+              </RegistrationComingSoon>
               {featuredSpeakersEnabled ? (
                 <Button asChild size="lg" variant="outline">
                   <Link href={`/${year}/featured-speakers`}>
@@ -157,8 +160,18 @@ const HomePage = async ({ year }: { year: ValidYear }) => {
                   width={80}
                   height={80}
                   loading="lazy"
-                  className="object-contain w-24 h-16"
+                  className={`object-contain w-24 h-16 ${collab.logoDark ? "dark:hidden" : ""}`}
                 />
+                {collab.logoDark && (
+                  <Image
+                    src={collab.logoDark}
+                    alt={`${collab.name} Logo`}
+                    width={80}
+                    height={80}
+                    loading="lazy"
+                    className="hidden object-contain w-24 h-16 dark:block"
+                  />
+                )}
                 <div className="flex flex-col gap-1">
                   <h3 className="subheading text-foreground">{collab.name}</h3>
                   <small className="caption text-muted-foreground">{collab.subtitle}</small>

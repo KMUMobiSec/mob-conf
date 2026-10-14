@@ -177,9 +177,7 @@ export const kookminWayfinder: WayfinderConfig = {
  * here simply doesn't render the Campus Wayfinder rather than showing another
  * year's venue.
  */
-export const wayfinderConfigByYear: Partial<Record<ValidYear, WayfinderConfig>> = {
-  2026: kookminWayfinder,
-};
+export const wayfinderConfigByYear: Partial<Record<ValidYear, WayfinderConfig>> = {};
 
 // ---------------------------------------------------------------------------
 // Pure helpers (unit-testable without a map)

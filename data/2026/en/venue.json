@@ -1,7 +1,7 @@
 {
   "venue": "Splendor Hotel",
-  "street": "1049 Jianxing Road",
-  "city": "Taichung",
+  "street": "No. 1049, Jianxing Rd.",
+  "city": "Taichung City",
   "ward": "West District",
   "prefecture": "",
   "postalCode": "403",
@@ -10,9 +10,9 @@
     "latitude": 24.1469,
     "longitude": 120.6839
   },
-  "description": "Splendor Hotel Taichung is a premier conference hotel in the heart of Taichung, Taiwan, offering modern meeting facilities alongside easy access to the city's cultural and business districts.",
+  "description": "Splendor Hotel Taichung is a premier conference hotel in the heart of Taichung, Taiwan, located at the intersection of Taiwan Blvd and Jianxing Rd, offering modern meeting facilities alongside easy access to the city's cultural and business districts.",
   "websiteUrl": "https://www.splendor-taichung.com.tw/",
-  "transportation": "Located in central Taichung, within easy reach of Taichung HSR Station by shuttle or taxi, and close to Taichung Chiang Kai-Shek Memorial Park and the National Museum of Natural Science. Taichung International Airport is approximately 30 minutes away by car.",
+  "transportation": "Located in central Taichung at Taiwan Blvd & Jianxing Rd, within easy reach of Taichung HSR Station by shuttle or taxi, and close to Taichung Chiang Kai-Shek Memorial Park and the National Museum of Natural Science. Taichung International Airport (RMQ) is approximately 30 minutes away by car.",
   "image": {
     "src": "/assets/venue/2026/venue.jpg",
     "alt": "MOBISEC 2026 — Splendor Hotel, Taichung"

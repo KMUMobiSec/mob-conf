@@ -12,7 +12,10 @@
     "upcoming": "예정",
     "questionsTitle": "문의사항이 있으신가요?",
     "readyToSubmit": "논문을 제출할 준비가 되셨나요?",
-    "readyToContribute": "연구에 기여할 준비가 되셨나요?"
+    "readyToContribute": "연구에 기여할 준비가 되셨나요?",
+    "registrationComingSoonTitle": "등록",
+    "registrationComingSoonDescription": "MOBISEC {year} 등록은 아직 시작되지 않았습니다. 세부 사항은 추후 공지될 예정입니다.",
+    "close": "닫기"
   },
   "Navbar": {
     "home": "홈",

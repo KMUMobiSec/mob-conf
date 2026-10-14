@@ -17,6 +17,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { RegistrationComingSoon } from "@/components/ui/RegistrationComingSoon";
 import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { type NavRouteKey, YEAR_CONFIG } from "@/constants/config";
@@ -30,13 +31,13 @@ export function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("Navbar");
+  const tCommon = useTranslations("Common");
   const [mobileOpen, setMobileOpen] = useState(false);
   const year = useYear();
 
   const yearConfig = YEAR_CONFIG[year];
   const disabledRoutes = yearConfig.disabledRoutes;
   const isDisabled = (key: NavRouteKey) => disabledRoutes.includes(key);
-  const registrationUrl = yearConfig.registrationUrl;
 
   const HOME_SUBNAV: NavItem[] = [
     { key: "home", href: `/${year}`, disabled: isDisabled("home") },
@@ -250,19 +251,18 @@ export function Navbar() {
 
                     {NAV_LINKS.map((item) => renderMobileLink(item, mobileTopClass))}
 
-                    {registrationUrl && (
-                      <SheetClose asChild>
-                        <a
-                          href={registrationUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={() => setMobileOpen(false)}
-                          className="px-3 py-2.5 rounded-md text-sm font-semibold text-primary hover:text-primary/80 hover:bg-primary/5 transition-colors"
-                        >
-                          {t("registration")}
-                        </a>
-                      </SheetClose>
-                    )}
+                    <RegistrationComingSoon
+                      title={tCommon("registrationComingSoonTitle")}
+                      description={tCommon("registrationComingSoonDescription", { year })}
+                      closeLabel={tCommon("close")}
+                    >
+                      <button
+                        type="button"
+                        className="px-3 py-2.5 rounded-md text-sm font-semibold text-primary hover:text-primary/80 hover:bg-primary/5 transition-colors text-left"
+                      >
+                        {t("registration")}
+                      </button>
+                    </RegistrationComingSoon>
 
                     {/* Admin sign-in — mobile menu only. */}
                     <SheetClose asChild>
@@ -396,13 +396,15 @@ export function Navbar() {
 
         {/* Language & mode toggles */}
         <div className="flex items-center gap-2 shrink-0 px-4 lg:px-0 lg:pr-4">
-          {registrationUrl && (
-            <Button asChild size="sm" className="hidden lg:inline-flex">
-              <a href={registrationUrl} target="_blank" rel="noopener noreferrer">
-                {t("registration")}
-              </a>
+          <RegistrationComingSoon
+            title={tCommon("registrationComingSoonTitle")}
+            description={tCommon("registrationComingSoonDescription", { year })}
+            closeLabel={tCommon("close")}
+          >
+            <Button size="sm" className="hidden lg:inline-flex">
+              {t("registration")}
             </Button>
-          )}
+          </RegistrationComingSoon>
           <LanguageToggle />
           <ModeToggle />
           <Button

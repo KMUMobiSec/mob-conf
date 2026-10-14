@@ -12,20 +12,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { year } = await params;
   const config = YEAR_CONFIG[Number(year) as ValidYear];
   const pageUrl = `${SITE_URL}/${year}/keynotes`;
-  const description = `Meet the distinguished keynote speakers at EBISION ${year}. ${config.venue}, ${config.location}, ${config.dates}.`;
+  const description = `Meet the distinguished keynote speakers at MOBISEC ${year}. ${config.venue}, ${config.location}, ${config.dates}.`;
 
   return {
     title: "Keynote Speakers",
     description,
-    keywords: [`EBISION ${year} keynotes`, "keynote speakers", config.venue],
+    keywords: [`MOBISEC ${year} keynotes`, "keynote speakers", config.venue],
     openGraph: {
       url: pageUrl,
-      title: `Keynote Speakers | EBISION ${year}`,
+      title: `Keynote Speakers | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Keynote Speakers | EBISION ${year}`,
+      title: `Keynote Speakers | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

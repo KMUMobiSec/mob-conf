@@ -29,7 +29,7 @@ export function NotifyWinnersButton({
   const [pending, startTransition] = useTransition();
   const router = useRouter();
 
-  const scopeLabel = year ? `EBISION ${year}` : t("allYears");
+  const scopeLabel = year ? `MOBISEC ${year}` : t("allYears");
 
   function confirm() {
     startTransition(async () => {

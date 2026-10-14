@@ -23,7 +23,7 @@ describe("winner congratulations email", () => {
     });
     expect(html).toContain("Dear Alan Turing");
     expect(html).toContain("Young Researcher Award");
-    expect(html).toContain("EBISION 2026");
+    expect(html).toContain("MOBISEC 2026");
     expect(winnerCongratulationsSubject(2026)).toContain("2026");
   });
 
@@ -54,9 +54,9 @@ describe("winner congratulations email", () => {
       year: 2026,
       awardName: "Young Researcher Award",
       nomineeName: "Alan Turing",
-      rollOfHonorsUrl: "https://ebision.org/2026/roll-of-honors",
+      rollOfHonorsUrl: "https://mobisec.org/2026/roll-of-honors",
     });
-    expect(html).toContain('href="https://ebision.org/2026/roll-of-honors"');
+    expect(html).toContain('href="https://mobisec.org/2026/roll-of-honors"');
     expect(html).toContain("View the Roll of Honors");
   });
 
@@ -94,11 +94,11 @@ describe("nominator winner notice email", () => {
       awardName: "Industry Pioneer Award",
       nominatorName: "Ada Lovelace",
       nomineeName: "Alan Turing",
-      rollOfHonorsUrl: "https://ebision.org/2026/roll-of-honors",
+      rollOfHonorsUrl: "https://mobisec.org/2026/roll-of-honors",
     });
     expect(html).toContain("July 9, 2026");
     expect(html).toContain("The Plaza Hotel, Seoul");
-    expect(html).toContain('href="https://ebision.org/2026/roll-of-honors"');
+    expect(html).toContain('href="https://mobisec.org/2026/roll-of-honors"');
     expect(html).toContain("View the Roll of Honors");
   });
 });

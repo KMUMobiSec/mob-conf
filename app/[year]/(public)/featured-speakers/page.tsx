@@ -12,13 +12,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { year } = await params;
   const config = YEAR_CONFIG[Number(year) as ValidYear];
   const pageUrl = `${SITE_URL}/${year}/featured-speakers`;
-  const description = `Meet the EBISION ${year} keynote speakers, invited speakers, and industrial session companies. ${config.venue}, ${config.location}, ${config.dates}.`;
+  const description = `Meet the MOBISEC ${year} keynote speakers, invited speakers, and industrial session companies. ${config.venue}, ${config.location}, ${config.dates}.`;
 
   return {
     title: "Featured Speakers & Sessions",
     description,
     keywords: [
-      `EBISION ${year} speakers`,
+      `MOBISEC ${year} speakers`,
       "keynote speakers",
       "invited speakers",
       "industrial session",
@@ -26,12 +26,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ],
     openGraph: {
       url: pageUrl,
-      title: `Featured Speakers & Sessions | EBISION ${year}`,
+      title: `Featured Speakers & Sessions | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Featured Speakers & Sessions | EBISION ${year}`,
+      title: `Featured Speakers & Sessions | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

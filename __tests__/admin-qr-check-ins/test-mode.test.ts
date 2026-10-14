@@ -57,8 +57,8 @@ import {
 
 const REG_ID = "11111111-1111-4111-8111-111111111111";
 const QR_NONCE = "qr-nonce";
-const TESTERS = ["tester@ebision.test", "qa@ebision.test"];
-const FALLBACK = "cyberchair.ebision@gmail.com";
+const TESTERS = ["tester@mobisec.test", "qa@mobisec.test"];
+const FALLBACK = "cyberchair.mobisec@gmail.com";
 
 function makeRow(overrides: Record<string, unknown> = {}) {
   return {

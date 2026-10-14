@@ -30,7 +30,7 @@ function shell({
   const logoChip = logoUrl
     ? `<td style="width:56px;vertical-align:middle;">
             <div style="width:44px;height:44px;background:#ffffff;border-radius:10px;text-align:center;mso-line-height-rule:exactly;line-height:44px;">
-              <img src="${escapeHtml(logoUrl)}" width="30" height="30" alt="EBISION" style="display:inline-block;vertical-align:middle;border:0;" />
+              <img src="${escapeHtml(logoUrl)}" width="30" height="30" alt="MOBISEC" style="display:inline-block;vertical-align:middle;border:0;" />
             </div>
           </td>`
     : "";
@@ -44,7 +44,7 @@ function shell({
         <tr>
           ${logoChip}
           <td style="vertical-align:middle;${logoUrl ? "padding-left:14px;" : ""}">
-            <p style="margin:0;color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">EBISION ${year} &middot; Banquet Invitation</p>
+            <p style="margin:0;color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">MOBISEC ${year} &middot; Banquet Invitation</p>
             <h1 style="margin:4px 0 0;color:#ffffff;font-size:20px;font-weight:650;">${escapeHtml(heading)}</h1>
           </td>
         </tr>
@@ -53,7 +53,7 @@ function shell({
     <div style="background:${SURFACE};border:1px solid ${BORDER};border-top:none;border-radius:0 0 10px 10px;padding:28px;">
       ${bodyHtml}
     </div>
-    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">EBISION ${year} &middot; IFIP WG 8.4 International Symposium</p>
+    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">MOBISEC ${year} &middot; KIISC International Conference</p>
   </div>
 </body>
 </html>`;
@@ -74,7 +74,7 @@ export interface BanquetInvitationEmailInput {
 }
 
 export function banquetInvitationSubject(year: number): string {
-  return `You are invited to the EBISION ${year} banquet`;
+  return `You are invited to the MOBISEC ${year} banquet`;
 }
 
 export function renderBanquetInvitationHtml(input: BanquetInvitationEmailInput): string {
@@ -82,7 +82,7 @@ export function renderBanquetInvitationHtml(input: BanquetInvitationEmailInput):
   const url = escapeHtml(input.surveyUrl);
   const body = `
       <p style="${P}">${greeting}</p>
-      <p style="${P}">You are warmly invited to the <strong>EBISION ${input.year}</strong> banquet on ${escapeHtml(input.banquetDate)} at ${escapeHtml(input.banquetVenue)}. Please let us know whether you will join us so we can plan the seating and the menu.</p>
+      <p style="${P}">You are warmly invited to the <strong>MOBISEC ${input.year}</strong> banquet on ${escapeHtml(input.banquetDate)} at ${escapeHtml(input.banquetVenue)}. Please let us know whether you will join us so we can plan the seating and the menu.</p>
 
       ${renderBanquetVenueHero({ imageUrl: input.venueImageUrl, venue: input.banquetVenue, date: input.banquetDate })}
 
@@ -95,7 +95,7 @@ export function renderBanquetInvitationHtml(input: BanquetInvitationEmailInput):
       </table>
 
       <p style="${P}">If the button does not work, copy and paste this link into your browser:<br /><a href="${url}" style="color:${BRAND};word-break:break-all;">${url}</a></p>
-      <p style="${P}">Warm regards,<br />The EBISION ${input.year} Organizing Committee</p>`;
+      <p style="${P}">Warm regards,<br />The MOBISEC ${input.year} Organizing Committee</p>`;
 
   return shell({
     year: input.year,
@@ -110,12 +110,12 @@ export function renderBanquetInvitationText(input: BanquetInvitationEmailInput):
   return [
     greeting,
     "",
-    `You are warmly invited to the EBISION ${input.year} banquet on ${input.banquetDate} at ${input.banquetVenue}. Please let us know whether you will join us so we can plan the seating and the menu.`,
+    `You are warmly invited to the MOBISEC ${input.year} banquet on ${input.banquetDate} at ${input.banquetVenue}. Please let us know whether you will join us so we can plan the seating and the menu.`,
     "",
     "RSVP for the banquet using this link:",
     input.surveyUrl,
     "",
     "Warm regards,",
-    `The EBISION ${input.year} Organizing Committee`,
+    `The MOBISEC ${input.year} Organizing Committee`,
   ].join("\n");
 }

@@ -1,6 +1,6 @@
 ## Context
 
-The EBISION site (`app/[year]/(public)/*`) renders read-only conference pages. Each public page is a server component that delegates to `modules/landing/<name>/components/<Name>Page.tsx`; the year segment is validated against `VALID_YEARS` in `constants/config.ts` and shared through `YearProvider`. Theming is token-driven (Tailwind v4 CSS-first in `styles/globals.css`, forest-green palette, IBM Plex), with light/dark/system handled by `next-themes` and the `ModeToggle` in the global `Navbar`.
+The MOBISEC site (`app/[year]/(public)/*`) renders read-only conference pages. Each public page is a server component that delegates to `modules/landing/<name>/components/<Name>Page.tsx`; the year segment is validated against `VALID_YEARS` in `constants/config.ts` and shared through `YearProvider`. Theming is token-driven (Tailwind v4 CSS-first in `styles/globals.css`, forest-green palette, IBM Plex), with light/dark/system handled by `next-themes` and the `ModeToggle` in the global `Navbar`.
 
 The source of truth for the UI is the Claude Design handoff `Nomination Form.html` (+ `app.jsx` / `fields.jsx`): a single-file React prototype with six sections, award-driven conditional fields, hand-rolled validation, file-drop uploads, a best-effort PDF page counter, and a success recap. The handoff README directs us to recreate the *visual output* in the target stack — not copy the prototype's structure — and to skin it with our own theme.
 
@@ -40,7 +40,7 @@ Each accepted file is uploaded directly from the browser to the existing `nomina
 The preparation action generates a UUID up front (`crypto.randomUUID()`) so it can namespace the storage path and use it as the row primary key, keeping files and record correlated even if the DB insert is retried.
 
 ### D5 — Email via Resend with a hand-written branded HTML template
-Add the `resend` SDK. A `lib/email/` module exposes a lazily-initialized client and `sendNominationConfirmation()` that renders an inline-styled HTML email (forest-green header, IBM-Plex-ish system fallback stack) recapping the nomination. Sender = `RESEND_EMAIL_FROM_AWARDS` (`awards@ebision.ifip-wg84.org`). **Recap only** — no file links.
+Add the `resend` SDK. A `lib/email/` module exposes a lazily-initialized client and `sendNominationConfirmation()` that renders an inline-styled HTML email (forest-green header, IBM-Plex-ish system fallback stack) recapping the nomination. Sender = `RESEND_EMAIL_FROM_AWARDS` (`awards@mobisec-conference.com`). **Recap only** — no file links.
 - *Alternative considered:* `react-email` / `@react-email/components`. Rejected to avoid extra dependencies for a single template; a typed HTML-string builder is sufficient.
 
 ### D6 — CAPTCHA: Cloudflare Turnstile
@@ -77,7 +77,7 @@ The four awards and their rule flags (`noSelfNomination`, `requiresSupervisorLet
 2. Add `db/schema/nominations.ts` and export it from `db/schema/index.ts`.
 3. Run `pnpm db:generate` to produce the migration, then `pnpm db:migrate` to apply it. (No manual SQL.)
 4. Add env vars to `.env.example`: `RESEND_EMAIL_FROM_AWARDS`, `NEXT_PUBLIC_TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY` (real values already/also set in `.env`).
-5. Ensure the Resend sending domain (`ebision.ifip-wg84.org`) is verified and a Turnstile site/secret key pair is provisioned.
+5. Ensure the Resend sending domain (`mobisec-conference.com`) is verified and a Turnstile site/secret key pair is provisioned.
 6. Confirm the existing `nominations` Supabase bucket's policy allows service-role uploads.
 - **Rollback:** the change is additive (new table, new route, new files). Rolling back = removing the route/module and dropping the unused `nominations` table; existing pages are unaffected.
 

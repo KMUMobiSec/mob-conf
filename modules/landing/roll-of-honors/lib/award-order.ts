@@ -17,5 +17,5 @@ export const AWARD_DESCRIPTION_ORDER = [
 ] as const;
 
 export function buildRollOfHonorsDescription(year: string, venue: string, dates: string) {
-  return `EBISION ${year} Roll of Honors — ${AWARD_DESCRIPTION_ORDER.join(", ")}. ${venue}, ${dates}.`;
+  return `MOBISEC ${year} Roll of Honors — ${AWARD_DESCRIPTION_ORDER.join(", ")}. ${venue}, ${dates}.`;
 }

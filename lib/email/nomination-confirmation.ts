@@ -46,13 +46,13 @@ function renderHtml(input: NominationConfirmationInput): string {
 <body style="margin:0;padding:0;background:${CANVAS};font-family:'IBM Plex Sans',-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:${INK};">
   <div style="max-width:600px;margin:0 auto;padding:24px 16px;">
     <div style="background:${BRAND};border-radius:10px 10px 0 0;padding:24px 28px;">
-      <p style="margin:0;color:rgba(255,255,255,0.8);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">EBISION ${input.year} · Awards Committee</p>
+      <p style="margin:0;color:rgba(255,255,255,0.8);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">MOBISEC ${input.year} · Awards Committee</p>
       <h1 style="margin:6px 0 0;color:#ffffff;font-size:20px;font-weight:650;">Nomination received</h1>
     </div>
     <div style="background:${SURFACE};border:1px solid ${BORDER};border-top:none;border-radius:0 0 10px 10px;padding:28px;">
       <p style="margin:0 0 16px;font-size:15px;line-height:1.55;">Dear ${escapeHtml(input.nominatorName)},</p>
       <p style="margin:0 0 20px;font-size:15px;line-height:1.55;color:${INK};">
-        Thank you for your nomination for the <strong>${escapeHtml(input.awardName)}</strong>. We have recorded your submission for EBISION ${input.year}. Below is a copy for your records.
+        Thank you for your nomination for the <strong>${escapeHtml(input.awardName)}</strong>. We have recorded your submission for MOBISEC ${input.year}. Below is a copy for your records.
       </p>
       <table style="width:100%;border-collapse:collapse;margin:0 0 20px;">
         ${row("Award", `<strong>${escapeHtml(input.awardName)}</strong>`)}
@@ -64,7 +64,7 @@ function renderHtml(input: NominationConfirmationInput): string {
         No action is required. If you did not submit this nomination, please disregard this email.
       </p>
     </div>
-    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">EBISION ${input.year} — IFIP WG 8.4 International Symposium</p>
+    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">MOBISEC ${input.year} — KIISC International Conference</p>
   </div>
 </body>
 </html>`;
@@ -83,7 +83,7 @@ export async function sendNominationConfirmation(
   const { error } = await resend.emails.send({
     from,
     to: input.to,
-    subject: `Your EBISION ${input.year} nomination has been received`,
+    subject: `Your MOBISEC ${input.year} nomination has been received`,
     html: renderHtml(input),
   });
 

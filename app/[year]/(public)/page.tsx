@@ -11,22 +11,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { year } = await params;
   const yearNum = Number(year) as ValidYear;
   const config = YEAR_CONFIG[yearNum];
-  const description = `The ${config.edition} IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution — ${config.venue}, ${config.location}, ${config.dates}`;
+  const description = `The ${config.edition} KIISC International Conference on Mobile Internet Security — ${config.venue}, ${config.location}, ${config.dates}`;
   const pageUrl = `${SITE_URL}/${year}`;
 
   return {
     title: {
-      absolute: `EBISION ${year} — International Symposium on E-Business Information Systems Evolution`,
+      absolute: `MOBISEC ${year} — International Conference on Mobile Internet Security`,
     },
     description,
     openGraph: {
       url: pageUrl,
-      title: `EBISION ${year}`,
+      title: `MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `EBISION ${year}`,
+      title: `MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 401 });
   }
 
-  const proceedingId = `ebision-${year}`;
+  const proceedingId = `mobisec-${year}`;
   const result = getProceedingDetail(year, proceedingId);
   if (!result.proceedingPeriod) {
     return NextResponse.json({

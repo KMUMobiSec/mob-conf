@@ -336,7 +336,7 @@ export function NominationForm({ year }: { year: ValidYear }) {
       }
     } catch {
       setServerError(
-        "The nomination could not be submitted. Please try again. If this happens again, contact the EBISION awards team.",
+        "The nomination could not be submitted. Please try again. If this happens again, contact the MOBISEC awards team.",
       );
     } finally {
       setSubmitting(false);

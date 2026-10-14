@@ -24,7 +24,7 @@ import { normalizeRegistrationEmail } from "@/modules/admin/qr-check-ins/lib/reg
  *   pnpm registrations:backfill-ids "path/to.csv" 2026 --apply
  */
 
-const DEFAULT_CSV = "EBISION Participants - 시트1.csv";
+const DEFAULT_CSV = "MOBISEC Participants - 시트1.csv";
 const DEFAULT_YEAR = 2026;
 
 interface ListRow {

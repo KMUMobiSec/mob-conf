@@ -9,7 +9,7 @@ describe("admin year helpers", () => {
     expect(parseAdminYear("1999")).toBe(CURRENT_YEAR);
   });
 
-  it("accepts configured EBISION years from strings or repeated params", () => {
+  it("accepts configured MOBISEC years from strings or repeated params", () => {
     expect(parseAdminYear("2025")).toBe(2025);
     expect(parseAdminYear(["2026", "2025"])).toBe(2026);
   });

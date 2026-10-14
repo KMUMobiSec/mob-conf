@@ -18,15 +18,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: "Roll of Honors",
     description,
-    keywords: [`EBISION ${year} awards`, "roll of honors", "conference awards", config.venue],
+    keywords: [`MOBISEC ${year} awards`, "roll of honors", "conference awards", config.venue],
     openGraph: {
       url: pageUrl,
-      title: `Roll of Honors | EBISION ${year}`,
+      title: `Roll of Honors | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Roll of Honors | EBISION ${year}`,
+      title: `Roll of Honors | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

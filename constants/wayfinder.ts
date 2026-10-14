@@ -65,7 +65,7 @@ export interface WayfinderConfig {
 }
 
 /**
- * EBISION 2026 @ Kookmin University.
+ * MOBISEC 2026 @ Kookmin University.
  * Building coords + walking route from OpenStreetMap's pedestrian network.
  * Hub-and-spoke layout: the shared trunk (`route`) runs from the Main Gate up
  * to the plaza by the University Statue, east along the top walkway, then

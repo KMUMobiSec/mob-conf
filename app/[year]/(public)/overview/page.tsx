@@ -11,26 +11,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { year } = await params;
   const config = YEAR_CONFIG[Number(year) as ValidYear];
   const pageUrl = `${SITE_URL}/${year}/overview`;
-  const description = `EBISION ${year} — Explore the paradigm shift in E-Business Information Systems through multidisciplinary perspectives. ${config.venue}, ${config.location}, ${config.dates}.`;
+  const description = `MOBISEC ${year} — Explore the paradigm shift in Mobile Internet Security through multidisciplinary perspectives. ${config.venue}, ${config.location}, ${config.dates}.`;
 
   return {
     title: "Overview",
     description,
     keywords: [
-      `EBISION ${year}`,
-      "E-Business Information Systems",
-      "IFIP WG 8.4",
+      `MOBISEC ${year}`,
+      "Mobile Internet Security",
+      "KIISC",
       config.venue,
       config.location,
     ],
     openGraph: {
       url: pageUrl,
-      title: `Overview | EBISION ${year}`,
+      title: `Overview | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Overview | EBISION ${year}`,
+      title: `Overview | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

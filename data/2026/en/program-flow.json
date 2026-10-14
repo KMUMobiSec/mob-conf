@@ -2,8 +2,8 @@
   "info": {
     "date": "July 8 (Wed) – 10 (Fri), 2026",
     "venue": "Kookmin University, Seoul, Korea",
-    "type": "Official Flagship Event of IFIP WG 8.4",
-    "organizer": "IFIP WG 8.4 / Kookmin University"
+    "type": "Official Flagship Event of KIISC",
+    "organizer": "KIISC / Kookmin University"
   },
   "cooperation": [
     "KMU Global Research Center for ICT Convergence Security",
@@ -238,7 +238,7 @@
         },
         {
           "time": "12:30 – 14:00",
-          "title": "IFIP WG 8.4 Meeting",
+          "title": "KIISC Meeting",
           "type": "meeting"
         },
         {
@@ -306,5 +306,5 @@
       ]
     }
   },
-  "description": "EBISION 2026 is a three-day international academic event featuring paper presentations, posters, keynote speeches, invited sessions, industrial sessions, the IFIP WG 8.4 meeting, and international collaboration programs."
+  "description": "MOBISEC 2026 is a three-day international academic event featuring paper presentations, posters, keynote speeches, invited sessions, industrial sessions, the KIISC meeting, and international collaboration programs."
 }

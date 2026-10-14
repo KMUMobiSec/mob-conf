@@ -93,7 +93,7 @@ const Footer = async ({ year }: { year: ValidYear }) => {
           <div className="flex flex-col md:items-start items-center md:text-left text-center gap-4">
             <Image
               src="/assets/logo/ebision-logo.svg"
-              alt="EBISION Logo"
+              alt="MOBISEC Logo"
               width={120}
               height={40}
               className="h-10 w-auto"

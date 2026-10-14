@@ -88,8 +88,8 @@ const parseCSVToSchedule = (csvText: string, year: number): ConferenceSchedule |
   // Extract conference info based on year config
   const config = isValidYear(year) ? YEAR_CONFIG[year] : null;
   const conference: ConferenceInfo = {
-    name: config?.conferenceName ?? `EBISION ${year}`,
-    fullName: `The ${config?.edition ?? ""} IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution`,
+    name: config?.conferenceName ?? `MOBISEC ${year}`,
+    fullName: `The ${config?.edition ?? ""} KIISC International Conference on Mobile Internet Security`,
     dates: config?.dates ?? `TBD, ${year}`,
     location: config?.location ?? "TBD",
     venue: config?.venue ?? "TBD",
@@ -226,8 +226,8 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ year = CURRENT_YEAR }) => {
         setLoading(true);
         setError(null);
 
-        // Load the EBISION CSV schedule
-        const response = await fetch(`/data/${year}/ebision-table.csv`);
+        // Load the MOBISEC CSV schedule
+        const response = await fetch(`/data/${year}/mobisec-table.csv`);
         if (!response.ok) {
           throw new Error(`Failed to load CSV: ${response.status}`);
         }
@@ -302,7 +302,7 @@ const ProgramPage: React.FC<ProgramPageProps> = ({ year = CURRENT_YEAR }) => {
   if (!schedule || schedule.days.length === 0) {
     return (
       <div className="container mx-auto px-4 py-8">
-        <EmptySchedule conferenceName={schedule?.conference.name || `EBISION ${year}`} />
+        <EmptySchedule conferenceName={schedule?.conference.name || `MOBISEC ${year}`} />
       </div>
     );
   }

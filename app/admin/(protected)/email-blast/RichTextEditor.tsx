@@ -283,7 +283,7 @@ export function RichTextEditor({
                   setLinkUrl(event.target.value);
                   setLinkError(null);
                 }}
-                placeholder="https://ebision.ifip-wg84.org"
+                placeholder="https://mobisec-conference.com"
                 autoFocus
               />
               {linkError ? <p className="caption text-destructive">{linkError}</p> : null}

@@ -13,14 +13,14 @@ describe("registration QR pass email", () => {
       name: "Ada Lovelace",
       venue: "Kookmin University",
       dates: "July 8-10, 2026",
-      passUrl: "https://ebision.example/registration-pass/abc123",
+      passUrl: "https://mobisec.example/registration-pass/abc123",
     });
 
     expect(html).toContain("Dear Ada Lovelace");
-    expect(html).toContain("EBISION 2026");
+    expect(html).toContain("MOBISEC 2026");
     expect(html).toContain("Kookmin University");
     expect(html).toContain("July 8-10, 2026");
-    expect(html).toContain("https://ebision.example/registration-pass/abc123");
+    expect(html).toContain("https://mobisec.example/registration-pass/abc123");
     expect(html).toContain("View your QR pass");
     expect(html).not.toContain("data:image");
     expect(registrationPassSubject(2026)).toContain("2026");
@@ -32,7 +32,7 @@ describe("registration QR pass email", () => {
       name: "<b>Ada</b>",
       venue: "<script>",
       dates: "July",
-      passUrl: "https://ebision.example/registration-pass/abc123?x=<script>",
+      passUrl: "https://mobisec.example/registration-pass/abc123?x=<script>",
     });
 
     expect(html).toContain("&lt;b&gt;Ada&lt;/b&gt;");
@@ -43,11 +43,11 @@ describe("registration QR pass email", () => {
 });
 
 describe("check-in welcome email", () => {
-  it("welcomes the attendee to EBISION for the selected year", () => {
+  it("welcomes the attendee to MOBISEC for the selected year", () => {
     const html = renderCheckInWelcomeHtml({ year: 2026, name: "Grace Hopper" });
 
     expect(html).toContain("Dear Grace Hopper");
-    expect(html).toContain("Welcome to EBISION 2026");
+    expect(html).toContain("Welcome to MOBISEC 2026");
     expect(checkInWelcomeSubject(2026)).toContain("2026");
   });
 
@@ -55,12 +55,12 @@ describe("check-in welcome email", () => {
     const html = renderCheckInWelcomeHtml({
       year: 2026,
       name: "Grace Hopper",
-      gettingAroundUrl: "https://ebision.example/2026#getting-around",
+      gettingAroundUrl: "https://mobisec.example/2026#getting-around",
     });
 
     expect(html).toContain("Getting around");
     expect(html).toContain("View the campus guide");
-    expect(html).toContain("https://ebision.example/2026#getting-around");
+    expect(html).toContain("https://mobisec.example/2026#getting-around");
   });
 
   it("omits the campus guide block when no getting-around URL is set", () => {

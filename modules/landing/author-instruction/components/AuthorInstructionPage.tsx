@@ -98,7 +98,7 @@ const AuthorInstructionPage = async ({ year }: { year: ValidYear }) => {
             </h2>
             <p className="body text-foreground">
               All papers must be original and not simultaneously submitted to another journal or
-              conference. The contributions to EBISION {year} must be submitted to the conference
+              conference. The contributions to MOBISEC {year} must be submitted to the conference
               submission system:{" "}
               <a
                 href={yearConfig.submissionUrl}

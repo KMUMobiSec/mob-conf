@@ -22,8 +22,8 @@ export async function generateMetadata({
 
   return {
     title: {
-      template: `%s | EBISION ${year}`,
-      default: `EBISION ${year}`,
+      template: `%s | MOBISEC ${year}`,
+      default: `MOBISEC ${year}`,
     },
   };
 }
@@ -49,7 +49,7 @@ export default async function YearLayout({
     "@context": "https://schema.org",
     "@type": "Event",
     name: config.conferenceName,
-    description: `The ${config.edition} IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution`,
+    description: `The ${config.edition} KIISC International Conference on Mobile Internet Security`,
     startDate: config.startDate,
     endDate: config.endDate,
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
@@ -65,8 +65,8 @@ export default async function YearLayout({
     },
     organizer: {
       "@type": "Organization",
-      name: "IFIP Working Group 8.4",
-      url: "https://ifip-wg84.org",
+      name: "KIISC (Korea Institute of Information Security and Cryptology)",
+      url: "https://www.kiisc.or.kr",
     },
     url: `${SITE_URL}/${year}`,
     image: `${SITE_URL}/opengraph-image`,

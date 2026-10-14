@@ -5,9 +5,9 @@ import Link from "next/link";
 import { CURRENT_YEAR, VALID_YEARS, YEAR_CONFIG } from "@/constants/config";
 
 export const metadata: Metadata = {
-  title: "EBISION — International Symposium on E-Business Information Systems Evolution",
+  title: "MOBISEC — International Conference on Mobile Internet Security",
   description:
-    "The IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution. Browse all editions.",
+    "The KIISC International Conference on Mobile Internet Security. Browse all editions.",
   alternates: { canonical: "/" },
 };
 
@@ -32,19 +32,19 @@ export default function RootPage() {
         <div className="flex flex-col items-center text-center gap-6">
           <Image
             src="/assets/logo/ebision-logo.svg"
-            alt="EBISION Logo"
+            alt="MOBISEC Logo"
             width={160}
             height={60}
             priority
             className="h-14 w-auto"
           />
           <div className="flex flex-col gap-2">
-            <p className="tag text-primary">IFIP WG 8.4</p>
+            <p className="tag text-primary">KIISC</p>
             <h1 className="display text-foreground">
-              International Symposium on E-Business Information Systems Evolution
+              International Conference on Mobile Internet Security
             </h1>
             <p className="body text-muted-foreground max-w-xl mx-auto">
-              Browse all editions of the EBISION symposium. Select an event to view its program,
+              Browse all editions of the MOBISEC symposium. Select an event to view its program,
               keynotes, and more.
             </p>
           </div>
@@ -119,7 +119,7 @@ export default function RootPage() {
 
         {/* Footer note */}
         <small className="caption text-muted-foreground text-center">
-          © {CURRENT_YEAR} EBISION. All rights reserved.
+          © {CURRENT_YEAR} MOBISEC. All rights reserved.
         </small>
       </div>
     </main>

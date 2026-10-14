@@ -29,8 +29,8 @@
 
 ## 5. Email Backend
 
-- [x] 5.1 Create an EBISION-branded QR pass email template and sender that includes attendee name, selected year, venue/date context, and a button to the attendee's public QR pass page
-- [x] 5.2 Create an EBISION-branded welcome email template and sender for successful first check-in
+- [x] 5.1 Create an MOBISEC-branded QR pass email template and sender that includes attendee name, selected year, venue/date context, and a button to the attendee's public QR pass page
+- [x] 5.2 Create an MOBISEC-branded welcome email template and sender for successful first check-in
 - [x] 5.3 Create admin server actions for single and bulk QR pass sends with per-registration success/failure results
 - [x] 5.4 Record QR email sent timestamp/count only for successful sends; leave failed recipients eligible for retry
 - [x] 5.5 Schedule welcome email sending after first check-in and record `welcomeEmailSentAt` only after successful send

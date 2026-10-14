@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Add a "Campus Navigator" section to the EBISION 2026 home page that lets attendees pick two on-campus locations and see the computed walking route between them.
+**Goal:** Add a "Campus Navigator" section to the MOBISEC 2026 home page that lets attendees pick two on-campus locations and see the computed walking route between them.
 
 **Architecture:** A hand-curated JSON routing graph (`data/2026/{locale}/campus-graph.json`) is loaded server-side via the existing `loadData()` helper and handed to a client component that runs a dependency-free Dijkstra shortest-path function and renders the route as an inline SVG diagram with a plain-text step summary. No map vendor, no external routing API, no runtime network calls.
 
@@ -260,7 +260,7 @@ describe.each([
     }
   });
 
-  it("includes the three confirmed EBISION 2026 conference buildings", () => {
+  it("includes the three confirmed MOBISEC 2026 conference buildings", () => {
     const nodeIds = graph.nodes.map((node) => node.id);
     expect(nodeIds).toEqual(
       expect.arrayContaining(["administration-hall", "international-hall", "college-of-law"]),
@@ -290,7 +290,7 @@ Create `data/2026/en/campus-graph.json`:
 
 ```json
 {
-  "notes": "Distances and the campus entrance position are estimated placeholders. Confirm exact inter-building distances and the real arrival point (gate/parking lot/bus stop) with the EBISION 2026 organizing committee before launch.",
+  "notes": "Distances and the campus entrance position are estimated placeholders. Confirm exact inter-building distances and the real arrival point (gate/parking lot/bus stop) with the MOBISEC 2026 organizing committee before launch.",
   "nodes": [
     {
       "id": "campus-entrance",
@@ -336,7 +336,7 @@ Create `data/2026/kr/campus-graph.json`:
 
 ```json
 {
-  "notes": "거리와 캠퍼스 입구 위치는 추정값입니다. 정확한 건물 간 거리와 실제 출발 지점(정문/주차장/버스정류장), 공식 한글 건물명을 EBISION 2026 조직위원회에 확인 후 반영해야 합니다.",
+  "notes": "거리와 캠퍼스 입구 위치는 추정값입니다. 정확한 건물 간 거리와 실제 출발 지점(정문/주차장/버스정류장), 공식 한글 건물명을 MOBISEC 2026 조직위원회에 확인 후 반영해야 합니다.",
   "nodes": [
     {
       "id": "campus-entrance",
@@ -385,7 +385,7 @@ Expected: PASS (6 tests — 3 checks × 2 locales)
 
 ```bash
 git add data/2026/en/campus-graph.json data/2026/kr/campus-graph.json __tests__/data/campus-graph.test.ts
-git commit -m "feat: add initial EBISION 2026 campus routing graph data"
+git commit -m "feat: add initial MOBISEC 2026 campus routing graph data"
 ```
 
 ---

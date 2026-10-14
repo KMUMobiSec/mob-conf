@@ -72,7 +72,7 @@ export default async function NominationDetailPage({
             )}
           </div>
           <p className="body text-muted-foreground">
-            {getAward(n.award)?.name ?? n.award} · EBISION {n.year}
+            {getAward(n.award)?.name ?? n.award} · MOBISEC {n.year}
           </p>
         </div>
         <div className="flex flex-col items-end gap-2">

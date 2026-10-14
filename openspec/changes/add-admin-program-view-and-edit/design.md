@@ -1,6 +1,6 @@
 ## Context
 
-`/admin/presentations` today is a filterable table (`page.tsx` → `listPresentations`) with a detail page per submission. Presentations store `paperNumber`, `title`, `contactEmail`, `videoUrl`, and files in `presentation_files`. The repo already has a detailed schedule model (`types/conference-schedule.ts`: `ConferenceSchedule` → `ConferenceDay` → `TimeSlot` → `Session` → `Paper`) and a public `ScheduleGrid` fed by a client-side fetch of `/data/{year}/ebision-table.csv`. No 2026 program CSV exists yet.
+`/admin/presentations` today is a filterable table (`page.tsx` → `listPresentations`) with a detail page per submission. Presentations store `paperNumber`, `title`, `contactEmail`, `videoUrl`, and files in `presentation_files`. The repo already has a detailed schedule model (`types/conference-schedule.ts`: `ConferenceSchedule` → `ConferenceDay` → `TimeSlot` → `Session` → `Paper`) and a public `ScheduleGrid` fed by a client-side fetch of `/data/{year}/mobisec-table.csv`. No 2026 program CSV exists yet.
 
 Organizers want to view uploads against the real program and to fix mismatched titles.
 

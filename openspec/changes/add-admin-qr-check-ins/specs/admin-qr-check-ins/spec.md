@@ -42,7 +42,7 @@ The system SHALL let administrators send QR pass emails to one registration manu
 
 #### Scenario: Send one QR pass email
 - **WHEN** an administrator sends a QR pass email for one registration
-- **THEN** the system sends a professional EBISION-branded email containing a button to that attendee's public QR pass page and records the send on the registration
+- **THEN** the system sends a professional MOBISEC-branded email containing a button to that attendee's public QR pass page and records the send on the registration
 
 #### Scenario: Send selected QR pass emails in bulk
 - **WHEN** an administrator selects multiple registrations and confirms a bulk QR email send
@@ -66,7 +66,7 @@ The system SHALL provide a public dynamic registration pass page addressed by re
 
 #### Scenario: View registration pass
 - **WHEN** a visitor opens the registration pass URL for an existing registration id
-- **THEN** the system displays the attendee name, EBISION year, conference context, and a scannable QR code
+- **THEN** the system displays the attendee name, MOBISEC year, conference context, and a scannable QR code
 
 #### Scenario: Unknown registration pass
 - **WHEN** a visitor opens the registration pass URL for an unknown registration id
@@ -119,11 +119,11 @@ The system SHALL use a Supabase realtime channel named `check-ins` so scanner re
 
 ### Requirement: Welcome Email After Check-In
 
-After a first successful check-in, the system SHALL send the attendee a welcome email for EBISION `<selected year>`.
+After a first successful check-in, the system SHALL send the attendee a welcome email for MOBISEC `<selected year>`.
 
 #### Scenario: Welcome email sent after successful check-in
 - **WHEN** an attendee is checked in for the first time
-- **THEN** the system sends an email welcoming the attendee to EBISION for the selected year
+- **THEN** the system sends an email welcoming the attendee to MOBISEC for the selected year
 
 #### Scenario: Welcome email not duplicated
 - **WHEN** an already checked-in attendee's QR credential is scanned again

@@ -11,7 +11,7 @@ import { getRegistration } from "@/modules/admin/qr-check-ins/lib/queries";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Registration QR Pass | EBISION",
+  title: "Registration QR Pass | MOBISEC",
   robots: { index: false, follow: false },
 };
 
@@ -43,7 +43,7 @@ export default async function RegistrationPassPage({
     <main className="min-h-screen bg-muted/30 px-4 py-8 text-foreground">
       <div className="mx-auto flex max-w-xl flex-col gap-6">
         <header className="rounded-lg bg-primary px-6 py-5 text-primary-foreground">
-          <p className="tag text-primary-foreground/80">EBISION {year}</p>
+          <p className="tag text-primary-foreground/80">MOBISEC {year}</p>
           <h1 className="subheading mt-2 text-primary-foreground">Registration QR Pass</h1>
         </header>
 
@@ -60,7 +60,7 @@ export default async function RegistrationPassPage({
           <div className="mt-6 flex justify-center rounded-lg border border-border bg-white p-5">
             <Image
               src={qrDataUrl}
-              alt={`EBISION ${year} check-in QR code`}
+              alt={`MOBISEC ${year} check-in QR code`}
               width={360}
               height={360}
               unoptimized

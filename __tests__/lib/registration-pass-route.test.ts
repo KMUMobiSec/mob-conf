@@ -7,8 +7,8 @@ describe("registration pass route helpers", () => {
   });
 
   it("builds an absolute public URL without duplicate slashes", () => {
-    expect(registrationPassUrl("https://ebision.example/", "abc-123")).toBe(
-      "https://ebision.example/registration-pass/abc-123",
+    expect(registrationPassUrl("https://mobisec.example/", "abc-123")).toBe(
+      "https://mobisec.example/registration-pass/abc-123",
     );
   });
 });

@@ -4,7 +4,7 @@
  */
 
 /** Recipient used when test mode is on but the tester list is empty. */
-export const TEST_MODE_FALLBACK_EMAIL = "cyberchair.ebision@gmail.com";
+export const TEST_MODE_FALLBACK_EMAIL = "cyberchair.mobisec@gmail.com";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

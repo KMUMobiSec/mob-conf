@@ -7,16 +7,16 @@ describe("renderEmailBlastHtml", () => {
       year: 2026,
       subject: "Hi <there> & welcome",
       bodyHtml: "<p>Body content</p>",
-      logoUrl: "https://ebision.ifip-wg84.org/assets/email/ebision-logo-email.png",
+      logoUrl: "https://mobisec-conference.com/assets/email/ebision-logo-email.png",
     });
 
     expect(html).toContain("<p>Body content</p>");
-    expect(html).toContain("EBISION 2026");
+    expect(html).toContain("MOBISEC 2026");
     // Subject is HTML-escaped in the header.
     expect(html).toContain("Hi &lt;there&gt; &amp; welcome");
     expect(html).not.toContain("Hi <there>");
     // Logo is rendered when a URL is provided.
-    expect(html).toContain("https://ebision.ifip-wg84.org/assets/email/ebision-logo-email.png");
+    expect(html).toContain("https://mobisec-conference.com/assets/email/ebision-logo-email.png");
   });
 
   it("omits the logo image when no URL is provided", () => {

@@ -25,7 +25,7 @@ Delivery uses Resend with **one personalized message per recipient** (single-add
 
 ## Framing
 
-`renderEmailBlastHtml` reuses the existing branded shell structure (max-width card, brand-green header with the logo chip, muted footer) but with a generic eyebrow (`EBISION {year}`) and the subject as the heading, so a blast looks like the other conference emails without being tied to the check-in wording. The composed body is dropped into the white content card. The "Send test to me" button delivers the real wrapped email to the admin, which is the authoritative preview (no separate in-app preview panel this iteration).
+`renderEmailBlastHtml` reuses the existing branded shell structure (max-width card, brand-green header with the logo chip, muted footer) but with a generic eyebrow (`MOBISEC {year}`) and the subject as the heading, so a blast looks like the other conference emails without being tied to the check-in wording. The composed body is dropped into the white content card. The "Send test to me" button delivers the real wrapped email to the admin, which is the authoritative preview (no separate in-app preview panel this iteration).
 
 ## Editor
 

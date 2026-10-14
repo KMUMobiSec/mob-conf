@@ -1,10 +1,10 @@
 {
-  "name": "ebision-next",
+  "name": "mobisec-next",
   "version": "1.0.1",
   "private": true,
   "license": "MIT",
   "keywords": [
-    "ebision",
+    "mobisec",
     "conference",
     "nextjs",
     "typescript",

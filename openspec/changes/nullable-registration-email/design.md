@@ -11,7 +11,7 @@ The email layer (`lib/email/registration-check-in.ts`) sends both the QR pass an
 - Keep per-year uniqueness for real emails; allow unlimited null-email rows per year.
 - Make null-email rows always-insert in import (no dedup, no upsert match).
 - Add an edit action + dialog for email/name/affiliation, including null email.
-- Send QR passes (initial + resend) from `registration@ebision.ifip-wg84.org`.
+- Send QR passes (initial + resend) from `registration@mobisec-conference.com`.
 - Guard sends to null-email registrations as reported failures.
 
 **Non-Goals:**
@@ -49,7 +49,7 @@ Add `updateRegistration({ year, id, email, name, affiliation })` mirroring `crea
 - `AddRegistrationDialog` + `createRegistration` also relax email to optional (assumption; trivially reverted by re-adding `required`).
 
 ### 5. Registration from-address for QR passes
-`lib/email/registration-check-in.ts`: add `registrationFromAddress()` reading `RESEND_EMAIL_FROM_REGISTRATION` (throws if unset, mirroring `fromAddress()`). `sendRegistrationPass` uses it. `sendCheckInWelcome` keeps `fromAddress()` (awards) per the scoping assumption. Add `RESEND_EMAIL_FROM_REGISTRATION=registration@ebision.ifip-wg84.org` to `.env.example`/deploy config.
+`lib/email/registration-check-in.ts`: add `registrationFromAddress()` reading `RESEND_EMAIL_FROM_REGISTRATION` (throws if unset, mirroring `fromAddress()`). `sendRegistrationPass` uses it. `sendCheckInWelcome` keeps `fromAddress()` (awards) per the scoping assumption. Add `RESEND_EMAIL_FROM_REGISTRATION=registration@mobisec-conference.com` to `.env.example`/deploy config.
 
 ### 6. Sending to null-email registrations
 `sendRegistrationQrPasses` (`actions.ts`): before calling `sendRegistrationPass`, if `row.email` is falsy, push a failure `{ id, email: "", error: "No email on file." }` and continue — do not attempt the send. Existing "not found" and send-error failure handling is unchanged.

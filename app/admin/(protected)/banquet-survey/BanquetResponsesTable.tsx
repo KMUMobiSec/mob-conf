@@ -92,12 +92,12 @@ const BULK_COPY: Record<BulkKind, { title: string; description: (year: number) =
   "invite-all": {
     title: "Send invitation to all invited",
     description: (year) =>
-      `This emails a banquet invitation to every invited person for EBISION ${year} who has not yet responded.`,
+      `This emails a banquet invitation to every invited person for MOBISEC ${year} who has not yet responded.`,
   },
   "confirm-all": {
     title: "Send confirmation to all responded",
     description: (year) =>
-      `This emails a confirmation to every person who has responded to the EBISION ${year} banquet survey.`,
+      `This emails a confirmation to every person who has responded to the MOBISEC ${year} banquet survey.`,
   },
 };
 

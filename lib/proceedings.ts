@@ -44,13 +44,13 @@ const PROCEEDINGS_CONFIG: Record<
 > = {
   2025: {
     csvPath: "public/data/2025/program-book-table.csv",
-    papersDir: "public/data/2025/ebision-papers",
-    coverImage: "/proceedings/ebision-2025.png",
+    papersDir: "public/data/2025/mobisec-papers",
+    coverImage: "/proceedings/mobisec-2025.png",
   },
   2026: {
     csvPath: "public/data/2026/program-book-table.csv",
-    papersDir: "public/data/2026/ebision-papers",
-    coverImage: "/proceedings/ebision-2026.jpg",
+    papersDir: "public/data/2026/mobisec-papers",
+    coverImage: "/proceedings/mobisec-2026.jpg",
   },
 };
 
@@ -149,11 +149,11 @@ export function getProceedingPeriods(year: ValidYear): ProceedingPeriod[] {
   if (!config) return [];
 
   const yearConfig = YEAR_CONFIG[year];
-  const proceedingId = `ebision-${year}`;
+  const proceedingId = `mobisec-${year}`;
   return [
     {
       id: proceedingId,
-      title: `EBISION ${year} Proceedings`,
+      title: `MOBISEC ${year} Proceedings`,
       description: `Online proceedings for ${yearConfig.conferenceName}`,
       periodId: 1,
       coverImageUrl: config.coverImage,
@@ -171,7 +171,7 @@ export function getProceedingDetail(
   papers: Paper[];
 } {
   const config = PROCEEDINGS_CONFIG[year];
-  if (!config || proceedingId !== `ebision-${year}`) {
+  if (!config || proceedingId !== `mobisec-${year}`) {
     return { proceedingPeriod: null, period: null, papers: [] };
   }
 
@@ -184,7 +184,7 @@ export function getProceedingDetail(
     return {
       proceedingPeriod: {
         id: proceedingId,
-        title: `EBISION ${year} Proceedings`,
+        title: `MOBISEC ${year} Proceedings`,
         description: null,
         periodId: 1,
         coverImageUrl: config.coverImage,
@@ -227,7 +227,7 @@ export function getProceedingDetail(
 
   const proceedingPeriod: ProceedingPeriod = {
     id: proceedingId,
-    title: `EBISION ${year} Proceedings`,
+    title: `MOBISEC ${year} Proceedings`,
     description: `Online proceedings for ${yearConfig.conferenceName}`,
     coverImageUrl: config.coverImage,
     periodId: 1,

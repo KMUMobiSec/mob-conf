@@ -10,7 +10,7 @@ const PresentationFormPage = ({ year }: { year: ValidYear }) => {
           <p className="tag text-primary">Presentations</p>
           <h1 className="display text-foreground">Presentation Upload</h1>
           <p className="body text-muted-foreground">
-            Submit your presentation for EBISION {year}. Provide your paper details and upload your
+            Submit your presentation for MOBISEC {year}. Provide your paper details and upload your
             presentation file — it is stored securely and shared only with the organizing committee.
           </p>
         </div>

@@ -524,7 +524,7 @@ function ProceedingsPage() {
                 </div>
                 <div>
                   <Button asChild size="lg" className="gap-2">
-                    <a href={`/data/${year}/ebision-${year}-program-book.pdf`} download>
+                    <a href={`/data/${year}/mobisec-${year}-program-book.pdf`} download>
                       <Download className="w-4 h-4 shrink-0" />
                       {t("downloadProgramBook")}
                     </a>

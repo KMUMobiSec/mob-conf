@@ -51,7 +51,7 @@ describe.each([
     }
   });
 
-  it("includes the three confirmed EBISION 2026 conference buildings", () => {
+  it("includes the three confirmed MOBISEC 2026 conference buildings", () => {
     const nodeIds = graph.nodes.map((node) => node.id);
     expect(nodeIds).toEqual(
       expect.arrayContaining(["administration-hall", "international-hall", "college-of-law"]),
@@ -113,7 +113,7 @@ Replace the full contents of `data/2026/en/campus-graph.json` with:
 
 ```json
 {
-  "notes": "Node x/y are proportioned from the organizing committee's reference satellite screenshot (entrance/parking to the south, building cluster to the north, College of Law to the east) — a real relative layout, not GPS-exact. Distances are still estimated placeholders. Confirm exact inter-building distances with the EBISION 2026 organizing committee before launch.",
+  "notes": "Node x/y are proportioned from the organizing committee's reference satellite screenshot (entrance/parking to the south, building cluster to the north, College of Law to the east) — a real relative layout, not GPS-exact. Distances are still estimated placeholders. Confirm exact inter-building distances with the MOBISEC 2026 organizing committee before launch.",
   "nodes": [
     {
       "id": "main-gate",
@@ -163,7 +163,7 @@ Replace the full contents of `data/2026/kr/campus-graph.json` with:
 
 ```json
 {
-  "notes": "노드 x/y 좌표는 조직위원회가 제공한 위성 사진 참고 자료를 기준으로 비례 배치했습니다(출입구/주차장은 남쪽, 건물군은 북쪽, 법과대학은 동쪽) — 실제 상대적 배치이며 GPS 정밀도는 아닙니다. 거리는 여전히 추정값입니다. 정확한 건물 간 거리를 EBISION 2026 조직위원회에 확인 후 반영해야 합니다.",
+  "notes": "노드 x/y 좌표는 조직위원회가 제공한 위성 사진 참고 자료를 기준으로 비례 배치했습니다(출입구/주차장은 남쪽, 건물군은 북쪽, 법과대학은 동쪽) — 실제 상대적 배치이며 GPS 정밀도는 아닙니다. 거리는 여전히 추정값입니다. 정확한 건물 간 거리를 MOBISEC 2026 조직위원회에 확인 후 반영해야 합니다.",
   "nodes": [
     {
       "id": "main-gate",

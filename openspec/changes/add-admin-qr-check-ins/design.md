@@ -9,7 +9,7 @@ The admin area is protected by Better Auth (`requireAdminSession()` in the prote
 - Support CSV import and manual registration creation with `email`, `name`, and optional `affiliation`.
 - Generate a unique opaque QR credential for every registration and render QR pass emails on demand.
 - Support single and bulk QR email sends with select-all / multi-select controls and visible send tracking.
-- Add a scanner tab that verifies QR credentials, marks first-time check-ins, broadcasts realtime updates, and sends a welcome email for EBISION `<selected year>`.
+- Add a scanner tab that verifies QR credentials, marks first-time check-ins, broadcasts realtime updates, and sends a welcome email for MOBISEC `<selected year>`.
 - Add a sidebar year selector that scopes nominations/awards and QR check-in data to the selected year.
 
 **Non-Goals:**
@@ -47,7 +47,7 @@ Use a uniqueness constraint for one registration per normalized email per year. 
 
 ### D3 — QR credential format
 
-Do not put attendee email or name in the QR. Generate an opaque payload from registration id + `qrNonce` + an HMAC signature using a server-only `CHECK_IN_QR_SECRET`, for example `ebision-checkin:v1:<id>:<nonce>:<signature>`. The QR image can be regenerated for email or display without storing the raw full credential; verification recomputes the signature and confirms the id/nonce pair belongs to a registration for the selected year.
+Do not put attendee email or name in the QR. Generate an opaque payload from registration id + `qrNonce` + an HMAC signature using a server-only `CHECK_IN_QR_SECRET`, for example `mobisec-checkin:v1:<id>:<nonce>:<signature>`. The QR image can be regenerated for email or display without storing the raw full credential; verification recomputes the signature and confirms the id/nonce pair belongs to a registration for the selected year.
 
 Use `qrcode` for server-side SVG or data-URL QR generation. The token remains bearer-style; anyone with the QR can check in that attendee, so scanner routes must still require admin auth.
 - *Alternative considered:* store the full QR token in the database. Rejected to reduce impact if registration rows are exposed.
@@ -60,7 +60,7 @@ Use `qrcode` for server-side SVG or data-URL QR generation. The token remains be
 
 ### D5 — Email send behavior
 
-Add `lib/email/registration-pass.ts` and `lib/email/check-in-welcome.ts` using the existing Resend client and the visual language established by winner notification emails: dark EBISION header, neutral body, primary accent, and concise professional copy. QR pass emails include the attendee name, EBISION year, venue/date context from `YEAR_CONFIG`, and a button to `/registration-pass/[registrationId]`. The public pass page renders the signed QR code server-side. Successful QR sends increment `qrEmailSentCount` and set `qrEmailSentAt`; failed sends leave the registration pending and return per-recipient errors.
+Add `lib/email/registration-pass.ts` and `lib/email/check-in-welcome.ts` using the existing Resend client and the visual language established by winner notification emails: dark MOBISEC header, neutral body, primary accent, and concise professional copy. QR pass emails include the attendee name, MOBISEC year, venue/date context from `YEAR_CONFIG`, and a button to `/registration-pass/[registrationId]`. The public pass page renders the signed QR code server-side. Successful QR sends increment `qrEmailSentCount` and set `qrEmailSentAt`; failed sends leave the registration pending and return per-recipient errors.
 
 Bulk sending works from selected registration ids. The UI supports row checkboxes, select-all for the current filtered result, and clear selected. Already-sent rows can be selected for a deliberate resend, but the confirmation copy distinguishes first sends from resends.
 - *Alternative considered:* send all unsent passes without explicit selection. Rejected because staff asked for manual and bulk control through checkboxes.

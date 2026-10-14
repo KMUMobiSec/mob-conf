@@ -1,6 +1,6 @@
 ## Why
 
-EBISION recognizes outstanding individuals through several awards, but there is no way for the community to submit nominations online — the existing `/[year]` site is read-only and submissions are handled off-platform. A public, per-year nomination form lets nominators submit candidates and supporting documents directly, recording each submission and confirming receipt by email.
+MOBISEC recognizes outstanding individuals through several awards, but there is no way for the community to submit nominations online — the existing `/[year]` site is read-only and submissions are handled off-platform. A public, per-year nomination form lets nominators submit candidates and supporting documents directly, recording each submission and confirming receipt by email.
 
 ## What Changes
 
@@ -37,5 +37,5 @@ EBISION recognizes outstanding individuals through several awards, but there is 
 - **New dependency:** `resend`. Cloudflare Turnstile is loaded via its hosted script (no SDK required); server verification uses `fetch`.
 - **Env:** new `RESEND_EMAIL_FROM_AWARDS`, `NEXT_PUBLIC_TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY` (documented in `.env.example`); reuses existing `RESEND_API_KEY`, `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `DATABASE_URL`.
 - **Database:** one new `nominations` table; migration produced via `pnpm db:generate` / `pnpm db:migrate`.
-- **External services:** Supabase Storage (existing `nominations` bucket), Resend (requires verified sending domain for `ebision.ifip-wg84.org`), Cloudflare Turnstile.
+- **External services:** Supabase Storage (existing `nominations` bucket), Resend (requires verified sending domain for `mobisec-conference.com`), Cloudflare Turnstile.
 - **Out of scope:** admin list/review UI, committee-notification email, navigation-menu link, Korean/i18n localization (English only for now).

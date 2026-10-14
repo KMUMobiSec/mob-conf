@@ -1,6 +1,6 @@
 import { escapeHtml } from "./winner-notification.templates";
 
-// Shared brand tokens, matching the other EBISION transactional templates.
+// Shared brand tokens, matching the other MOBISEC transactional templates.
 const BRAND = "#578429";
 const INK = "#121212";
 const MUTED = "#646b72";
@@ -18,7 +18,7 @@ export interface EmailBlastTemplateInput {
 }
 
 /**
- * Wrap an admin-composed, already-sanitized body in the EBISION branded email shell (brand-green
+ * Wrap an admin-composed, already-sanitized body in the MOBISEC branded email shell (brand-green
  * header with the logo chip, white content card, muted footer). A `<style>` block gives the
  * semantic Tiptap output (headings, links, lists) reasonable defaults in clients that honor it;
  * the container also sets a base font/color that cascades to text where it isn't.
@@ -27,7 +27,7 @@ export function renderEmailBlastHtml(input: EmailBlastTemplateInput): string {
   const logoChip = input.logoUrl
     ? `<td style="width:56px;vertical-align:middle;">
             <div style="width:44px;height:44px;background:#ffffff;border-radius:10px;text-align:center;mso-line-height-rule:exactly;line-height:44px;">
-              <img src="${escapeHtml(input.logoUrl)}" width="30" height="30" alt="EBISION" style="display:inline-block;vertical-align:middle;border:0;" />
+              <img src="${escapeHtml(input.logoUrl)}" width="30" height="30" alt="MOBISEC" style="display:inline-block;vertical-align:middle;border:0;" />
             </div>
           </td>`
     : "";
@@ -58,7 +58,7 @@ export function renderEmailBlastHtml(input: EmailBlastTemplateInput): string {
         <tr>
           ${logoChip}
           <td style="vertical-align:middle;${input.logoUrl ? "padding-left:14px;" : ""}">
-            <p style="margin:0;color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">EBISION ${input.year}</p>
+            <p style="margin:0;color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">MOBISEC ${input.year}</p>
             <h1 style="margin:4px 0 0;color:#ffffff;font-size:20px;font-weight:650;">${escapeHtml(input.subject)}</h1>
           </td>
         </tr>
@@ -67,7 +67,7 @@ export function renderEmailBlastHtml(input: EmailBlastTemplateInput): string {
     <div style="background:${SURFACE};border:1px solid ${BORDER};border-top:none;border-radius:0 0 10px 10px;padding:28px;">
       <div class="eb-body">${input.bodyHtml}</div>
     </div>
-    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">EBISION ${input.year} &middot; IFIP WG 8.4 International Symposium</p>
+    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">MOBISEC ${input.year} &middot; KIISC International Conference</p>
   </div>
 </body>
 </html>`;

@@ -37,7 +37,7 @@ export async function GET(request: Request): Promise<Response> {
     return new Response(body, {
       headers: {
         "Content-Type": "text/csv; charset=utf-8",
-        "Content-Disposition": `attachment; filename="ebision-${year}-banquet-responses.csv"`,
+        "Content-Disposition": `attachment; filename="mobisec-${year}-banquet-responses.csv"`,
         "Cache-Control": "no-store",
       },
     });
@@ -54,7 +54,7 @@ export async function GET(request: Request): Promise<Response> {
   return new Response(new Uint8Array(pdf), {
     headers: {
       "Content-Type": "application/pdf",
-      "Content-Disposition": `attachment; filename="ebision-${year}-banquet-report.pdf"`,
+      "Content-Disposition": `attachment; filename="mobisec-${year}-banquet-report.pdf"`,
       "Cache-Control": "no-store",
     },
   });

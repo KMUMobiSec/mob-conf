@@ -17,7 +17,7 @@ describe("collectAdminRegistrationInput", () => {
     expect(input).toEqual({
       email: "admin@example.com",
       password: "correct horse battery staple",
-      name: "EBISION Admin",
+      name: "MOBISEC Admin",
     });
     expect(prompts).toEqual([{ question: "Email: " }, { question: "Password: ", hidden: true }]);
   });

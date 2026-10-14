@@ -49,7 +49,7 @@ export function ImportRegistrationsButton({ year }: { year: ValidYear }) {
           <AlertDialogHeader>
             <AlertDialogTitle>Import from registrations</AlertDialogTitle>
             <AlertDialogDescription>
-              This adds everyone registered for EBISION {year} (with an email) as banquet invitees.
+              This adds everyone registered for MOBISEC {year} (with an email) as banquet invitees.
               People already in this list are skipped, so it is safe to run more than once.
             </AlertDialogDescription>
           </AlertDialogHeader>

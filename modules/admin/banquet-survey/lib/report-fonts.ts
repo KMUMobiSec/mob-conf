@@ -53,5 +53,5 @@ function registerReportFonts(): ReportFonts {
 
 export const REPORT_FONTS: ReportFonts = registerReportFonts();
 
-/** Absolute path to the EBISION logo for the report masthead, or null when unavailable. */
+/** Absolute path to the MOBISEC logo for the report masthead, or null when unavailable. */
 export const LOGO_PATH: string | null = existsSync(LOGO_CANDIDATE) ? LOGO_CANDIDATE : null;

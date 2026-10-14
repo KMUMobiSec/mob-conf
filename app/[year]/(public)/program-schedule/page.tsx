@@ -12,13 +12,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { year } = await params;
   const config = YEAR_CONFIG[Number(year) as ValidYear];
   const pageUrl = `${SITE_URL}/${year}/program-schedule`;
-  const description = `Program overview and highlights for EBISION ${year} — the three-day schedule, sessions, and event details. ${config.venue}, ${config.location}, ${config.dates}.`;
+  const description = `Program overview and highlights for MOBISEC ${year} — the three-day schedule, sessions, and event details. ${config.venue}, ${config.location}, ${config.dates}.`;
 
   return {
     title: "Program Schedule",
     description,
     keywords: [
-      `EBISION ${year} program`,
+      `MOBISEC ${year} program`,
       "program overview",
       "conference schedule",
       "program schedule",
@@ -26,12 +26,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ],
     openGraph: {
       url: pageUrl,
-      title: `Program Schedule | EBISION ${year}`,
+      title: `Program Schedule | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Program Schedule | EBISION ${year}`,
+      title: `Program Schedule | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

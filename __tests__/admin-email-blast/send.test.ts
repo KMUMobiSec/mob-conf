@@ -12,7 +12,7 @@ const { sendEmailBlastMessages } = await import("@/lib/email/email-blast");
 
 beforeEach(() => {
   vi.clearAllMocks();
-  process.env.RESEND_EMAIL_FROM_NOREPLY = "noreply@ebision.test";
+  process.env.RESEND_EMAIL_FROM_NOREPLY = "noreply@mobisec.test";
 });
 
 describe("sendEmailBlastMessages", () => {

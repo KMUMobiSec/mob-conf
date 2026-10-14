@@ -1,6 +1,6 @@
 ## Context
 
-EBISION 2026 is at Kookmin University. The existing `Venue.tsx` renders address, transportation, and a small Google Maps iframe — good for reaching the campus, useless once you're at the gate. This change adds on-campus wayfinding: an interactive Mapbox GL map that walks attendees from the Main Gate to the venue cluster.
+MOBISEC 2026 is at Kookmin University. The existing `Venue.tsx` renders address, transportation, and a small Google Maps iframe — good for reaching the campus, useless once you're at the gate. This change adds on-campus wayfinding: an interactive Mapbox GL map that walks attendees from the Main Gate to the venue cluster.
 
 > Design history: an earlier iteration overlaid a route on Kookmin's static isometric illustration. It was rejected as too static; this design replaces it with a live Mapbox map. The step-by-step structure and config-driven approach carried over. See `docs/superpowers/specs/2026-07-02-campus-wayfinder-design.md` for the original.
 

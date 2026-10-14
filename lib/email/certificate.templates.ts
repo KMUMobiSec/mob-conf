@@ -17,7 +17,7 @@ export interface CertificateEmailInput {
 }
 
 export function certificateEmailSubject(year: number): string {
-  return `Your EBISION ${year} Certificate of Appreciation`;
+  return `Your MOBISEC ${year} Certificate of Appreciation`;
 }
 
 export function renderCertificateEmailHtml({
@@ -29,7 +29,7 @@ export function renderCertificateEmailHtml({
   const logoChip = logoUrl
     ? `<td style="width:56px;vertical-align:middle;">
             <div style="width:44px;height:44px;background:#ffffff;border-radius:10px;text-align:center;mso-line-height-rule:exactly;line-height:44px;">
-              <img src="${escapeHtml(logoUrl)}" width="30" height="30" alt="EBISION" style="display:inline-block;vertical-align:middle;border:0;" />
+              <img src="${escapeHtml(logoUrl)}" width="30" height="30" alt="MOBISEC" style="display:inline-block;vertical-align:middle;border:0;" />
             </div>
           </td>`
     : "";
@@ -44,7 +44,7 @@ export function renderCertificateEmailHtml({
         <tr>
           ${logoChip}
           <td style="vertical-align:middle;${logoUrl ? "padding-left:14px;" : ""}">
-            <p style="margin:0;color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">EBISION ${year} &middot; Certificate</p>
+            <p style="margin:0;color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">MOBISEC ${year} &middot; Certificate</p>
             <h1 style="margin:4px 0 0;color:#ffffff;font-size:20px;font-weight:650;">Certificate of Appreciation</h1>
           </td>
         </tr>
@@ -52,10 +52,10 @@ export function renderCertificateEmailHtml({
     </div>
     <div style="background:${SURFACE};border:1px solid ${BORDER};border-top:none;border-radius:0 0 10px 10px;padding:28px;">
       <p style="${P}">Dear ${escapeHtml(name)},</p>
-      <p style="${P}">Thank you for your participation as <strong>${escapeHtml(role)}</strong> in the ${year} IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution (EBISION ${year}). Please find your Certificate of Appreciation attached to this email as a PDF.</p>
-      <p style="${P}">With appreciation,<br /><strong>The EBISION ${year} Organizing Committee</strong></p>
+      <p style="${P}">Thank you for your participation as <strong>${escapeHtml(role)}</strong> in the ${year} KIISC International Conference on Mobile Internet Security (MOBISEC ${year}). Please find your Certificate of Appreciation attached to this email as a PDF.</p>
+      <p style="${P}">With appreciation,<br /><strong>The MOBISEC ${year} Organizing Committee</strong></p>
     </div>
-    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">EBISION ${year} &middot; IFIP WG 8.4 International Symposium</p>
+    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">MOBISEC ${year} &middot; KIISC International Conference</p>
   </div>
 </body>
 </html>`;

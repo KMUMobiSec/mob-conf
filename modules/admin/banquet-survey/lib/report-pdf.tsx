@@ -24,7 +24,7 @@ export interface BanquetReportRow {
 const SANS = REPORT_FONTS.sans;
 const MONO = REPORT_FONTS.mono;
 
-// EBISION light theme (styles/globals.css): warm-white surfaces, near-black ink, forest-green brand.
+// MOBISEC light theme (styles/globals.css): warm-white surfaces, near-black ink, forest-green brand.
 const INK = "#121212"; // --foreground
 const BODY = "#3a3a3a"; // slightly softened ink for running text
 const MUTED = "#737373"; // --muted-foreground (rgba(0,0,0,.55))
@@ -295,14 +295,14 @@ function BanquetReportDocument({
   const subtitle = conferenceLine(year);
 
   return (
-    <Document title={`EBISION ${year} Banquet Report`}>
+    <Document title={`MOBISEC ${year} Banquet Report`}>
       <Page size="A4" style={styles.page}>
         {/* Masthead */}
         <View style={styles.header}>
           <View style={styles.headerLeft}>
             {LOGO_PATH ? <Image src={LOGO_PATH} style={styles.logo} /> : null}
             <View>
-              <Text style={styles.brand}>EBISION {year}</Text>
+              <Text style={styles.brand}>MOBISEC {year}</Text>
               <Text style={styles.headerTitle}>Banquet Report</Text>
               {subtitle ? <Text style={styles.headerSub}>{subtitle}</Text> : null}
             </View>
@@ -412,7 +412,7 @@ function BanquetReportDocument({
 
         {/* Footer */}
         <View style={styles.footer} fixed>
-          <Text>EBISION {year} · Banquet Report</Text>
+          <Text>MOBISEC {year} · Banquet Report</Text>
           <Text render={({ pageNumber, totalPages }) => `Page ${pageNumber} of ${totalPages}`} />
         </View>
       </Page>

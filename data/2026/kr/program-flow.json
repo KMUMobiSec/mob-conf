@@ -2,8 +2,8 @@
   "info": {
     "date": "2026년 7월 8일(수) – 10일(금)",
     "venue": "국민대학교, 서울, 대한민국",
-    "type": "IFIP WG 8.4 공식 대표 행사",
-    "organizer": "IFIP WG 8.4 / 국민대학교"
+    "type": "KIISC 공식 대표 행사",
+    "organizer": "KIISC / 국민대학교"
   },
   "cooperation": [
     "국민대학교 ICT융합보안 글로벌연구센터",
@@ -238,7 +238,7 @@
         },
         {
           "time": "12:30 – 14:00",
-          "title": "IFIP WG 8.4 회의",
+          "title": "KIISC 회의",
           "type": "meeting"
         },
         {
@@ -306,5 +306,5 @@
       ]
     }
   },
-  "description": "EBISION 2026은 논문 발표, 포스터, 기조연설, 초청 세션, 산업 세션, IFIP WG 8.4 회의, 국제 협력 프로그램으로 구성된 3일간의 국제 학술 행사입니다."
+  "description": "MOBISEC 2026은 논문 발표, 포스터, 기조연설, 초청 세션, 산업 세션, KIISC 회의, 국제 협력 프로그램으로 구성된 3일간의 국제 학술 행사입니다."
 }

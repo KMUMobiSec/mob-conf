@@ -167,8 +167,8 @@ interface CertificateEventInfo {
 function certificateEventInfo(year: ValidYear): CertificateEventInfo {
   const config = YEAR_CONFIG[year];
   return {
-    // Line break groups the (EBISION ####) acronym under the full symposium name, as on the print design.
-    fullEventName: `The ${year} IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution\n(EBISION ${year})`,
+    // Line break groups the (MOBISEC ####) acronym under the full symposium name, as on the print design.
+    fullEventName: `The ${year} KIISC International Conference on Mobile Internet Security\n(MOBISEC ${year})`,
     eventLocation: `${config.venue}, ${config.location}`,
     eventDates: config.dates,
     // Issued date = last conference day, formatted "####. MM. DD" to match the print certificates.
@@ -245,8 +245,8 @@ function CertificateDocument({ input }: { input: CertificateInput }) {
                 </Text>
                 <Text style={styles.paperTitle}>&ldquo;{input.paperTitle}&rdquo;</Text>
                 <Text style={styles.recognitionText}>
-                  presented at the {input.year} IFIP WG 8.4 International Symposium on E-Business
-                  Information Systems Evolution
+                  presented at the {input.year} KIISC International Conference on Mobile Internet
+                  Security
                 </Text>
               </>
             ) : (
@@ -255,8 +255,8 @@ function CertificateDocument({ input }: { input: CertificateInput }) {
                   in recognition as the {input.recognitionTitle}
                 </Text>
                 <Text style={styles.recognitionText}>
-                  to the success of the {input.year} IFIP WG 8.4 International Symposium on
-                  E-Business Information Systems Evolution
+                  to the success of the {input.year} KIISC International Conference on Mobile
+                  Internet Security
                 </Text>
               </>
             )}
@@ -276,8 +276,8 @@ export function renderCertificate(input: CertificateInput): Promise<Buffer> {
   return renderToBuffer(<CertificateDocument input={input} />);
 }
 
-/** File-safe certificate filename, e.g. "ebision-2026-certificate-Ada_Lovelace.pdf". */
+/** File-safe certificate filename, e.g. "mobisec-2026-certificate-Ada_Lovelace.pdf". */
 export function certificateFilename(year: ValidYear, recipientName: string): string {
   const safeName = recipientName.trim().replace(/[^a-zA-Z0-9]/g, "_") || "participant";
-  return `ebision-${year}-certificate-${safeName}.pdf`;
+  return `mobisec-${year}-certificate-${safeName}.pdf`;
 }

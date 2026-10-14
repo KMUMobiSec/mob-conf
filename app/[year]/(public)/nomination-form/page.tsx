@@ -17,25 +17,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const pageUrl = `${SITE_URL}/${year}/nomination-form`;
-  const description = `Submit a nomination for the EBISION ${year} awards. Nominate an outstanding individual and attach the required supporting documents.`;
+  const description = `Submit a nomination for the MOBISEC ${year} awards. Nominate an outstanding individual and attach the required supporting documents.`;
 
   return {
     title: "Award Nomination",
     description,
-    keywords: [
-      `EBISION ${year} nomination`,
-      "award nomination",
-      "IFIP WG 8.4",
-      "conference awards",
-    ],
+    keywords: [`MOBISEC ${year} nomination`, "award nomination", "KIISC", "conference awards"],
     openGraph: {
       url: pageUrl,
-      title: `Award Nomination | EBISION ${year}`,
+      title: `Award Nomination | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Award Nomination | EBISION ${year}`,
+      title: `Award Nomination | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

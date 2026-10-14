@@ -5,7 +5,7 @@ export const runtime = "edge";
 
 const config = YEAR_CONFIG[CURRENT_YEAR];
 
-export const alt = `EBISION ${CURRENT_YEAR} — The ${config.edition} IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution`;
+export const alt = `MOBISEC ${CURRENT_YEAR} — The ${config.edition} KIISC International Conference on Mobile Internet Security`;
 
 export const size = {
   width: 1200,
@@ -49,7 +49,7 @@ export default function OgImage() {
             textTransform: "uppercase" as const,
           }}
         >
-          IFIP WG 8.4 International Symposium
+          KIISC International Conference
         </div>
       </div>
 
@@ -65,7 +65,7 @@ export default function OgImage() {
           letterSpacing: "-1px",
         }}
       >
-        EBISION {CURRENT_YEAR}
+        MOBISEC {CURRENT_YEAR}
       </div>
 
       {/* Subtitle */}
@@ -79,7 +79,7 @@ export default function OgImage() {
           marginBottom: "32px",
         }}
       >
-        The {config.edition} International Symposium on E-Business Information Systems Evolution
+        The {config.edition} International Conference on Mobile Internet Security
       </div>
 
       {/* Divider */}

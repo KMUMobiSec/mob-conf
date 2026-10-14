@@ -113,7 +113,7 @@ export async function collectAdminRegistrationInput(
   try {
     const email = normalizeEmail(env.ADMIN_EMAIL || (await ask("Email: ")));
     const password = env.ADMIN_PASSWORD || (await ask("Password: ", { hidden: true }));
-    const name = env.ADMIN_NAME?.trim() || "EBISION Admin";
+    const name = env.ADMIN_NAME?.trim() || "MOBISEC Admin";
 
     validateEmail(email);
     validatePassword(password);

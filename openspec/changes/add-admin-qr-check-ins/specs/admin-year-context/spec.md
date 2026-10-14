@@ -2,18 +2,18 @@
 
 ### Requirement: Sidebar Year Selector
 
-The protected admin sidebar SHALL provide a year selector populated from the configured EBISION years. The selected year SHALL default to the current EBISION year when no valid year is provided.
+The protected admin sidebar SHALL provide a year selector populated from the configured MOBISEC years. The selected year SHALL default to the current MOBISEC year when no valid year is provided.
 
 #### Scenario: Default selected year
 - **WHEN** an authenticated administrator opens a year-scoped admin page without a valid selected year
-- **THEN** the system uses the configured current EBISION year as the selected year
+- **THEN** the system uses the configured current MOBISEC year as the selected year
 
 #### Scenario: Administrator changes selected year
 - **WHEN** an authenticated administrator chooses a different valid year from the sidebar selector
 - **THEN** the current admin page reloads or navigates using that selected year
 
 #### Scenario: Invalid year rejected
-- **WHEN** an admin route receives a year value that is not one of the configured EBISION years
+- **WHEN** an admin route receives a year value that is not one of the configured MOBISEC years
 - **THEN** the system ignores or rejects that value and does not query year-scoped data with it
 
 ### Requirement: Year-Scoped Admin Navigation

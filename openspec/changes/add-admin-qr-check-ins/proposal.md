@@ -1,6 +1,6 @@
 ## Why
 
-Conference staff need a reliable way to manage attendee registrations, issue per-attendee QR credentials, and verify arrivals at the venue. The admin area also needs a single year context so awards, registrations, and check-ins consistently show the selected EBISION year.
+Conference staff need a reliable way to manage attendee registrations, issue per-attendee QR credentials, and verify arrivals at the venue. The admin area also needs a single year context so awards, registrations, and check-ins consistently show the selected MOBISEC year.
 
 ## What Changes
 
@@ -9,10 +9,10 @@ Conference staff need a reliable way to manage attendee registrations, issue per
 - Generate one unique QR credential per registration immediately after creation/import.
 - Let administrators email QR passes manually per attendee or in bulk using checkbox selection, including select-all for the current result set.
 - Track QR email delivery state on each registration so staff can see whether the pass has been sent.
-- Add a professional EBISION-branded QR email template consistent with the existing site palette.
+- Add a professional MOBISEC-branded QR email template consistent with the existing site palette.
 - Add a scanner-focused check-in page that reads QR codes, verifies the registration, marks it checked in, and reflects the status in the registrations table.
 - Publish check-in events through the Supabase realtime channel named `check-ins` so scanners and registration tables stay synchronized.
-- Send a welcome email after successful check-in: welcoming the attendee to **EBISION `<selected year>`**.
+- Send a welcome email after successful check-in: welcoming the attendee to **MOBISEC `<selected year>`**.
 - Add a year selector to the admin sidebar and make year-scoped admin data render from the selected year, including awards/nominations and the new registration/check-in data.
 
 ## Capabilities
@@ -20,7 +20,7 @@ Conference staff need a reliable way to manage attendee registrations, issue per
 ### New Capabilities
 
 - `admin-qr-check-ins`: Admin-managed registration records, QR generation, QR email sending/tracking, scanner-based check-in, realtime check-in updates, and post-check-in welcome emails.
-- `admin-year-context`: A sidebar-level year selector that scopes year-specific admin sections and actions to the selected EBISION year.
+- `admin-year-context`: A sidebar-level year selector that scopes year-specific admin sections and actions to the selected MOBISEC year.
 
 ### Modified Capabilities
 

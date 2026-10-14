@@ -319,7 +319,7 @@ export function PresentationForm({ year }: { year: ValidYear }) {
       }
     } catch {
       setServerError(
-        "The presentation could not be submitted. Please try again. If this happens again, contact the EBISION team.",
+        "The presentation could not be submitted. Please try again. If this happens again, contact the MOBISEC team.",
       );
     } finally {
       setSubmitting(false);
@@ -393,7 +393,7 @@ export function PresentationForm({ year }: { year: ValidYear }) {
             <h2 className="heading text-foreground">Upload your presentation</h2>
             <p className="body mt-1.5 text-sm text-muted-foreground">
               Upload your presentation materials here. Your files are stored securely and are only
-              accessible to the EBISION organizing committee.
+              accessible to the MOBISEC organizing committee.
             </p>
           </div>
 

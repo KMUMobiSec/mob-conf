@@ -35,24 +35,25 @@ const OverviewPage = async ({ year }: { year: ValidYear }) => {
           <div className={`${glassCard} p-6 sm:p-8 flex flex-col gap-6`}>
             <p className="body text-foreground">
               We are living in an era of digital great transformation, where revolutionary advances
-              in technology are reshaping every dimension of E-Business. Artificial intelligence,
-              quantum computing, 6G mobile communications, cloud ecosystems, robotics, blockchain,
-              and Web 3.0 are no longer distant visions but emerging realities that are redefining
-              how businesses and societies operate.
+              in technology are reshaping every dimension of mobile connectivity. Artificial
+              intelligence, quantum computing, 6G mobile communications, cloud ecosystems, robotics,
+              blockchain, and Web 3.0 are no longer distant visions but emerging realities that are
+              redefining how mobile networks, devices, and services must be secured.
             </p>
             <p className="body text-foreground">
-              These developments demand a paradigm shift in E-Business Information Systems (EBIS)—a
-              shift that must be approached through truly multidisciplinary perspectives, spanning
-              not only technology and organizations but also society, culture, consumers, and global
+              These developments demand a paradigm shift in Mobile Internet Security—a shift that
+              must be approached through truly multidisciplinary perspectives, spanning not only
+              technology and organizations but also society, culture, consumers, and global
               infrastructures.
             </p>
             <p className="body text-foreground">
-              As the flagship event of IFIP Working Group 8.4, EBISION {year} provides an
-              international forum to explore this paradigm shift, share insights across disciplines,
-              and envision the next stage of EBIS evolution. The symposium encourages contributions
-              that highlight both theoretical advancements and practical success stories,
-              demonstrating how innovations can be effectively translated into sustainable impact
-              across industries, economies, and societies.
+              As the flagship event of KIISC (Korea Institute of Information Security and
+              Cryptology), MOBISEC {year} provides an international forum to explore this paradigm
+              shift, share insights across disciplines, and envision the next stage of mobile
+              internet security's evolution. The conference encourages contributions that highlight
+              both theoretical advancements and practical success stories, demonstrating how
+              innovations can be effectively translated into sustainable impact across industries,
+              economies, and societies.
             </p>
           </div>
 

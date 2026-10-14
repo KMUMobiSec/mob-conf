@@ -8,7 +8,7 @@ Admins need to rehearse the QR check-in flow — sending passes, scanning badges
 - New global, admin-editable settings persisted in a new single-row `app_settings` table: a `checkInTestMode` boolean and a `testerEmails` string list.
 - New **check-in test mode** toggle on the QR Check-Ins page. When ON:
   - The check-in surface (registrations tab **and** the full-screen scanner) gets a distinct amber "TEST MODE" frame + banner so it is unmistakably not production.
-  - Every check-in email (QR pass initial send + resend via `sendRegistrationPass`, and the post-check-in welcome via `sendCheckInWelcome`) is sent with **identical content** but the recipient is replaced by the tester list. If the tester list is empty, it falls back to `cyberchair.ebision@gmail.com`.
+  - Every check-in email (QR pass initial send + resend via `sendRegistrationPass`, and the post-check-in welcome via `sendCheckInWelcome`) is sent with **identical content** but the recipient is replaced by the tester list. If the tester list is empty, it falls back to `cyberchair.mobisec@gmail.com`.
   - Because the recipient is fully overridden, a registration with no email on file **can** be sent to (the null-email guard is bypassed in test mode).
   - Real send-tracking is **not** polluted: `qrEmailSentAt` / `qrEmailSentCount` / `welcomeEmailSentAt` on the real registration are not updated in test mode. _(Confirmed 2026-07-03: keep real rows clean; there is no UI to undo a falsely-set "Sent" badge.)_
 - Test mode is **global** and **only redirects email** — actual check-ins still persist normally (`checkedInAt` write + realtime broadcast are unchanged). The realtime broadcast has no email recipient, so it is not redirected. _(Assumptions from defaults chosen while you were away.)_
@@ -30,4 +30,4 @@ Admins need to rehearse the QR check-in flow — sending passes, scanning badges
 - **Check-in actions:** `modules/admin/qr-check-ins/actions.ts` — `sendRegistrationQrPasses` and `checkInRegistration` resolve recipients via settings; test mode bypasses the null-email guard and skips send-tracking writes.
 - **Email lib:** `lib/email/registration-check-in.ts` — `sendRegistrationPass` / `sendCheckInWelcome` accept `to: string | string[]`.
 - **UI:** new `/admin/setup` page + `TesterEmailsForm`; new `TestModeToggle` + amber frame/banner on `qr-check-ins/page.tsx`, `ScannerTab.tsx`, `RegistrationTable.tsx`; `AdminSidebar.tsx` (new item), `AdminHeaderTitle.tsx` (new title).
-- **Constant:** `cyberchair.ebision@gmail.com` test-mode fallback recipient.
+- **Constant:** `cyberchair.mobisec@gmail.com` test-mode fallback recipient.

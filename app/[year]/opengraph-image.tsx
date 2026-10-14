@@ -3,8 +3,7 @@ import { VALID_YEARS, type ValidYear, YEAR_CONFIG } from "@/constants/config";
 
 export const runtime = "edge";
 
-export const alt =
-  "EBISION — IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution";
+export const alt = "MOBISEC — KIISC International Conference on Mobile Internet Security";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -49,7 +48,7 @@ export default async function OgImage({ params }: { params: Promise<{ year: stri
             textTransform: "uppercase" as const,
           }}
         >
-          IFIP WG 8.4 International Symposium
+          KIISC International Conference
         </div>
       </div>
       <div
@@ -63,7 +62,7 @@ export default async function OgImage({ params }: { params: Promise<{ year: stri
           letterSpacing: "-1px",
         }}
       >
-        EBISION {year}
+        MOBISEC {year}
       </div>
       <div
         style={{
@@ -75,7 +74,7 @@ export default async function OgImage({ params }: { params: Promise<{ year: stri
           marginBottom: "32px",
         }}
       >
-        The {config.edition} International Symposium on E-Business Information Systems Evolution
+        The {config.edition} International Conference on Mobile Internet Security
       </div>
       <div
         style={{

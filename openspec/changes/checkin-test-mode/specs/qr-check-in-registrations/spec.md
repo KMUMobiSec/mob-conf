@@ -2,7 +2,7 @@
 
 ### Requirement: Check-in test mode redirects email recipients
 
-When check-in test mode is ON, every check-in email — the QR pass (initial send and resend) and the post-check-in welcome — SHALL be sent with content identical to production but with the recipient replaced by the tester email receiver list. If the tester list is empty, the recipient SHALL fall back to `cyberchair.ebision@gmail.com`. When test mode is OFF, emails SHALL be sent to the registration's real address exactly as before. The recipient override SHALL be resolved from the persisted global settings on the server (not trusted from the client).
+When check-in test mode is ON, every check-in email — the QR pass (initial send and resend) and the post-check-in welcome — SHALL be sent with content identical to production but with the recipient replaced by the tester email receiver list. If the tester list is empty, the recipient SHALL fall back to `cyberchair.mobisec@gmail.com`. When test mode is OFF, emails SHALL be sent to the registration's real address exactly as before. The recipient override SHALL be resolved from the persisted global settings on the server (not trusted from the client).
 
 #### Scenario: Resend redirected to tester list
 
@@ -12,7 +12,7 @@ When check-in test mode is ON, every check-in email — the QR pass (initial sen
 #### Scenario: Empty tester list falls back
 
 - **WHEN** test mode is ON and the tester list is empty and any check-in email is sent
-- **THEN** it is delivered to `cyberchair.ebision@gmail.com`
+- **THEN** it is delivered to `cyberchair.mobisec@gmail.com`
 
 #### Scenario: Test mode off is normal
 

@@ -83,11 +83,11 @@ const OrganizationPage = async ({ year }: { year: ValidYear }) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             <div className={`${glassCard} p-6 sm:p-8 flex flex-col gap-2`}>
               <p className="tag text-primary">{t("hostedBy")}</p>
-              <p className="subheading text-foreground">IFIP WG 8.4</p>
+              <p className="subheading text-foreground">KIISC</p>
             </div>
             <div className={`${glassCard} p-6 sm:p-8 flex flex-col gap-2`}>
               <p className="tag text-primary">{t("organizedBy")}</p>
-              <p className="subheading text-foreground">IFIP WG 8.4 and Kookmin University</p>
+              <p className="subheading text-foreground">KIISC and Kookmin University</p>
             </div>
             <div className={`${glassCard} p-6 sm:p-8 flex flex-col gap-2`}>
               <p className="tag text-primary">{t("sponsoredBy")}</p>

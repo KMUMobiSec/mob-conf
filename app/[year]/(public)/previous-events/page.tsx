@@ -11,26 +11,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { year } = await params;
   const pageUrl = `${SITE_URL}/${year}/previous-events`;
   const description =
-    "Explore the history of EBISION conferences. View past events, host locations, proceedings, and the upcoming edition.";
+    "Explore the history of MOBISEC conferences. View past events, host locations, proceedings, and the upcoming edition.";
 
   return {
     title: "Previous Events",
     description,
     keywords: [
-      `EBISION ${year}`,
-      "EBISION previous events",
-      "EBISION history",
+      `MOBISEC ${year}`,
+      "MOBISEC previous events",
+      "MOBISEC history",
       "past conferences",
-      "IFIP WG 8.4",
+      "KIISC",
     ],
     openGraph: {
       url: pageUrl,
-      title: `Previous Events | EBISION ${year}`,
+      title: `Previous Events | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Previous Events | EBISION ${year}`,
+      title: `Previous Events | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

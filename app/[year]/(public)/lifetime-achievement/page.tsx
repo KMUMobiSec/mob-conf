@@ -12,20 +12,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { year } = await params;
   const config = YEAR_CONFIG[Number(year) as ValidYear];
   const pageUrl = `${SITE_URL}/${year}/lifetime-achievement`;
-  const description = `EBISION ${year} Lifetime Achievement Award — Recognizing outstanding contributions to E-Business Information Systems. ${config.venue}, ${config.dates}.`;
+  const description = `MOBISEC ${year} Lifetime Achievement Award — Recognizing outstanding contributions to Mobile Internet Security. ${config.venue}, ${config.dates}.`;
 
   return {
     title: "Lifetime Achievement Award",
     description,
-    keywords: [`EBISION ${year} lifetime achievement`, "conference award", "IFIP WG 8.4"],
+    keywords: [`MOBISEC ${year} lifetime achievement`, "conference award", "KIISC"],
     openGraph: {
       url: pageUrl,
-      title: `Lifetime Achievement Award | EBISION ${year}`,
+      title: `Lifetime Achievement Award | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Lifetime Achievement Award | EBISION ${year}`,
+      title: `Lifetime Achievement Award | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

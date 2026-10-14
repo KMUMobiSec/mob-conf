@@ -1,8 +1,8 @@
-export const EBISION_2026_SUBMISSION_URL = "https://easychair.org/conferences/?conf=ebision2026";
-export const EBISION_2026_CFP_URL = "/assets/files/2026/ebision-cfp-2026.pdf";
-export const EBISION_2026_CFP_LEAFLET_URL = "/assets/files/2026/ebision-cfp-2026.pdf";
+export const MOBISEC_2026_SUBMISSION_URL = "https://easychair.org/conferences/?conf=mobisec2026";
+export const MOBISEC_2026_CFP_URL = "/assets/files/2026/mobisec-cfp-2026.pdf";
+export const MOBISEC_2026_CFP_LEAFLET_URL = "/assets/files/2026/mobisec-cfp-2026.pdf";
 
-export const EBISION_2026_REGISTRATION_URL = "https://public.thinkonweb.com/sites/ebision2026";
+export const MOBISEC_2026_REGISTRATION_URL = "https://public.thinkonweb.com/sites/mobisec2026";
 
 export const CURRENT_YEAR = 2026;
 export const VALID_YEARS = [2025, 2026] as const;
@@ -53,7 +53,7 @@ export const YEAR_CONFIG: Record<
   }
 > = {
   2025: {
-    conferenceName: "EBISION 2025",
+    conferenceName: "MOBISEC 2025",
     edition: "1st",
     dates: "December 16–18, 2025",
     startDate: "2025-12-16",
@@ -62,15 +62,15 @@ export const YEAR_CONFIG: Record<
     city: "Sapporo",
     countryCode: "JP",
     venue: "Hotel Emisia Sapporo",
-    submissionUrl: "https://easychair.org/conferences?conf=ebision2025",
-    cfpUrl: "/assets/files/2025/ebision-cfp-2025.pdf",
-    cfpLeafletUrl: "/assets/files/2025/ebision-cfp-2025.pdf",
+    submissionUrl: "https://easychair.org/conferences?conf=mobisec2025",
+    cfpUrl: "/assets/files/2025/mobisec-cfp-2025.pdf",
+    cfpLeafletUrl: "/assets/files/2025/mobisec-cfp-2025.pdf",
     programBookUrl: "/data/2025/program-book-table.csv",
     registrationUrl: "",
     disabledRoutes: ["featuredSpeakers", "programFlow"],
   },
   2026: {
-    conferenceName: "EBISION 2026",
+    conferenceName: "MOBISEC 2026",
     edition: "2nd",
     dates: "July 8–10, 2026",
     startDate: "2026-07-08",
@@ -79,11 +79,11 @@ export const YEAR_CONFIG: Record<
     city: "Seoul",
     countryCode: "KR",
     venue: "Kookmin University",
-    submissionUrl: EBISION_2026_SUBMISSION_URL,
-    cfpUrl: "/assets/files/2026/ebision-cfp-2026.pdf",
-    cfpLeafletUrl: "/assets/files/2026/ebision-cfp-2026.pdf",
+    submissionUrl: MOBISEC_2026_SUBMISSION_URL,
+    cfpUrl: "/assets/files/2026/mobisec-cfp-2026.pdf",
+    cfpLeafletUrl: "/assets/files/2026/mobisec-cfp-2026.pdf",
     programBookUrl: "",
-    registrationUrl: EBISION_2026_REGISTRATION_URL,
+    registrationUrl: MOBISEC_2026_REGISTRATION_URL,
     disabledRoutes: ["program", "lifetimeAchievement"],
   },
 };

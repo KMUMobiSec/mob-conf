@@ -7,7 +7,7 @@ import {
 import { renderBanquetVenueHero } from "@/lib/email/banquet-venue.templates";
 import { banquetSurveyPath, banquetSurveyUrl } from "@/lib/routes/banquet-survey";
 
-const VENUE_IMAGE = "https://ebision.org/assets/venue/2026/THE_PLAZA.jpg";
+const VENUE_IMAGE = "https://mobisec.org/assets/venue/2026/THE_PLAZA.jpg";
 
 const EMDASH = "—";
 

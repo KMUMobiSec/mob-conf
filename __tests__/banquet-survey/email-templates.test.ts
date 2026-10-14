@@ -37,7 +37,7 @@ describe("renderBanquetConfirmationHtml", () => {
     expect(html).toContain("Dear Ada Lovelace");
     expect(html).toContain("July 9");
     expect(html).toContain("the Plaza Hotel");
-    expect(html).toContain("EBISION 2026");
+    expect(html).toContain("MOBISEC 2026");
   });
 
   it("escapes injected HTML in attendee-controlled values", () => {
@@ -85,7 +85,7 @@ describe("renderBanquetConfirmationText", () => {
     expect(text).toContain("Dear Ada Lovelace");
     expect(text).toContain("July 9");
     expect(text).toContain("the Plaza Hotel");
-    expect(text).toContain("EBISION 2026");
+    expect(text).toContain("MOBISEC 2026");
   });
 
   it("renders the not attending copy when attending is false", () => {

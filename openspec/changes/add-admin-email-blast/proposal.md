@@ -7,7 +7,7 @@ Organizers need to send one-off announcements (schedule changes, reminders, call
 - New **Email Blast** admin page (`/admin/email-blast`, in the Management nav) for composing and sending a one-off email to selected registrants.
 - A **WYSIWYG (rich-text) editor** (Tiptap) with bold, italic, headings, bullet/numbered lists, undo/redo, and **hyperlink insert/edit/remove** (safe `http`/`https`/`mailto` only).
 - A **recipient picker** over the selected year's registrations: select-all + per-row checkboxes + search; registrations without an email are shown but not selectable. The **Import registrations** action (the existing CSV import) is available here too, so organizers can bulk-add people and then blast them.
-- Sending: the composed body is **sanitized** server-side and wrapped in the **EBISION branded email shell**, then sent from the **no-reply sender** (`RESEND_EMAIL_FROM_NOREPLY`) via Resend, one personalized recipient per message (the list is never exposed via a shared To/CC), batched. A **"Send test to me"** button sends the real email to the signed-in admin for preview.
+- Sending: the composed body is **sanitized** server-side and wrapped in the **MOBISEC branded email shell**, then sent from the **no-reply sender** (`RESEND_EMAIL_FROM_NOREPLY`) via Resend, one personalized recipient per message (the list is never exposed via a shared To/CC), batched. A **"Send test to me"** button sends the real email to the signed-in admin for preview.
 - Result is reported as a **sent / failed / skipped** summary. **Nothing is persisted** (send-and-forget) — no history table this iteration.
 
 ## Capabilities

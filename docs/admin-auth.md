@@ -15,7 +15,7 @@ pnpm admin:create
 The CLI prompts for email and password. For a non-interactive run:
 
 ```sh
-ADMIN_EMAIL=admin@example.com ADMIN_PASSWORD='change-this-password' ADMIN_NAME='EBISION Admin' pnpm admin:create
+ADMIN_EMAIL=admin@example.com ADMIN_PASSWORD='change-this-password' ADMIN_NAME='MOBISEC Admin' pnpm admin:create
 ```
 
 Required runtime variables:

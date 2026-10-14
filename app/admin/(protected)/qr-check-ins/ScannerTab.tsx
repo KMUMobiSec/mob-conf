@@ -167,12 +167,12 @@ export function ScannerTab({
             headline: "Already checked in",
             name: response.registration.name,
             idNumber: response.registration.idNumber,
-            hint: `You're all set for EBISION ${year}.`,
+            hint: `You're all set for MOBISEC ${year}.`,
           };
         } else {
           next = {
             kind: "success",
-            headline: `Welcome to EBISION ${year}`,
+            headline: `Welcome to MOBISEC ${year}`,
             name: response.registration.name,
             idNumber: response.registration.idNumber,
             hint: "You're checked in.",
@@ -360,7 +360,7 @@ export function ScannerTab({
         <div className="flex flex-col items-center gap-4 text-center">
           <Image
             src="/assets/logo/ebision-logo-nobg.png"
-            alt="EBISION"
+            alt="MOBISEC"
             width={200}
             height={200}
             priority
@@ -370,7 +370,7 @@ export function ScannerTab({
             <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
               Conference Check-In
             </h1>
-            <p className="text-sm text-white/60">EBISION {year}</p>
+            <p className="text-sm text-white/60">MOBISEC {year}</p>
           </div>
         </div>
 

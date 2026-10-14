@@ -33,7 +33,7 @@ function shell({
   const logoChip = logoUrl
     ? `<td style="width:56px;vertical-align:middle;">
             <div style="width:44px;height:44px;background:#ffffff;border-radius:10px;text-align:center;mso-line-height-rule:exactly;line-height:44px;">
-              <img src="${escapeHtml(logoUrl)}" width="30" height="30" alt="EBISION" style="display:inline-block;vertical-align:middle;border:0;" />
+              <img src="${escapeHtml(logoUrl)}" width="30" height="30" alt="MOBISEC" style="display:inline-block;vertical-align:middle;border:0;" />
             </div>
           </td>`
     : "";
@@ -47,7 +47,7 @@ function shell({
         <tr>
           ${logoChip}
           <td style="vertical-align:middle;${logoUrl ? "padding-left:14px;" : ""}">
-            <p style="margin:0;color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">EBISION ${year} &middot; Banquet RSVP</p>
+            <p style="margin:0;color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">MOBISEC ${year} &middot; Banquet RSVP</p>
             <h1 style="margin:4px 0 0;color:#ffffff;font-size:20px;font-weight:650;">${escapeHtml(heading)}</h1>
           </td>
         </tr>
@@ -56,7 +56,7 @@ function shell({
     <div style="background:${SURFACE};border:1px solid ${BORDER};border-top:none;border-radius:0 0 10px 10px;padding:28px;">
       ${bodyHtml}
     </div>
-    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">EBISION ${year} &middot; IFIP WG 8.4 International Symposium</p>
+    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">MOBISEC ${year} &middot; KIISC International Conference</p>
   </div>
 </body>
 </html>`;
@@ -80,7 +80,7 @@ export interface BanquetConfirmationEmailInput {
 }
 
 export function banquetConfirmationSubject(year: number): string {
-  return `Your EBISION ${year} banquet RSVP has been received`;
+  return `Your MOBISEC ${year} banquet RSVP has been received`;
 }
 
 function detailRow(label: string, value: string): string {
@@ -111,8 +111,8 @@ export function renderBanquetConfirmationHtml(input: BanquetConfirmationEmailInp
   }
 
   const intro = input.attending
-    ? `Thank you. Your response for the <strong>EBISION ${input.year}</strong> banquet on ${escapeHtml(input.banquetDate)} at ${escapeHtml(input.banquetVenue)} has been recorded. We look forward to seeing you there.`
-    : `Thank you for letting us know. We have recorded that you will not be attending the <strong>EBISION ${input.year}</strong> banquet on ${escapeHtml(input.banquetDate)} at ${escapeHtml(input.banquetVenue)}. We hope to see you at the symposium.`;
+    ? `Thank you. Your response for the <strong>MOBISEC ${input.year}</strong> banquet on ${escapeHtml(input.banquetDate)} at ${escapeHtml(input.banquetVenue)} has been recorded. We look forward to seeing you there.`
+    : `Thank you for letting us know. We have recorded that you will not be attending the <strong>MOBISEC ${input.year}</strong> banquet on ${escapeHtml(input.banquetDate)} at ${escapeHtml(input.banquetVenue)}. We hope to see you at the symposium.`;
 
   const body = `
       <p style="${P}">Dear ${escapeHtml(input.name)},</p>
@@ -125,7 +125,7 @@ export function renderBanquetConfirmationHtml(input: BanquetConfirmationEmailInp
       </table>
 
       <p style="${P}">If your plans change, reply to this email and we will update your RSVP.</p>
-      <p style="${P}">Warm regards,<br />The EBISION ${input.year} Organizing Committee</p>`;
+      <p style="${P}">Warm regards,<br />The MOBISEC ${input.year} Organizing Committee</p>`;
 
   return shell({
     year: input.year,
@@ -140,7 +140,7 @@ export function renderBanquetConfirmationText(input: BanquetConfirmationEmailInp
 
   if (input.attending) {
     lines.push(
-      `Thank you. Your response for the EBISION ${input.year} banquet on ${input.banquetDate} at ${input.banquetVenue} has been recorded. We look forward to seeing you there.`,
+      `Thank you. Your response for the MOBISEC ${input.year} banquet on ${input.banquetDate} at ${input.banquetVenue} has been recorded. We look forward to seeing you there.`,
       "",
       `Attending: Yes`,
       `Allergens and dietary needs: ${input.allergens.length > 0 ? input.allergens.join(", ") : "None specified"}`,
@@ -150,7 +150,7 @@ export function renderBanquetConfirmationText(input: BanquetConfirmationEmailInp
     if (input.message?.trim()) lines.push(`Your message: ${input.message.trim()}`);
   } else {
     lines.push(
-      `Thank you for letting us know. We have recorded that you will not be attending the EBISION ${input.year} banquet on ${input.banquetDate} at ${input.banquetVenue}. We hope to see you at the symposium.`,
+      `Thank you for letting us know. We have recorded that you will not be attending the MOBISEC ${input.year} banquet on ${input.banquetDate} at ${input.banquetVenue}. We hope to see you at the symposium.`,
       "",
       `Attending: No`,
     );
@@ -161,7 +161,7 @@ export function renderBanquetConfirmationText(input: BanquetConfirmationEmailInp
     "If your plans change, reply to this email and we will update your RSVP.",
     "",
     "Warm regards,",
-    `The EBISION ${input.year} Organizing Committee`,
+    `The MOBISEC ${input.year} Organizing Committee`,
   );
 
   return lines.join("\n");

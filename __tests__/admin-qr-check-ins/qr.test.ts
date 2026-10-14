@@ -9,7 +9,7 @@ describe("QR check-in payloads", () => {
   it("creates an opaque signed payload that verifies back to id and nonce", () => {
     const payload = createQrPayload({ id: ID, qrNonce: NONCE, secret: SECRET });
 
-    expect(payload).toMatch(/^ebision-checkin:v1:/);
+    expect(payload).toMatch(/^mobisec-checkin:v1:/);
     expect(payload).not.toContain("@");
 
     expect(verifyQrPayload(payload, SECRET)).toEqual({

@@ -12,25 +12,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { year } = await params;
   const config = YEAR_CONFIG[Number(year) as ValidYear];
   const pageUrl = `${SITE_URL}/${year}/announcement`;
-  const description = `EBISION ${year} Awards Nomination — Best Paper, Best Student Paper, Distinguished Lecturer, Young Researcher, Promising Graduate Student, Industry Pioneer. ${config.venue}, ${config.dates}.`;
+  const description = `MOBISEC ${year} Awards Nomination — Best Paper, Best Student Paper, Distinguished Lecturer, Young Researcher, Promising Graduate Student, Industry Pioneer. ${config.venue}, ${config.dates}.`;
 
   return {
     title: "Awards Nomination",
     description,
     keywords: [
-      `EBISION ${year} awards`,
+      `MOBISEC ${year} awards`,
       "awards nomination",
       "best paper award",
       "conference awards",
     ],
     openGraph: {
       url: pageUrl,
-      title: `Awards Nomination | EBISION ${year}`,
+      title: `Awards Nomination | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Awards Nomination | EBISION ${year}`,
+      title: `Awards Nomination | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

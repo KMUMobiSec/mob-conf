@@ -1,6 +1,6 @@
 ## Context
 
-EBISION runs per-year conference sites under `app/[year]/(public)/...`. The existing **nominations** feature already implements the hard parts of a public file-submission flow:
+MOBISEC runs per-year conference sites under `app/[year]/(public)/...`. The existing **nominations** feature already implements the hard parts of a public file-submission flow:
 
 - Two-phase upload: a `prepare*` server action validates input and returns Supabase **signed upload URLs** + an HMAC-signed **upload-session token**; the browser `PUT`s files directly to storage; a `submit*` server action verifies the token, persists the row, emails a confirmation, and cleans up orphaned objects on failure.
 - Anti-spam via Cloudflare Turnstile (`verifyTurnstile`) + a hidden `company` honeypot.

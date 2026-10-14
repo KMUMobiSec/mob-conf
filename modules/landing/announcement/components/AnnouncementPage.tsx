@@ -174,10 +174,10 @@ const AnnouncementPage = async ({ year }: { year: ValidYear }) => {
               <small className="caption text-muted-foreground">
                 {t("questionsContactNote")}{" "}
                 <a
-                  href="mailto:cyberchair.ebision@gmail.com"
+                  href="mailto:cyberchair.mobisec@gmail.com"
                   className="text-primary hover:text-primary/80 underline"
                 >
-                  cyberchair.ebision@gmail.com
+                  cyberchair.mobisec@gmail.com
                 </a>
               </small>
             </div>

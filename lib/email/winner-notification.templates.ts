@@ -12,7 +12,7 @@ const SURFACE = "#ffffff";
 const CANVAS = "#f4f5f6";
 const PANEL = "#fafbfb";
 
-/** The EBISION award ceremony — a fixed event; only the year varies. */
+/** The MOBISEC award ceremony — a fixed event; only the year varies. */
 const AWARD_CEREMONY = {
   /** Ceremony day (year is supplied per email). */
   monthDay: "July 9",
@@ -45,13 +45,13 @@ function shell({
 <body style="margin:0;padding:0;background:${CANVAS};font-family:'IBM Plex Sans',-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:${INK};">
   <div style="max-width:600px;margin:0 auto;padding:24px 16px;">
     <div style="background:${BRAND};border-radius:10px 10px 0 0;padding:24px 28px;">
-      <p style="margin:0;color:rgba(255,255,255,0.8);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">EBISION ${year} · Awards Committee</p>
+      <p style="margin:0;color:rgba(255,255,255,0.8);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">MOBISEC ${year} · Awards Committee</p>
       <h1 style="margin:6px 0 0;color:#ffffff;font-size:20px;font-weight:650;">${escapeHtml(heading)}</h1>
     </div>
     <div style="background:${SURFACE};border:1px solid ${BORDER};border-top:none;border-radius:0 0 10px 10px;padding:28px;">
       ${bodyHtml}
     </div>
-    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">EBISION ${year} — IFIP WG 8.4 International Symposium</p>
+    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">MOBISEC ${year} — KIISC International Conference</p>
   </div>
 </body>
 </html>`;
@@ -114,17 +114,17 @@ export interface WinnerEmailInput {
 }
 
 export function winnerCongratulationsSubject(year: number): string {
-  return `Congratulations — you're an EBISION ${year} award winner!`;
+  return `Congratulations — you're an MOBISEC ${year} award winner!`;
 }
 
 export function renderWinnerCongratulationsHtml(input: WinnerEmailInput): string {
   const body = `
       <p style="${P}">Dear ${escapeHtml(input.nomineeName)},</p>
-      <p style="${P}">Wonderful news! You have been selected as a <strong>winner of the ${escapeHtml(input.awardName)}</strong> at EBISION ${input.year}. Your work truly stood out to the committee.</p>
+      <p style="${P}">Wonderful news! You have been selected as a <strong>winner of the ${escapeHtml(input.awardName)}</strong> at MOBISEC ${input.year}. Your work truly stood out to the committee.</p>
       <p style="${P}">Please join us at the award ceremony to celebrate — the details are below.</p>
 ${awardingSectionHtml(input.year, input.rollOfHonorsUrl)}
       <p style="${P}">Huge congratulations once again!</p>
-      <p style="margin:0;font-size:15px;line-height:1.55;">— The EBISION ${input.year} Awards Committee</p>`;
+      <p style="margin:0;font-size:15px;line-height:1.55;">— The MOBISEC ${input.year} Awards Committee</p>`;
   return shell({ year: input.year, heading: "Congratulations!", bodyHtml: body });
 }
 
@@ -138,15 +138,15 @@ export interface NominatorWinnerEmailInput {
 }
 
 export function nominatorWinnerNoticeSubject(year: number): string {
-  return `Great news about your EBISION ${year} nominee`;
+  return `Great news about your MOBISEC ${year} nominee`;
 }
 
 export function renderNominatorWinnerNoticeHtml(input: NominatorWinnerEmailInput): string {
   const body = `
       <p style="${P}">Dear ${escapeHtml(input.nominatorName)},</p>
-      <p style="${P}">The nominee you put forward — <strong>${escapeHtml(input.nomineeName)}</strong> — has been selected as a <strong>winner of the ${escapeHtml(input.awardName)}</strong> at EBISION ${input.year}!</p>
+      <p style="${P}">The nominee you put forward — <strong>${escapeHtml(input.nomineeName)}</strong> — has been selected as a <strong>winner of the ${escapeHtml(input.awardName)}</strong> at MOBISEC ${input.year}!</p>
       <p style="${P}">Thank you for recognizing their work and taking the time to nominate them. Nominations like yours are what make these awards meaningful. We warmly invite you to join us at the award ceremony.</p>
 ${awardingSectionHtml(input.year, input.rollOfHonorsUrl)}
-      <p style="margin:0;font-size:15px;line-height:1.55;">— The EBISION ${input.year} Awards Committee</p>`;
+      <p style="margin:0;font-size:15px;line-height:1.55;">— The MOBISEC ${input.year} Awards Committee</p>`;
   return shell({ year: input.year, heading: "Great news about your nominee", bodyHtml: body });
 }

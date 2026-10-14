@@ -35,7 +35,7 @@ const passHtml = renderRegistrationPassHtml({
   name: "Ada Lovelace",
   venue: "Kookmin University",
   dates: "July 8-10, 2026",
-  passUrl: "https://ebision.org/registration-pass/8f3c1a2b-6d44-4e90-9b21-2c5e7a0f1d33",
+  passUrl: "https://mobisec.org/registration-pass/8f3c1a2b-6d44-4e90-9b21-2c5e7a0f1d33",
   logoUrl,
 });
 
@@ -50,7 +50,7 @@ const invitationHtml = renderBanquetInvitationHtml({
   name: "Ada Lovelace",
   banquetDate: "July 9",
   banquetVenue: "the Plaza Hotel",
-  surveyUrl: "https://ebision.org/2026/banquet-survey?email=ada%40example.org&name=Ada%20Lovelace",
+  surveyUrl: "https://mobisec.org/2026/banquet-survey?email=ada%40example.org&name=Ada%20Lovelace",
   logoUrl,
   venueImageUrl,
 });
@@ -90,7 +90,7 @@ const frame = (html: string) =>
   `<iframe srcdoc="${escapeForAttr(html)}" onload="this.style.height=this.contentWindow.document.body.scrollHeight+32+'px'"></iframe>`;
 
 const wrapper = `<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8" /><title>EBISION email preview</title>
+<html lang="en"><head><meta charset="utf-8" /><title>MOBISEC email preview</title>
 <style>
   body { margin: 0; padding: 32px 16px; background: #e9eaec; font-family: system-ui, sans-serif; }
   h2 { max-width: 640px; margin: 28px auto 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #555; }

@@ -40,7 +40,7 @@ The Email Blast page SHALL list the selected year's registrations as candidate r
 
 ### Requirement: Send from the no-reply sender, sanitized and branded
 
-When an admin sends a blast, the composed HTML SHALL be sanitized on the server to a fixed allowlist (removing scripts, styles, event handlers, and disallowed tags/attributes) and wrapped in the EBISION branded email shell before delivery. The email SHALL be sent from the configured no-reply sender (`RESEND_EMAIL_FROM_NOREPLY`). Each recipient SHALL receive an individually addressed message (recipients SHALL NOT be exposed to one another). The sender SHALL NOT be selectable or overridable by the client.
+When an admin sends a blast, the composed HTML SHALL be sanitized on the server to a fixed allowlist (removing scripts, styles, event handlers, and disallowed tags/attributes) and wrapped in the MOBISEC branded email shell before delivery. The email SHALL be sent from the configured no-reply sender (`RESEND_EMAIL_FROM_NOREPLY`). Each recipient SHALL receive an individually addressed message (recipients SHALL NOT be exposed to one another). The sender SHALL NOT be selectable or overridable by the client.
 
 #### Scenario: Sent from no-reply, individually addressed
 

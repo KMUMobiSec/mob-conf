@@ -1,6 +1,6 @@
 {
   "title": "Call for Papers",
-  "description": "The 2025 IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution (EBISION 2025) invites researchers, practitioners, and students to submit original research papers, case studies, and position papers that advance the field of E-Business Information Systems.",
+  "description": "The 2025 KIISC International Conference on Mobile Internet Security (MOBISEC 2025) invites researchers, practitioners, and students to submit original research papers, case studies, and position papers that advance the field of Mobile Internet Security.",
   "topics": [
     "Artificial Intelligence and Data-Driven Business Innovation",
     "Quantum-Safe and Powered EBIS",
@@ -41,7 +41,7 @@
     "paperCategories": ["Original Research Papers"],
     "requirements": [
       "Authors are invited to submit original papers. Submissions must not substantially overlap with work that any of the authors have published elsewhere, or that is simultaneously under review for another conference with proceedings.",
-      "An accepted paper must be registered before the registration deadline and presented at the symposium. Failure to register by the deadline will result in automatic withdrawal of the paper from the proceedings and the program.",
+      "An accepted paper must be registered before the registration deadline and presented at the conference. Failure to register by the deadline will result in automatic withdrawal of the paper from the proceedings and the program.",
       "Submissions must be anonymous. No author names, affiliations, acknowledgments, or obvious self-references should be included.",
       {
         "text": "The submission file must be in PDF format, prepared using the EasyChair LaTeX class file (US letter size) [Available at ",
@@ -59,21 +59,21 @@
         "textEnd": "]."
       },
       "The length of the submission must be at least 5 pages and not exceed 20 pages in EasyChair style, excluding the bibliography and clearly marked appendices.",
-      "Submission of a paper implies that, should the paper be accepted, at least one of the authors will register and present the paper at the symposium."
+      "Submission of a paper implies that, should the paper be accepted, at least one of the authors will register and present the paper at the conference."
     ]
   },
   "proceedings": {
     "title": "Proceedings & Post Publications",
     "items": [
-      "The proceedings of EBISION 2025 will be made available to all registered attendees.",
-      "During the symposium, all accepted papers will appear in the preliminary online proceedings (non-official publication) for participant access.",
-      "The proceedings of the above-mentioned event will be published in the IFIP Advances in Information and Communication Technology (IFIP AICT) series, in accordance with the contract between Springer Nature Switzerland AG and International Federation for Information Processing.",
+      "The proceedings of MOBISEC 2025 will be made available to all registered attendees.",
+      "During the conference, all accepted papers will appear in the preliminary online proceedings (non-official publication) for participant access.",
+      "Selected proceedings of the above-mentioned event will be considered for publication in an official post-conference volume with our academic publishing partners (details to be announced).",
       "The remaining papers will also be invited to submit extended and revised versions for possible publication in SCIE- or Scopus-indexed journals (pending)."
     ]
   },
   "callToAction": {
     "title": "Ready to Submit?",
-    "description": "Join leading researchers and practitioners in advancing E-Business Information Systems research.",
+    "description": "Join leading researchers and practitioners in advancing Mobile Internet Security research.",
     "buttons": [
       {
         "text": "Author Instructions",
@@ -88,7 +88,7 @@
     ]
   },
   "contact": {
-    "email": "cyberchair.ebision@gmail.com",
+    "email": "cyberchair.mobisec@gmail.com",
     "message": "Questions about submissions? Contact us at"
   }
 }

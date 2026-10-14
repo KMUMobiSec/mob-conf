@@ -1,6 +1,6 @@
 ## Why
 
-EBISION currently organizes public conference pages under year-specific routes, but there is no year-independent area for administrative work. Before adding admin management features, the app needs a dedicated admin authentication foundation that does not depend on a selected event year.
+MOBISEC currently organizes public conference pages under year-specific routes, but there is no year-independent area for administrative work. Before adding admin management features, the app needs a dedicated admin authentication foundation that does not depend on a selected event year.
 
 ## What Changes
 

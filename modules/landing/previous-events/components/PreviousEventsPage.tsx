@@ -78,14 +78,14 @@ const PreviousEventsPage = async ({ year }: { year: ValidYear }) => {
                   <div className="relative w-12 h-8 rounded overflow-hidden shrink-0">
                     <Image
                       src={`/assets/venue/${loc.year}/venue.jpg`}
-                      alt={`EBISION ${loc.year}`}
+                      alt={`MOBISEC ${loc.year}`}
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div>
                     <p className="body text-foreground">{loc.location}</p>
-                    <small className="caption text-muted-foreground">EBISION {loc.year}</small>
+                    <small className="caption text-muted-foreground">MOBISEC {loc.year}</small>
                   </div>
                 </div>
                 {loc.isUpcoming ? (
@@ -119,7 +119,7 @@ const PreviousEventsPage = async ({ year }: { year: ValidYear }) => {
             <div className="relative w-full lg:w-1/2 aspect-video rounded-lg overflow-hidden border-2 border-primary/40">
               <Image
                 src={`/assets/venue/${CURRENT_YEAR}/venue.jpg`}
-                alt={`EBISION ${CURRENT_YEAR} — ${currentConfig.venue}`}
+                alt={`MOBISEC ${CURRENT_YEAR} — ${currentConfig.venue}`}
                 fill
                 className="object-cover"
               />
@@ -159,14 +159,14 @@ const PreviousEventsPage = async ({ year }: { year: ValidYear }) => {
                   <Users className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                   <div>
                     <small className="caption text-muted-foreground">{t("organizedByLabel")}</small>
-                    <p className="body text-foreground">IFIP WG 8.4</p>
+                    <p className="body text-foreground">KIISC</p>
                   </div>
                 </div>
                 <div className={`${glassCard} p-4 flex items-start gap-3`}>
                   <BookOpen className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                   <div>
                     <small className="caption text-muted-foreground">{t("proceedingsLabel")}</small>
-                    <p className="body text-foreground">Springer IFIP AICT Series</p>
+                    <p className="body text-foreground">Official Post-Conference Proceedings</p>
                   </div>
                 </div>
               </div>
@@ -192,7 +192,7 @@ const PreviousEventsPage = async ({ year }: { year: ValidYear }) => {
                   className={`flex flex-col gap-2 ${index % 2 === 0 ? "items-end text-right" : ""}`}
                 >
                   <p className="tag text-primary">{conference.year}</p>
-                  <h2 className="title text-foreground">EBISION {conference.year}</h2>
+                  <h2 className="title text-foreground">MOBISEC {conference.year}</h2>
                   <p className="body text-muted-foreground max-w-3xl">{conference.title}</p>
                 </div>
 
@@ -203,7 +203,7 @@ const PreviousEventsPage = async ({ year }: { year: ValidYear }) => {
                   <div className="relative w-full lg:w-1/2 aspect-video rounded-lg overflow-hidden">
                     <Image
                       src={conference.image}
-                      alt={`EBISION ${conference.year}`}
+                      alt={`MOBISEC ${conference.year}`}
                       fill
                       className="object-cover"
                     />

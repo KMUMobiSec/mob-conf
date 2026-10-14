@@ -9,7 +9,7 @@ Admins run walk-in and paper-based check-ins where an attendee's email is often 
 - Import dedup and upsert are email-keyed today. Null-email rows are exempted: they are never deduped against each other and never matched as an existing registration, so each blank-email row always inserts a new record.
 - Manual "Add registration" allows a blank email (creates `email = null`). _(Assumption — pending confirmation; can be reverted to email-required for the Add form only.)_
 - New **edit registration** action + edit dialog on the qr-check-ins admin table so an admin can change email, name, and affiliation — including filling in a previously blank email or clearing an email back to null.
-- QR check-in pass emails (initial send **and** resend, same code path) are sent from `registration@ebision.ifip-wg84.org` via a new `RESEND_EMAIL_FROM_REGISTRATION` env var, instead of the awards from-address. _(Assumption — pending confirmation: scoped to the QR pass only; the post-check-in welcome email keeps the awards from-address.)_
+- QR check-in pass emails (initial send **and** resend, same code path) are sent from `registration@mobisec-conference.com` via a new `RESEND_EMAIL_FROM_REGISTRATION` env var, instead of the awards from-address. _(Assumption — pending confirmation: scoped to the QR pass only; the post-check-in welcome email keeps the awards from-address.)_
 - Sending or resending a QR pass to a null-email registration is reported as a per-row failure ("no email on file"), not an error that aborts the batch.
 
 ## Capabilities

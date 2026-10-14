@@ -26,7 +26,7 @@ const BanquetSurveyPage = async ({
           <p className="tag text-primary">Banquet</p>
           <h1 className="display text-foreground">Banquet RSVP</h1>
           <p className="body text-muted-foreground">
-            Let us know if you will join us for the EBISION {year} banquet on {banquetDate} at{" "}
+            Let us know if you will join us for the MOBISEC {year} banquet on {banquetDate} at{" "}
             {banquetVenue}. If you are attending, share any dietary needs so we can plan the menu. A
             confirmation will be emailed to you once you submit.
           </p>

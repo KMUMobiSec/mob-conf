@@ -2,13 +2,13 @@
 
 **Date:** 2026-07-02
 **Status:** Draft for review
-**Feature:** An interactive, step-by-step wayfinding guide that walks EBISION attendees from Kookmin University's Main Gate to the venue buildings, rendered as an overlay on Kookmin's official campus illustration.
+**Feature:** An interactive, step-by-step wayfinding guide that walks MOBISEC attendees from Kookmin University's Main Gate to the venue buildings, rendered as an overlay on Kookmin's official campus illustration.
 
 ---
 
 ## 1. Context & Goal
 
-The EBISION 2026 conference is hosted at Kookmin University (see `data/{year}/{locale}/venue.json`). The existing `modules/landing/home/components/Venue.tsx` gives macro location info (address, transportation blurb, a small Google Maps iframe, "Get Directions" links). What it lacks is **on-campus wayfinding**: once an attendee reaches the campus, how do they get from the Main Gate to the right building and floor?
+The MOBISEC 2026 conference is hosted at Kookmin University (see `data/{year}/{locale}/venue.json`). The existing `modules/landing/home/components/Venue.tsx` gives macro location info (address, transportation blurb, a small Google Maps iframe, "Get Directions" links). What it lacks is **on-campus wayfinding**: once an attendee reaches the campus, how do they get from the Main Gate to the right building and floor?
 
 Kookmin's campus climbs a hillside, which is exactly why the university publishes an **isometric illustrated map** rather than a flat geographic one (`https://english.kookmin.ac.kr/visit/map`). We want a guide that is **super accurate to that official map**, not an approximation.
 
@@ -27,7 +27,7 @@ Kookmin's campus climbs a hillside, which is exactly why the university publishe
 
 ### Route anchors (from Kookmin's official building directory)
 
-| Map # | Official name | EBISION role | Pin kind |
+| Map # | Official name | MOBISEC role | Pin kind |
 |---|---|---|---|
 | **25** | Main Gate (Security Office) | 🚶 Route start | `gate` |
 | **1** | Administration Hall | 📄 Paper Sessions — 5F, rooms 501/502/506 | `primary` |
@@ -159,7 +159,7 @@ Each is independently testable: the stage is a pure function of `(config, active
 ## 8. Licensing / attribution
 
 - Self-host the map; always render the "Map © Kookmin University" credit near the component.
-- **Action for user:** confirm the EBISION organizers have permission (as host venue) to reuse Kookmin's campus illustration, or obtain the official high-res asset with an OK. The v2 custom-illustration path exists to remove this dependency entirely.
+- **Action for user:** confirm the MOBISEC organizers have permission (as host venue) to reuse Kookmin's campus illustration, or obtain the official high-res asset with an OK. The v2 custom-illustration path exists to remove this dependency entirely.
 
 ## 9. Testing (vitest)
 

@@ -158,7 +158,7 @@ export function BanquetSurveyForm({
       }
     } catch {
       setServerError(
-        "Your response could not be submitted. Please try again. If this happens again, contact the EBISION team.",
+        "Your response could not be submitted. Please try again. If this happens again, contact the MOBISEC team.",
       );
     } finally {
       setSubmitting(false);

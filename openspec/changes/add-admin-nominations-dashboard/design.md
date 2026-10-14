@@ -17,7 +17,7 @@ The admin area already exists: `app/admin/(protected)/` is gated by `requireAdmi
 ## Decisions
 
 ### D1 — Sidebar shell replaces the header
-`app/admin/(protected)/layout.tsx` wraps children in `SidebarProvider` + a `Sidebar` + `SidebarInset`. The `Sidebar` has: a header with an EBISION/Admin brand, a `SidebarMenu` with one active-aware `SidebarMenuButton` linking to `/admin/nominations` (Trophy/Award icon), and a `SidebarFooter` with the admin identity, the existing `ModeToggle`, and `AdminSignOutButton`. `collapsible="icon"` for a sleek collapse. The inset holds a slim top bar (`SidebarTrigger` + page title) and the page content.
+`app/admin/(protected)/layout.tsx` wraps children in `SidebarProvider` + a `Sidebar` + `SidebarInset`. The `Sidebar` has: a header with an MOBISEC/Admin brand, a `SidebarMenu` with one active-aware `SidebarMenuButton` linking to `/admin/nominations` (Trophy/Award icon), and a `SidebarFooter` with the admin identity, the existing `ModeToggle`, and `AdminSignOutButton`. `collapsible="icon"` for a sleek collapse. The inset holds a slim top bar (`SidebarTrigger` + page title) and the page content.
 - *Alternative considered:* keep the header and add tabs. Rejected — the user explicitly wants a sidebar, and it scales to future admin items.
 
 ### D2 — Routes & navigation

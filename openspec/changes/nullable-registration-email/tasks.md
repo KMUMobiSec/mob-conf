@@ -26,7 +26,7 @@
 ## 5. Email from-address
 
 - [x] 5.1 In `lib/email/registration-check-in.ts`, add `registrationFromAddress()` reading `RESEND_EMAIL_FROM_REGISTRATION` (throw if unset); use it in `sendRegistrationPass`; leave `sendCheckInWelcome` on the awards address
-- [x] 5.2 Add `RESEND_EMAIL_FROM_REGISTRATION=registration@ebision.ifip-wg84.org` to `.env.example` (and note it for deploy env)
+- [x] 5.2 Add `RESEND_EMAIL_FROM_REGISTRATION=registration@mobisec-conference.com` to `.env.example` (and note it for deploy env)
 
 ## 6. UI
 

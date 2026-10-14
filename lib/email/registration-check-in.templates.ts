@@ -28,7 +28,7 @@ function shell({
   const logoChip = logoUrl
     ? `<td style="width:56px;vertical-align:middle;">
             <div style="width:44px;height:44px;background:#ffffff;border-radius:10px;text-align:center;mso-line-height-rule:exactly;line-height:44px;">
-              <img src="${escapeHtml(logoUrl)}" width="30" height="30" alt="EBISION" style="display:inline-block;vertical-align:middle;border:0;" />
+              <img src="${escapeHtml(logoUrl)}" width="30" height="30" alt="MOBISEC" style="display:inline-block;vertical-align:middle;border:0;" />
             </div>
           </td>`
     : "";
@@ -42,7 +42,7 @@ function shell({
         <tr>
           ${logoChip}
           <td style="vertical-align:middle;${logoUrl ? "padding-left:14px;" : ""}">
-            <p style="margin:0;color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">EBISION ${year} &middot; Conference Check-in</p>
+            <p style="margin:0;color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;">MOBISEC ${year} &middot; Conference Check-in</p>
             <h1 style="margin:4px 0 0;color:#ffffff;font-size:20px;font-weight:650;">${escapeHtml(heading)}</h1>
           </td>
         </tr>
@@ -51,7 +51,7 @@ function shell({
     <div style="background:${SURFACE};border:1px solid ${BORDER};border-top:none;border-radius:0 0 10px 10px;padding:28px;">
       ${bodyHtml}
     </div>
-    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">EBISION ${year} &middot; IFIP WG 8.4 International Symposium</p>
+    <p style="margin:16px 4px 0;font-size:12px;color:${MUTED};">MOBISEC ${year} &middot; KIISC International Conference</p>
   </div>
 </body>
 </html>`;
@@ -67,14 +67,14 @@ export interface RegistrationPassEmailInput {
 }
 
 export function registrationPassSubject(year: number): string {
-  return `Your EBISION ${year} check-in QR pass`;
+  return `Your MOBISEC ${year} check-in QR pass`;
 }
 
 export function renderRegistrationPassHtml(input: RegistrationPassEmailInput): string {
   const url = escapeHtml(input.passUrl);
   const body = `
       <p style="${P}">Dear ${escapeHtml(input.name)},</p>
-      <p style="${P}">You're all set for <strong>EBISION ${input.year}</strong>. Use your personal QR pass below to check in quickly when you arrive.</p>
+      <p style="${P}">You're all set for <strong>MOBISEC ${input.year}</strong>. Use your personal QR pass below to check in quickly when you arrive.</p>
 
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 24px;border:1px solid ${BORDER};border-radius:10px;background:${PANEL};">
         <tr>
@@ -111,7 +111,7 @@ export function renderRegistrationPassHtml(input: RegistrationPassEmailInput): s
       </ol>
 
       <p style="${P}">Please keep this email so you can reopen your pass anytime.</p>
-      <p style="margin:0;font-size:15px;line-height:1.55;">Warm regards,<br />The EBISION ${input.year} Organizing Committee</p>`;
+      <p style="margin:0;font-size:15px;line-height:1.55;">Warm regards,<br />The MOBISEC ${input.year} Organizing Committee</p>`;
   return shell({
     year: input.year,
     heading: "Your check-in QR pass",
@@ -129,7 +129,7 @@ export interface CheckInWelcomeEmailInput {
 }
 
 export function checkInWelcomeSubject(year: number): string {
-  return `Welcome to EBISION ${year}`;
+  return `Welcome to MOBISEC ${year}`;
 }
 
 export function renderCheckInWelcomeHtml(input: CheckInWelcomeEmailInput): string {
@@ -139,7 +139,7 @@ export function renderCheckInWelcomeHtml(input: CheckInWelcomeEmailInput): strin
         <tr>
           <td style="padding:16px 18px;">
             <p style="${LABEL}">Getting around</p>
-            <p style="margin:0 0 14px;font-size:15px;line-height:1.55;color:${INK};">First time on campus? Follow the step-by-step walk from Kookmin University's Main Gate to the EBISION venue buildings.</p>
+            <p style="margin:0 0 14px;font-size:15px;line-height:1.55;color:${INK};">First time on campus? Follow the step-by-step walk from Kookmin University's Main Gate to the MOBISEC venue buildings.</p>
             <table role="presentation" cellpadding="0" cellspacing="0" border="0">
               <tr>
                 <td style="border-radius:8px;background:${BRAND};">
@@ -153,13 +153,13 @@ export function renderCheckInWelcomeHtml(input: CheckInWelcomeEmailInput): strin
     : "";
   const body = `
       <p style="${P}">Dear ${escapeHtml(input.name)},</p>
-      <p style="${P}"><strong>Welcome to EBISION ${input.year}</strong>. Your check-in is complete, and we're glad to have you with us.</p>
+      <p style="${P}"><strong>Welcome to MOBISEC ${input.year}</strong>. Your check-in is complete, and we're glad to have you with us.</p>
       <p style="${P}">We hope you have a productive and inspiring conference experience.</p>
       ${locationBlock}
-      <p style="margin:0;font-size:15px;line-height:1.55;">Warm regards,<br />The EBISION ${input.year} Organizing Committee</p>`;
+      <p style="margin:0;font-size:15px;line-height:1.55;">Warm regards,<br />The MOBISEC ${input.year} Organizing Committee</p>`;
   return shell({
     year: input.year,
-    heading: `Welcome to EBISION ${input.year}`,
+    heading: `Welcome to MOBISEC ${input.year}`,
     bodyHtml: body,
     logoUrl: input.logoUrl,
   });

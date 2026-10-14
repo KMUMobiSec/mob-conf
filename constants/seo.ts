@@ -3,15 +3,15 @@ import { CURRENT_YEAR, YEAR_CONFIG } from "@/constants/config";
 
 const currentConfig = YEAR_CONFIG[CURRENT_YEAR];
 
-export const SITE_URL = "https://ebision.ifip-wg84.org";
-export const SITE_NAME = `EBISION ${CURRENT_YEAR}`;
-export const SITE_DESCRIPTION = `The ${currentConfig.edition} IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution — ${currentConfig.venue}, ${currentConfig.location}, ${currentConfig.dates}`;
+export const SITE_URL = "https://mobisec-conference.com";
+export const SITE_NAME = `MOBISEC ${CURRENT_YEAR}`;
+export const SITE_DESCRIPTION = `The ${currentConfig.edition} KIISC International Conference on Mobile Internet Security — ${currentConfig.venue}, ${currentConfig.location}, ${currentConfig.dates}`;
 
 export const OG_IMAGE = {
   url: `${SITE_URL}/opengraph-image`,
   width: 1200,
   height: 630,
-  alt: `EBISION ${CURRENT_YEAR} — The ${currentConfig.edition} IFIP WG 8.4 International Symposium on E-Business Information Systems Evolution`,
+  alt: `MOBISEC ${CURRENT_YEAR} — The ${currentConfig.edition} KIISC International Conference on Mobile Internet Security`,
   type: "image/png",
 };
 
@@ -24,12 +24,12 @@ export const sharedMetadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   keywords: [
-    `EBISION ${CURRENT_YEAR}`,
-    "EBISION",
-    "IFIP WG 8.4",
-    "E-Business Information Systems",
+    `MOBISEC ${CURRENT_YEAR}`,
+    "MOBISEC",
+    "KIISC",
+    "Mobile Internet Security",
     "digital transformation",
-    "international symposium",
+    "international conference",
     currentConfig.venue,
     ...currentConfig.location.split(", "),
     "conference",
@@ -40,9 +40,9 @@ export const sharedMetadata: Metadata = {
     "6G",
     "quantum computing",
   ],
-  authors: [{ name: "IFIP Working Group 8.4" }],
-  creator: `EBISION ${CURRENT_YEAR} Organizing Committee`,
-  publisher: "IFIP Working Group 8.4",
+  authors: [{ name: "KIISC (Korea Institute of Information Security and Cryptology)" }],
+  creator: `MOBISEC ${CURRENT_YEAR} Organizing Committee`,
+  publisher: "KIISC (Korea Institute of Information Security and Cryptology)",
   openGraph: {
     type: "website",
     locale: "en_US",

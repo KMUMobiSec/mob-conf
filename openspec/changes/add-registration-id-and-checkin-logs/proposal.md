@@ -1,6 +1,6 @@
 ## Why
 
-Each EBISION participant has a printed badge/ID number (the `No.` column of the official participant list, 1–200 for 2026). At the desk, when a badge is scanned the staffer needs to know **which numbered ID to hand the attendee**, and organizers want a live, auditable record of who checked in, in what order, and **which account scanned them**. Today the check-in surface shows names only, has no participant number anywhere, and offers no running log — so there is no way to reconcile the physical numbered IDs against check-ins, and no at-a-glance feed of arrivals.
+Each MOBISEC participant has a printed badge/ID number (the `No.` column of the official participant list, 1–200 for 2026). At the desk, when a badge is scanned the staffer needs to know **which numbered ID to hand the attendee**, and organizers want a live, auditable record of who checked in, in what order, and **which account scanned them**. Today the check-in surface shows names only, has no participant number anywhere, and offers no running log — so there is no way to reconcile the physical numbered IDs against check-ins, and no at-a-glance feed of arrivals.
 
 ## What Changes
 

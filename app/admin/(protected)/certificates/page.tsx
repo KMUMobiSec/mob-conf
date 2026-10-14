@@ -23,7 +23,7 @@ export default async function CertificatesPage({
       <div className="flex flex-col gap-1">
         <h2 className="text-lg font-semibold text-foreground">Certificates</h2>
         <p className="text-sm text-muted-foreground">
-          Generate and email EBISION {year} Certificates of Appreciation. Registrants who authored a
+          Generate and email MOBISEC {year} Certificates of Appreciation. Registrants who authored a
           submitted paper (matched by email) can receive an author certificate instead.
         </p>
       </div>

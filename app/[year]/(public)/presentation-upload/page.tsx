@@ -17,25 +17,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const pageUrl = `${SITE_URL}/${year}/presentation-upload`;
-  const description = `Upload your presentation for EBISION ${year}. Submit your paper details and presentation file securely to the organizing committee.`;
+  const description = `Upload your presentation for MOBISEC ${year}. Submit your paper details and presentation file securely to the organizing committee.`;
 
   return {
     title: "Presentation Upload",
     description,
     keywords: [
-      `EBISION ${year} presentation`,
+      `MOBISEC ${year} presentation`,
       "presentation upload",
-      "IFIP WG 8.4",
+      "KIISC",
       "conference presentation",
     ],
     openGraph: {
       url: pageUrl,
-      title: `Presentation Upload | EBISION ${year}`,
+      title: `Presentation Upload | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Presentation Upload | EBISION ${year}`,
+      title: `Presentation Upload | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

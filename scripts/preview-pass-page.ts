@@ -70,7 +70,7 @@ async function main() {
 <body>
   <div class="wrap">
     <div class="header">
-      <p class="tag">EBISION ${sample.year}</p>
+      <p class="tag">MOBISEC ${sample.year}</p>
       <h1 class="subheading">Registration QR Pass</h1>
     </div>
     <div class="card">
@@ -78,7 +78,7 @@ async function main() {
       <h2 class="name">${sample.name}</h2>
       <p class="caption">${sample.email}</p>
       <p class="caption">${sample.affiliation}</p>
-      <div class="qrbox"><img src="${qr}" alt="EBISION ${sample.year} check-in QR code" /></div>
+      <div class="qrbox"><img src="${qr}" alt="MOBISEC ${sample.year} check-in QR code" /></div>
       <div class="meta">
         <div class="row">${calendar}<span>${sample.dates}</span></div>
         <div class="row">${pin}<span>${sample.venue}, ${sample.location}</span></div>

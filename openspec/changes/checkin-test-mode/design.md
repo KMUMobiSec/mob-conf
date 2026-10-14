@@ -4,7 +4,7 @@ The admin app (`app/admin/(protected)/`) has a sidebar (`AdminSidebar.tsx`, year
 
 ## Goals / Non-Goals
 
-**Goals:** global admin-editable test mode + tester email list; identical email content with recipient redirected to testers (fallback `cyberchair.ebision@gmail.com`); unmistakable amber test-mode framing on the check-in surface; a check-in-page toggle; test mode must not pollute real send tracking.
+**Goals:** global admin-editable test mode + tester email list; identical email content with recipient redirected to testers (fallback `cyberchair.mobisec@gmail.com`); unmistakable amber test-mode framing on the check-in surface; a check-in-page toggle; test mode must not pollute real send tracking.
 
 **Non-Goals:** per-year test mode; redirecting non-check-in emails (nominations/presentations); redirecting the realtime broadcast (no email recipient); changing email templates/content; a general settings framework beyond the two fields needed.
 
@@ -19,7 +19,7 @@ The admin app (`app/admin/(protected)/`) has a sidebar (`AdminSidebar.tsx`, year
 
 ### 3. Central recipient resolver (pure, testable)
 `modules/admin/settings/lib/test-mode.ts`:
-- `TEST_MODE_FALLBACK_EMAIL = "cyberchair.ebision@gmail.com"`.
+- `TEST_MODE_FALLBACK_EMAIL = "cyberchair.mobisec@gmail.com"`.
 - `resolveCheckInRecipients({ testMode, testerEmails, intended }): string[] | null` — test mode → `testerEmails.length ? testerEmails : [FALLBACK]`; else → `intended ? [intended] : null` (null = "no email on file", skip/fail). This single function encodes the redirect, fallback, and null-email-bypass rules and is unit-testable without a DB.
 - `normalizeTesterEmails(raw): { emails: string[]; invalid: string[] }` — trim/lowercase/dedupe, validate with the shared email regex.
 

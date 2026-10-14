@@ -84,7 +84,7 @@ An admin SHALL be able to edit an existing registration's email, name, and affil
 
 ### Requirement: QR check-in pass emails send from the registration address
 
-Sending or resending a QR check-in pass SHALL use `registration@ebision.ifip-wg84.org` as the from-address, sourced from the `RESEND_EMAIL_FROM_REGISTRATION` environment variable. This applies to both the initial send and any resend (the shared send path).
+Sending or resending a QR check-in pass SHALL use `registration@mobisec-conference.com` as the from-address, sourced from the `RESEND_EMAIL_FROM_REGISTRATION` environment variable. This applies to both the initial send and any resend (the shared send path).
 
 #### Scenario: Resend uses the registration from-address
 

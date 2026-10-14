@@ -196,7 +196,7 @@ export function Navbar() {
             <Link href={`/${year}`} aria-label="Go to homepage">
               <Image
                 src="/assets/logo/ebision-logo.svg"
-                alt="EBISION Logo"
+                alt="MOBISEC Logo"
                 width={120}
                 height={40}
                 className="h-8 w-auto"
@@ -284,7 +284,7 @@ export function Navbar() {
                   <Link href={`/${year}`} aria-label="Go to homepage">
                     <Image
                       src="/assets/logo/ebision-logo.svg"
-                      alt="EBISION Logo"
+                      alt="MOBISEC Logo"
                       width={120}
                       height={40}
                       className="h-8 w-auto"

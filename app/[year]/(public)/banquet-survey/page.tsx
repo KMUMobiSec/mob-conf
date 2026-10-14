@@ -18,20 +18,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const pageUrl = `${SITE_URL}/${year}/banquet-survey`;
-  const description = `RSVP for the EBISION ${year} banquet. Let the organizing committee know if you will attend and share any dietary needs.`;
+  const description = `RSVP for the MOBISEC ${year} banquet. Let the organizing committee know if you will attend and share any dietary needs.`;
 
   return {
     title: "Banquet RSVP",
     description,
-    keywords: [`EBISION ${year} banquet`, "banquet RSVP", "IFIP WG 8.4", "conference banquet"],
+    keywords: [`MOBISEC ${year} banquet`, "banquet RSVP", "KIISC", "conference banquet"],
     openGraph: {
       url: pageUrl,
-      title: `Banquet RSVP | EBISION ${year}`,
+      title: `Banquet RSVP | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },
     twitter: {
-      title: `Banquet RSVP | EBISION ${year}`,
+      title: `Banquet RSVP | MOBISEC ${year}`,
       description,
       images: [`${SITE_URL}/${year}/opengraph-image`],
     },

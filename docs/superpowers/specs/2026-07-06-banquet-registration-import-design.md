@@ -80,7 +80,7 @@ toward `skipped`.
   `lib/routes/banquet-survey.ts` is extended so `banquetSurveyPath`/`Url` accept
   `{ email?, name? }` and encode both params. `requirePublicBaseUrl()` throws when
   `NEXT_PUBLIC_BASE_URL` is unset, surfacing as a per-recipient failure.
-- Subject: `You are invited to the EBISION {year} banquet`.
+- Subject: `You are invited to the MOBISEC {year} banquet`.
 
 ## Admin actions
 

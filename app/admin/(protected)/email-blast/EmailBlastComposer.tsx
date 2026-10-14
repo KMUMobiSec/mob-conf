@@ -107,7 +107,7 @@ export function EmailBlastComposer({
             id="blast-subject"
             value={subject}
             onChange={(event) => setSubject(event.target.value)}
-            placeholder="EBISION 2026 — an update for you"
+            placeholder="MOBISEC 2026 — an update for you"
             maxLength={200}
           />
         </div>
@@ -118,7 +118,7 @@ export function EmailBlastComposer({
           <Label id="blast-body-label">Message</Label>
           <RichTextEditor value={html} onChange={setHtml} ariaLabelledby="blast-body-label" />
           <p className="caption text-muted-foreground">
-            Sent from the no-reply address and wrapped in the EBISION email template. Use “Send test
+            Sent from the no-reply address and wrapped in the MOBISEC email template. Use “Send test
             to me” to preview the final email.
           </p>
         </div>
@@ -174,7 +174,7 @@ export function EmailBlastComposer({
             <AlertDialogTitle>Send this email blast?</AlertDialogTitle>
             <AlertDialogDescription>
               This will email <strong>{selected.size}</strong> selected recipient(s) from the
-              no-reply address for EBISION {year}. This can’t be undone.
+              no-reply address for MOBISEC {year}. This can’t be undone.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>

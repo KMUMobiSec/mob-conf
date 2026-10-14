@@ -1,6 +1,6 @@
 ## Why
 
-EBISION 2026 is hosted at Kookmin University, whose campus climbs a hillside. The current venue section only offers macro directions (address, a Google Maps iframe); attendees who reach the campus still have no guidance from the Main Gate to the right building and floor. We want an interactive on-campus wayfinding guide so first-time visitors can confidently reach the paper sessions, keynotes, and lunch.
+MOBISEC 2026 is hosted at Kookmin University, whose campus climbs a hillside. The current venue section only offers macro directions (address, a Google Maps iframe); attendees who reach the campus still have no guidance from the Main Gate to the right building and floor. We want an interactive on-campus wayfinding guide so first-time visitors can confidently reach the paper sessions, keynotes, and lunch.
 
 ## What Changes
 

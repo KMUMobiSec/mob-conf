@@ -10,7 +10,7 @@ const NominationFormPage = ({ year }: { year: ValidYear }) => {
           <p className="tag text-primary">Awards Committee</p>
           <h1 className="display text-foreground">Award Nomination Form</h1>
           <p className="body text-muted-foreground">
-            Nominate an outstanding individual for recognition at EBISION {year}. Select an award
+            Nominate an outstanding individual for recognition at MOBISEC {year}. Select an award
             below — the form will adapt to show the fields and documents required for that specific
             award.
           </p>

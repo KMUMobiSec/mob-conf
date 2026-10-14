@@ -11,7 +11,7 @@
  * <ProgramNavigationBar
  *   conferences={[
  *     { id: 'mobisec', name: 'MobiSec 2026' },
- *     { id: 'ebision', name: 'EBISION 2026' }
+ *     { id: 'mobisec', name: 'MOBISEC 2026' }
  *   ]}
  *   currentConf="mobisec"
  *   onConferenceChange={(confId) => router.push(`/program?conf=${confId}`)}

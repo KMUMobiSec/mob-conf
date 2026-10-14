@@ -26,10 +26,10 @@ describe("sanitizeEmailHtml", () => {
 
   it("keeps allowed formatting and hardens links", () => {
     const out = sanitizeEmailHtml(
-      '<p><strong>Bold</strong> and <a href="https://ebision.ifip-wg84.org">link</a></p>',
+      '<p><strong>Bold</strong> and <a href="https://mobisec-conference.com">link</a></p>',
     );
     expect(out).toContain("<strong>Bold</strong>");
-    expect(out).toContain('href="https://ebision.ifip-wg84.org"');
+    expect(out).toContain('href="https://mobisec-conference.com"');
     expect(out).toContain('target="_blank"');
     expect(out).toContain("noopener");
   });
@@ -40,8 +40,8 @@ describe("sanitizeEmailHtml", () => {
   });
 
   it("keeps mailto links", () => {
-    const out = sanitizeEmailHtml('<p><a href="mailto:info@ebision.ifip-wg84.org">Email</a></p>');
-    expect(out).toContain('href="mailto:info@ebision.ifip-wg84.org"');
+    const out = sanitizeEmailHtml('<p><a href="mailto:info@mobisec-conference.com">Email</a></p>');
+    expect(out).toContain('href="mailto:info@mobisec-conference.com"');
   });
 
   it("preserves a non-1 start on ordered lists", () => {

@@ -211,12 +211,12 @@ Feedback: inline `<span>` messages (no toast lib) — muted for success,
   `banquetFromAddress()` reads `RESEND_EMAIL_FROM_BANQUET` (throws if unset);
   `sendBanquetConfirmation(input & { to })` via `getResendClient().emails.send`;
   throws on Resend error.
-- Subject: `Your EBISION {year} banquet RSVP has been received`.
+- Subject: `Your MOBISEC {year} banquet RSVP has been received`.
 - Body (sample, no emdashes): "Dear {name}, Thank you. Your response for the
-  EBISION {year} banquet on {date} at {venue} has been recorded. We look forward
+  MOBISEC {year} banquet on {date} at {venue} has been recorded. We look forward
   to seeing you there. If your plans change, reply to this email and we will
-  update your RSVP." Footer: `EBISION {year} &middot; IFIP WG 8.4 International
-  Symposium`.
+  update your RSVP." Footer: `MOBISEC {year} &middot; KIISC International
+  Conference`.
 - Absolute links via `publicBaseUrl()` / `requirePublicBaseUrl()`
   (`lib/routes/base-url.ts`) — degrade gracefully when `NEXT_PUBLIC_BASE_URL`
   unset. New `lib/routes/banquet-survey.ts` (`banquetSurveyPath/Url`) builds the

@@ -1,22 +1,37 @@
 {
-  "name": "Prof. Okyeon Yi",
-  "image": "/assets/keynotes/2025/lifetime-full.png",
-  "imageMobile": "/assets/keynotes/2025/lifetime.png",
-  "about": "Prof. Okyeon Yi received the B.S. and M.S. degrees in Mathematics from Korea University, Seoul, Republic of Korea, in 1988 and 1990, respectively, and earned his Ph.D. degree in Mathematics from the University of Kentucky, Lexington, KY, USA, in 1996. Since 2001, he has been a Professor with the Department of Information Security, Cryptology, and Mathematics at Kookmin University, Seoul, Republic of Korea. In addition, he served as Senior Vice President of the Korean Institute of Information Security and Cryptology (KIISC) in 2021 and as President of KIISC in 2022. His research interests include 5G/6G mobile network security, satellite communication security, and the verification and certification of cryptographic modules under the Cryptographic Module Validation Program (CMVP).",
-  "researchPublications": [
-    "His representative publications include the following:",
-    "In 2023, “A Study on Scalar Multiplication Parallel Processing for X25519 Decryption of 5G Core Network SIDF Function for mMTC IoT Environment,” Wireless Communications and Mobile Computing, which investigates GPU-based parallelization of X25519 for accelerating SUCI decryption in large-scale IoT deployments.",
-    "In 2024, “Rider Optimization with Deep Learning Based Image Encryption for Secure Drone Communication,” IEEE Access, which proposes a deep-learning-enhanced image encryption approach for secure and efficient drone communication."
-  ],
-  "drivingResearchProjects": [
-    "He has been actively engaged in major national R&D programs, including the following:",
-    "2022–2025: Co-investigator of “Development of Security Technology for Interworking between M-BcN and 5G Commercial Network,” a national defense project focusing on establishing secure interconnection mechanisms between the Military Broadband Convergence Network (M-BcN) and commercial 5G infrastructure.",
-    "2020–2027: Principal Investigator of “Research on Security Technology for 6G Telecommunication with 5G+,” which aims to develop advanced information security technologies for future 6G mobile communication systems building upon 5G+ architectures."
-  ],
-  "contributionsToSociety": [
-    "Prof. Yi has also contributed extensively to national research, digital forensics, and cybersecurity capacity building through the following roles:",
-    "From July 1999 to August 2001, he served as Team Leader of the Information Security Infrastructure Research Team at the Electronics and Telecommunications Research Institute (ETRI), where he conducted foundational research on national cryptography and information security systems.",
-    "Since June 2007, he has been a Member of the Digital Forensic Advisory Committee for the Supreme Prosecutors’ Office of the Republic of Korea, providing expert consultation on cryptographic analysis and digital investigation.",
-    "Since March 2009, he has served as the Director of the Information Security Research Center at Kookmin University, leading research in cryptography, mobile network security, and national-level cybersecurity technologies."
+  "recipients": [
+    {
+      "name": "Prof. Okyeon Yi",
+      "image": "/assets/keynotes/2025/lifetime-full.png",
+      "imageMobile": "/assets/keynotes/2025/lifetime.png",
+      "about": "Prof. Okyeon Yi received the B.S. and M.S. degrees in Mathematics from Korea University, Seoul, Republic of Korea, in 1988 and 1990, respectively, and earned his Ph.D. degree in Mathematics from the University of Kentucky, Lexington, KY, USA, in 1996. Since 2001, he has been a Professor with the Department of Information Security, Cryptology, and Mathematics at Kookmin University, Seoul, Republic of Korea. In addition, he served as Senior Vice President of the Korean Institute of Information Security and Cryptology (KIISC) in 2021 and as President of KIISC in 2022. His research interests include 5G/6G mobile network security, satellite communication security, and the verification and certification of cryptographic modules under the Cryptographic Module Validation Program (CMVP).",
+      "achievements": [
+        {
+          "heading": "Research Publications",
+          "text": [
+            "His representative publications include the following:",
+            "In 2023, “A Study on Scalar Multiplication Parallel Processing for X25519 Decryption of 5G Core Network SIDF Function for mMTC IoT Environment,” Wireless Communications and Mobile Computing, which investigates GPU-based parallelization of X25519 for accelerating SUCI decryption in large-scale IoT deployments.",
+            "In 2024, “Rider Optimization with Deep Learning Based Image Encryption for Secure Drone Communication,” IEEE Access, which proposes a deep-learning-enhanced image encryption approach for secure and efficient drone communication."
+          ]
+        },
+        {
+          "heading": "Driving Research Projects",
+          "text": [
+            "He has been actively engaged in major national R&D programs, including the following:",
+            "2022–2025: Co-investigator of “Development of Security Technology for Interworking between M-BcN and 5G Commercial Network,” a national defense project focusing on establishing secure interconnection mechanisms between the Military Broadband Convergence Network (M-BcN) and commercial 5G infrastructure.",
+            "2020–2027: Principal Investigator of “Research on Security Technology for 6G Telecommunication with 5G+,” which aims to develop advanced information security technologies for future 6G mobile communication systems building upon 5G+ architectures."
+          ]
+        },
+        {
+          "heading": "Contributions to Society",
+          "text": [
+            "Prof. Yi has also contributed extensively to national research, digital forensics, and cybersecurity capacity building through the following roles:",
+            "From July 1999 to August 2001, he served as Team Leader of the Information Security Infrastructure Research Team at the Electronics and Telecommunications Research Institute (ETRI), where he conducted foundational research on national cryptography and information security systems.",
+            "Since June 2007, he has been a Member of the Digital Forensic Advisory Committee for the Supreme Prosecutors’ Office of the Republic of Korea, providing expert consultation on cryptographic analysis and digital investigation.",
+            "Since March 2009, he has served as the Director of the Information Security Research Center at Kookmin University, leading research in cryptography, mobile network security, and national-level cybersecurity technologies."
+          ]
+        }
+      ]
+    }
   ]
 }

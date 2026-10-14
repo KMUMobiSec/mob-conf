@@ -84,12 +84,6 @@ export const YEAR_CONFIG: Record<
     cfpLeafletUrl: "/assets/files/2026/mobisec-cfp-2026.pdf",
     programBookUrl: "",
     registrationUrl: "",
-    disabledRoutes: [
-      "program",
-      "programFlow",
-      "lifetimeAchievement",
-      "announcement",
-      "rollOfHonors",
-    ],
+    disabledRoutes: ["program", "programFlow", "announcement", "rollOfHonors"],
   },
 };

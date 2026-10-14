@@ -1,22 +1,60 @@
 {
-  "name": "Prof. Okyeon Yi",
-  "image": "/assets/keynotes/2025/lifetime-full.png",
-  "imageMobile": "/assets/keynotes/2025/lifetime.png",
-  "about": "Prof. Okyeon Yi received the B.S. and M.S. degrees in Mathematics from Korea University, Seoul, Republic of Korea, in 1988 and 1990, respectively, and earned his Ph.D. degree in Mathematics from the University of Kentucky, Lexington, KY, USA, in 1996. Since 2001, he has been a Professor with the Department of Information Security, Cryptology, and Mathematics at Kookmin University, Seoul, Republic of Korea. In addition, he served as Senior Vice President of the Korean Institute of Information Security and Cryptology (KIISC) in 2021 and as President of KIISC in 2022. His research interests include 5G/6G mobile network security, satellite communication security, and the verification and certification of cryptographic modules under the Cryptographic Module Validation Program (CMVP).",
-  "researchPublications": [
-    "His representative publications include the following:",
-    "In 2023, “A Study on Scalar Multiplication Parallel Processing for X25519 Decryption of 5G Core Network SIDF Function for mMTC IoT Environment,” Wireless Communications and Mobile Computing, which investigates GPU-based parallelization of X25519 for accelerating SUCI decryption in large-scale IoT deployments.",
-    "In 2024, “Rider Optimization with Deep Learning Based Image Encryption for Secure Drone Communication,” IEEE Access, which proposes a deep-learning-enhanced image encryption approach for secure and efficient drone communication."
-  ],
-  "drivingResearchProjects": [
-    "He has been actively engaged in major national R&D programs, including the following:",
-    "2022–2025: Co-investigator of “Development of Security Technology for Interworking between M-BcN and 5G Commercial Network,” a national defense project focusing on establishing secure interconnection mechanisms between the Military Broadband Convergence Network (M-BcN) and commercial 5G infrastructure.",
-    "2020–2027: Principal Investigator of “Research on Security Technology for 6G Telecommunication with 5G+,” which aims to develop advanced information security technologies for future 6G mobile communication systems building upon 5G+ architectures."
-  ],
-  "contributionsToSociety": [
-    "Prof. Yi has also contributed extensively to national research, digital forensics, and cybersecurity capacity building through the following roles:",
-    "From July 1999 to August 2001, he served as Team Leader of the Information Security Infrastructure Research Team at the Electronics and Telecommunications Research Institute (ETRI), where he conducted foundational research on national cryptography and information security systems.",
-    "Since June 2007, he has been a Member of the Digital Forensic Advisory Committee for the Supreme Prosecutors’ Office of the Republic of Korea, providing expert consultation on cryptographic analysis and digital investigation.",
-    "Since March 2009, he has served as the Director of the Information Security Research Center at Kookmin University, leading research in cryptography, mobile network security, and national-level cybersecurity technologies."
+  "recipients": [
+    {
+      "name": "Dr. Tei-Wei Kuo",
+      "title": "CTO, Delta Electronics · Academician, Academia Sinica",
+      "tagline": "Pioneering hardware–software co-design for durable non-volatile storage, with landmark contributions to embedded and real-time systems.",
+      "image": "/assets/lifetime-achievement/2026/kuo.png",
+      "imageMobile": "/assets/lifetime-achievement/2026/kuo.png",
+      "about": "Dr. Kuo received his bachelor's and Ph.D. degrees in Computer Science from National Taiwan University and the University of Texas at Austin in 1986 and 1994, respectively. He is CTO of Delta Electronics and was a Distinguished Professor in Computer Science and Information Engineering and Interim President of National Taiwan University from October 2017 to January 2019. His research interests include flash-memory storage systems, non-volatile memory systems, and embedded systems. Dr. Kuo is an Academician of Academia Sinica and a Fellow of ACM, IEEE, and the US National Academy of Inventors.",
+      "achievements": [
+        {
+          "heading": "Pioneering Durable Flash-Memory Systems",
+          "text": "Dr. Kuo pioneered hardware-software co-design of flash-memory storage systems, overcoming the scalability limits of traditional ECC-based hardware solutions through intelligent distribution of read, write, and erase interference across chips and through static wear leveling. He also made foundational contributions to address mapping, initialization, and striping architecture."
+        },
+        {
+          "heading": "Foundational Advances in Real-Time Computing",
+          "text": "He is widely recognized for fundamental technical contributions to real-time task scheduling theories, advancing the foundations of embedded and real-time computing systems."
+        },
+        {
+          "heading": "Shaping the Global Research Community",
+          "text": "He was the founding Editor-in-Chief of ACM Transactions on Cyber-Physical Systems from 2015 to 2021 and serves as Chair of ACM SIGAPP from 2023 to 2027. He also served as Program Chair and General Chair of the IEEE Real-Time Systems Symposium and as General Chair of ESWEEK 2025."
+        },
+        {
+          "heading": "A Career of International Distinction",
+          "text": "His honors include the Humboldt Research Award, Taiwan's Ministry of Education Academic Award, the National Science and Technology Council Distinguished Research Award, the IEEE Technical Committee on Real-Time Systems Outstanding Technical Achievement and Leadership Award, and best paper awards from ACM/IEEE CODES in 2019, 2022, and 2024."
+        }
+      ]
+    },
+    {
+      "name": "Dr. Goichiro Hanaoka",
+      "title": "Principal Researcher, AIST, Japan",
+      "tagline": "Advancing cryptographic science from foundational research to real-world deployment—and shaping its global research community.",
+      "image": "/assets/lifetime-achievement/2026/hanaoka.png",
+      "imageMobile": "/assets/lifetime-achievement/2026/hanaoka.png",
+      "about": "Dr. Hanaoka received his B.E. degree from the University of Tokyo in 1997 and his Ph.D. in Information and Communication Engineering from the same university in 2002. After serving as a JSPS Research Fellow (PD), he joined the National Institute of Advanced Industrial Science and Technology (AIST) in 2005 and has been a Principal Researcher since 2021. For nearly three decades, he has devoted his career to the research, development, and social implementation of advanced cryptographic technologies.",
+      "achievements": [
+        {
+          "heading": "Advancing the Frontiers of Modern Cryptography",
+          "text": "More than 270 peer-reviewed journal and conference publications in advanced cryptography, including multi-party computation, identity-based encryption, attribute-based encryption, proxy re-encryption, homomorphic encryption, and zero-knowledge proofs."
+        },
+        {
+          "heading": "Shaping the International Cryptographic Community",
+          "text": "He has served in numerous leadership roles in the international cryptographic community, including Chair of the PKC Steering Committee, Program Co-Chair of ASIACRYPT 2025, Program Chair of PKC 2022 and IWSEC 2012, General Chair of PKC 2013, and General Co-Chair of MobiSec 2024 and 2025, among many other Program Chair, General Chair, and committee appointments."
+        },
+        {
+          "heading": "Recognition for Scientific Excellence",
+          "text": "He is the recipient of numerous prestigious awards in Japan, including the Commendation for Science and Technology by the Minister of Education, Culture, Sports, Science and Technology and the 15th NTT DOCOMO Mobile Science Award (Advanced Technology Division). He also received the AIST President's Award twice as project leader."
+        },
+        {
+          "heading": "Leadership in Japan's Strategic Research Programs",
+          "text": "He has led numerous large-scale national research projects in Japan as Principal Investigator and currently serves as PI of a project under the Economic Security Critical Technology Development Program (K Program). He also contributed to the Cabinet Office's Strategic Innovation Promotion Program (SIP) as a Sub-Program Director."
+        },
+        {
+          "heading": "Bringing Cryptographic Research into Practice",
+          "text": "As a Principal Researcher at AIST, Dr. Hanaoka has conducted numerous industry-academia collaborative projects and contributed to the practical deployment of advanced cryptographic technologies through extensive collaboration with industrial partners."
+        }
+      ]
+    }
   ]
 }

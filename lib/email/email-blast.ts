@@ -31,9 +31,50 @@ function chunk<T>(items: T[], size: number): T[][] {
   return out;
 }
 
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// Resend's batch endpoint doesn't accept attachments at all (its batch payload type omits the
+// field) — they're silently dropped rather than rejected, which is easy to miss. So a blast with
+// an attachment falls back to one request per recipient via the regular send endpoint, paced to
+// stay under Resend's default rate limit.
+const SINGLE_SEND_DELAY_MS = 550;
+
+async function sendIndividually(input: {
+  from: string;
+  recipients: string[];
+  subject: string;
+  html: string;
+  attachments: BlastAttachment[];
+}): Promise<BlastSendResult> {
+  const resend = getResendClient();
+  const result: BlastSendResult = { sent: 0, failed: [] };
+
+  for (const to of input.recipients) {
+    try {
+      const { error } = await resend.emails.send({
+        from: input.from,
+        to,
+        subject: input.subject,
+        html: input.html,
+        attachments: input.attachments,
+      });
+      if (error) result.failed.push({ email: to, error: error.message });
+      else result.sent++;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "Unknown send error";
+      result.failed.push({ email: to, error: message });
+    }
+    await sleep(SINGLE_SEND_DELAY_MS);
+  }
+
+  return result;
+}
+
 /**
  * Send one personalized message per recipient (single-address `to`, so recipients never see each
- * other) from the no-reply sender, batched. A failed batch marks its recipients failed rather than
+ * other) from the no-reply sender. A failed batch marks its recipients failed rather than
  * aborting the whole run. `subject`/`html` are already final (sanitized + wrapped) by the caller.
  */
 export async function sendEmailBlastMessages(input: {
@@ -43,6 +84,17 @@ export async function sendEmailBlastMessages(input: {
   attachments?: BlastAttachment[];
 }): Promise<BlastSendResult> {
   const from = noreplyFromAddress();
+
+  if (input.attachments?.length) {
+    return sendIndividually({
+      from,
+      recipients: input.recipients,
+      subject: input.subject,
+      html: input.html,
+      attachments: input.attachments,
+    });
+  }
+
   const resend = getResendClient();
   const result: BlastSendResult = { sent: 0, failed: [] };
 
@@ -52,7 +104,6 @@ export async function sendEmailBlastMessages(input: {
       to,
       subject: input.subject,
       html: input.html,
-      ...(input.attachments?.length ? { attachments: input.attachments } : {}),
     }));
     try {
       // Permissive validation delivers every valid message and returns a per-index error list,

@@ -6,6 +6,8 @@ import type { BlastAttachment } from "@/lib/email/email-blast";
 import { sendEmailBlastMessages, sendSingleBlastMessage } from "@/lib/email/email-blast";
 import { renderEmailBlastHtml } from "@/lib/email/email-blast.templates";
 import { parseAdminYear } from "@/modules/admin/lib/year";
+import { getAppSettings } from "@/modules/admin/settings/lib/queries";
+import { testModeRecipients } from "@/modules/admin/settings/lib/test-mode";
 import {
   hasRenderableBody,
   isEmailableRow,
@@ -221,8 +223,8 @@ export async function sendTestPresentationRosterBlast(input: {
   const session = await getCurrentAdminSession();
   if (!session) return fail("Not authorized.");
 
-  const testEmail = process.env.TEST_EMAIL;
-  if (!testEmail) return fail("TEST_EMAIL is not configured.");
+  const settings = await getAppSettings();
+  const testers = testModeRecipients(settings.testerEmails);
 
   const year = parseAdminYear(input.year);
   const content = prepareContent(input.subject, input.html);
@@ -237,7 +239,7 @@ export async function sendTestPresentationRosterBlast(input: {
 
   try {
     await sendSingleBlastMessage({
-      to: testEmail,
+      to: testers,
       subject: content.subject,
       html,
       attachments: decodeAttachment(input.attachment),

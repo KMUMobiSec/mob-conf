@@ -82,7 +82,7 @@ export async function sendEmailBlastMessages(input: {
 
 /** Send a single blast message (used by the "send test to me" preview). Throws on failure. */
 export async function sendSingleBlastMessage(input: {
-  to: string;
+  to: string | string[];
   subject: string;
   html: string;
   attachments?: BlastAttachment[];

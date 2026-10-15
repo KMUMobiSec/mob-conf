@@ -6,6 +6,8 @@ import { sendEmailBlastMessages, sendSingleBlastMessage } from "@/lib/email/emai
 import { renderEmailBlastHtml } from "@/lib/email/email-blast.templates";
 import { parseAdminYear } from "@/modules/admin/lib/year";
 import { listRegistrationsByIds } from "@/modules/admin/qr-check-ins/lib/queries";
+import { getAppSettings } from "@/modules/admin/settings/lib/queries";
+import { testModeRecipients } from "@/modules/admin/settings/lib/test-mode";
 import { hasRenderableBody, isEmailableRow, resolveRecipientEmails } from "./lib/recipients";
 import { sanitizeEmailHtml } from "./lib/sanitize";
 
@@ -95,8 +97,8 @@ export async function sendTestEmailBlast(input: {
   const session = await getCurrentAdminSession();
   if (!session) return fail("Not authorized.");
 
-  const testEmail = process.env.TEST_EMAIL;
-  if (!testEmail) return fail("TEST_EMAIL is not configured.");
+  const settings = await getAppSettings();
+  const testers = testModeRecipients(settings.testerEmails);
 
   const year = parseAdminYear(input.year);
   const content = prepareContent(input.subject, input.html);
@@ -110,7 +112,7 @@ export async function sendTestEmailBlast(input: {
   });
 
   try {
-    await sendSingleBlastMessage({ to: testEmail, subject: content.subject, html });
+    await sendSingleBlastMessage({ to: testers, subject: content.subject, html });
     return { ok: true, sent: 1, failed: [], skipped: 0 };
   } catch (error) {
     console.error("Failed to send test email blast", error);

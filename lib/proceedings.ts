@@ -42,11 +42,7 @@ const PROCEEDINGS_CONFIG: Record<
   ValidYear,
   { csvPath: string; papersDir: string; coverImage: string } | null
 > = {
-  2025: {
-    csvPath: "public/data/2025/program-book-table.csv",
-    papersDir: "public/data/2025/mobisec-papers",
-    coverImage: "/proceedings/mobisec-2025.png",
-  },
+  2025: null,
   2026: null,
 };
 

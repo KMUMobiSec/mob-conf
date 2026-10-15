@@ -1,86 +1,437 @@
 [
   {
-    "title": "총괄 위원장",
-    "members": [{ "name": "유일선", "affiliation": "국민대학교, 대한민국" }]
-  },
-  {
-    "title": "프로그램 위원장",
+    "title": "명예위원장",
     "members": [
-      { "name": "Francesco Colace", "affiliation": "살레르노 대학교, 이탈리아" },
-      { "name": "Kun-Lin Tsai", "affiliation": "동해대학교, 대만" }
+      {
+        "name": "Il Yeon Cho",
+        "affiliation": "Electronics and Telecommunications Research Institute (ETRI), South Korea"
+      },
+      {
+        "name": "Fang-Yie Leu",
+        "affiliation": "Tunghai University, Taiwan"
+      },
+      {
+        "name": "Kouichi Sakurai",
+        "affiliation": "Kyushu University, Japan"
+      }
     ]
   },
   {
-    "title": "조직 위원장",
+    "title": "운영위원장",
     "members": [
-      { "name": "김지윤", "affiliation": "경상국립대학교, 대한민국" },
-      { "name": "Gaurav Choudhary", "affiliation": "덴마크 공과대학교, 코펜하겐" }
+      {
+        "name": "Young-Ho Park",
+        "affiliation": "Sejong Cyber University, South Korea"
+      },
+      {
+        "name": "Koji Nakao",
+        "affiliation": "NICT and Yokohama National University, Japan"
+      },
+      {
+        "name": "Ilsun You",
+        "affiliation": "Kookmin University, South Korea"
+      }
     ]
   },
   {
-    "title": "특별 고문",
+    "title": "총괄위원장",
     "members": [
-      { "name": "Andreas Holzinger", "affiliation": "BOKU 비엔나 대학교, 오스트리아" },
-      { "name": "Edgar Weippl", "affiliation": "비엔나 대학교, 오스트리아" }
+      {
+        "name": "Kiwook Sohn",
+        "affiliation": "Seoul National University of Science and Technology, South Korea"
+      },
+      {
+        "name": "Goichiro Hanaoka",
+        "affiliation": "AIST, Japan"
+      },
+      {
+        "name": "Jeong Nye Kim",
+        "affiliation": "Electronics and Telecommunications Research Institute (ETRI), South Korea"
+      }
     ]
   },
   {
-    "title": "홍보 위원장",
-    "members": [{ "name": "Domenico Santaniello", "affiliation": "살레르노 대학교, 이탈리아" }]
-  },
-  {
-    "title": "출판 위원장",
+    "title": "프로그램위원회 위원장",
     "members": [
-      { "name": "I Wayan Adi Juliawan Pawana", "affiliation": "우다야나 대학교, 인도네시아" }
+      {
+        "name": "Hwankuk Kim",
+        "affiliation": "Kookmin University, South Korea"
+      },
+      {
+        "name": "SeongHan Shin",
+        "affiliation": "AIST, Japan"
+      },
+      {
+        "name": "Antonio Skarmeta",
+        "affiliation": "University of Murcia, Spain"
+      }
     ]
   },
   {
-    "title": "웹 위원장",
+    "title": "포스터 위원장",
     "members": [
-      { "name": "Vincent Abella", "affiliation": "국민대학교, 대한민국" },
-      { "name": "Jhury Kevin Lastre", "affiliation": "국민대학교, 대한민국" },
-      { "name": "Iskandar Adi Panca Saputra", "affiliation": "국민대학교, 대한민국" }
+      {
+        "name": "Jiyoon Kim",
+        "affiliation": "Gyeongsang National University, South Korea"
+      },
+      {
+        "name": "Il-Gu Lee",
+        "affiliation": "Sungshin Women's University, South Korea"
+      },
+      {
+        "name": "Jungsoo Park",
+        "affiliation": "Kangnam University, South Korea"
+      }
     ]
   },
   {
-    "title": "프로그램 위원회",
+    "title": "워크숍 위원장",
     "members": [
-      { "name": "Md Amiruzzaman", "affiliation": "웨스트 체스터 대학교, 미국" },
-      { "name": "Mario Casillo", "affiliation": "살레르노 대학교, 이탈리아" },
-      { "name": "Yen-Lin Chen", "affiliation": "국립타이베이과기대학교, 대만" },
-      { "name": "최재원", "affiliation": "순천향대학교, 대한민국" },
-      { "name": "최상민", "affiliation": "경상국립대학교, 대한민국" },
-      { "name": "John Chui", "affiliation": "홍콩메트로폴리탄대학교, 홍콩" },
-      { "name": "Jialiang Gu", "affiliation": "홍콩교육대학교, 홍콩" },
-      { "name": "한윤희", "affiliation": "한국기술교육대학교, 대한민국" },
-      { "name": "Narit Hnoohom", "affiliation": "마히돌대학교, 태국" },
-      { "name": "홍민", "affiliation": "순천향대학교, 대한민국" },
-      { "name": "Kevin Hung", "affiliation": "홍콩메트로폴리탄대학교, 홍콩" },
-      { "name": "Anuchit Jitpattanakul", "affiliation": "KMUTNB, 태국" },
-      { "name": "I Putu Agus Eka Darma Udayana", "affiliation": "인도네시아 비즈니스 기술 연구소" },
-      { "name": "Jacky Wai Keung", "affiliation": "홍콩시립대학교, 홍콩" },
-      { "name": "김중헌", "affiliation": "고려대학교, 대한민국" },
-      { "name": "Jean Lai", "affiliation": "홍콩침례대학교, 홍콩" },
-      { "name": "Jeng-Wei Lin", "affiliation": "국립치난대학교, 대만" },
-      { "name": "Linawati", "affiliation": "우다야나 대학교, 인도네시아" },
-      { "name": "Angelo Lorusso", "affiliation": "살레르노 대학교, 이탈리아" },
-      { "name": "Massimo Mecella", "affiliation": "로마 사피엔차 대학교, 이탈리아" },
-      { "name": "Sakorn Mekruksavanich", "affiliation": "파야오 대학교, 태국" },
-      { "name": "Mert Nakip", "affiliation": "IITIS, 폴란드 과학 아카데미, 폴란드" },
-      { "name": "Zhuzhong Qian", "affiliation": "난징대학교, 중국" },
-      { "name": "Malek Ben Salem", "affiliation": "AILeap, 미국" },
-      { "name": "Gede Sukadarmika", "affiliation": "우다야나 대학교, 인도네시아" },
-      { "name": "Feilong Tang", "affiliation": "상하이교통대학교, 중국" },
-      { "name": "Alfredo Troiano", "affiliation": "NetCom Group S.p.A., 이탈리아" },
-      { "name": "Zhen-Yu Wu", "affiliation": "국립가오슝과기대학교, 대만" },
-      { "name": "Chao-Tung Yang", "affiliation": "동해대학교, 대만" },
-      { "name": "Farah Yan", "affiliation": "홍콩메트로폴리탄대학교, 홍콩" },
-      { "name": "William Yeoh", "affiliation": "홍콩메트로폴리탄대학교, 홍콩" },
-      { "name": "Meng Yu", "affiliation": "거버너스 주립대학교, 미국" },
-      { "name": "Xingjun Zhang", "affiliation": "시안교통대학교, 중국" },
-      { "name": "Fajar Purnama", "affiliation": "우다야나 대학교, 인도네시아" },
-      { "name": "Lely Meilina", "affiliation": "우다야나 대학교, 인도네시아" },
-      { "name": "신대민", "affiliation": "금융보안원, 대한민국" }
+      {
+        "name": "Shingo Sato",
+        "affiliation": "Yokohama National University, Japan"
+      },
+      {
+        "name": "Jong-Geun Park",
+        "affiliation": "Electronics and Telecommunications Research Institute (ETRI), South Korea"
+      },
+      {
+        "name": "Taek-Young Youn",
+        "affiliation": "Dankook University, South Korea"
+      }
+    ]
+  },
+  {
+    "title": "특별세션 위원장",
+    "members": [
+      {
+        "name": "Yuta Kodera",
+        "affiliation": "Okayama University, Japan"
+      },
+      {
+        "name": "Ki-Woong Park",
+        "affiliation": "Sejong University, South Korea"
+      }
+    ]
+  },
+  {
+    "title": "현지준비위원장",
+    "members": [
+      {
+        "name": "Hyungrok Jo",
+        "affiliation": "Yokohama National University, Japan"
+      },
+      {
+        "name": "Bonam Kim",
+        "affiliation": "Kookmin University, South Korea"
+      }
+    ]
+  },
+  {
+    "title": "국제협력위원장",
+    "members": [
+      {
+        "name": "Yuntao Wang",
+        "affiliation": "The University of Electro-Communications, Japan"
+      },
+      {
+        "name": "Karl Andersson",
+        "affiliation": "Luleå University of Technology, Sweden"
+      }
+    ]
+  },
+  {
+    "title": "홍보위원장",
+    "members": [
+      {
+        "name": "Kuo-Hui Yeh",
+        "affiliation": "National Yang Ming Chiao Tung University, Taiwan"
+      },
+      {
+        "name": "Su Hyun Kim",
+        "affiliation": "SoonChunHyang University, South Korea"
+      }
+    ]
+  },
+  {
+    "title": "출판위원장",
+    "members": [
+      {
+        "name": "Philip Astilo",
+        "affiliation": "University of San Carlos, Philippines"
+      }
+    ]
+  },
+  {
+    "title": "산업세션 위원장",
+    "members": [
+      {
+        "name": "Bona Kim",
+        "affiliation": "ICTK Co., Ltd., South Korea"
+      }
+    ]
+  },
+  {
+    "title": "자문위원회",
+    "members": [
+      {
+        "name": "Han-Chieh Chao",
+        "affiliation": "Fo Guang University, Taiwan"
+      },
+      {
+        "name": "Xiaofeng Chen",
+        "affiliation": "Xidian University, China"
+      },
+      {
+        "name": "Chun-I Fan",
+        "affiliation": "National Sun Yat-sen University, Taiwan"
+      },
+      {
+        "name": "Souhwan Jung",
+        "affiliation": "Soongsil University, South Korea"
+      },
+      {
+        "name": "Howon Kim",
+        "affiliation": "Pusan National University, South Korea"
+      },
+      {
+        "name": "Tei-Wei Kuo",
+        "affiliation": "Delta Electronics, Taiwan"
+      },
+      {
+        "name": "Dong Hoon Lee",
+        "affiliation": "Korea University, South Korea"
+      },
+      {
+        "name": "Yi-Bing Lin",
+        "affiliation": "National Yang Ming Chiao Tung University, Taiwan"
+      },
+      {
+        "name": "Atsuko Miyaji",
+        "affiliation": "Osaka University, Japan"
+      },
+      {
+        "name": "Kyung-Hyune Rhee",
+        "affiliation": "Pukyong National University, South Korea"
+      },
+      {
+        "name": "Jaecheol Ryou",
+        "affiliation": "Chungnam National University, South Korea"
+      },
+      {
+        "name": "Yoshitaka Shibata",
+        "affiliation": "Iwate Prefectural University, Japan"
+      },
+      {
+        "name": "Junji Shikata",
+        "affiliation": "Yokohama National University, Japan"
+      },
+      {
+        "name": "Huachun Zhou",
+        "affiliation": "Beijing Jiaotong University, China"
+      }
+    ]
+  },
+  {
+    "title": "조직위원회",
+    "members": [
+      {
+        "name": "Dooho Choi",
+        "affiliation": "Korea University, South Korea"
+      },
+      {
+        "name": "Yangsoo Choi",
+        "affiliation": "ELUON, South Korea"
+      },
+      {
+        "name": "Sookhyun Jeon",
+        "affiliation": "TTA, South Korea"
+      },
+      {
+        "name": "Jung Min Kang",
+        "affiliation": "Korea University, South Korea"
+      },
+      {
+        "name": "Jin Kwak",
+        "affiliation": "Ajou University, South Korea"
+      },
+      {
+        "name": "Seiil Son",
+        "affiliation": "KCA, South Korea"
+      }
+    ]
+  },
+  {
+    "title": "프로그램위원회",
+    "members": [
+      {
+        "name": "Ramón Alcarria",
+        "affiliation": "Universidad Politécnica de Madrid, Spain"
+      },
+      {
+        "name": "Pelin Angin",
+        "affiliation": "Middle East Technical University, Türkiye"
+      },
+      {
+        "name": "Ram Basnet",
+        "affiliation": "Colorado Mesa University, USA"
+      },
+      {
+        "name": "Daniele Bringhenti",
+        "affiliation": "Polytechnic University of Turin, Italy"
+      },
+      {
+        "name": "Yuanlong Cao",
+        "affiliation": "Jiangxi Normal University, China"
+      },
+      {
+        "name": "Gaurav Choudhary",
+        "affiliation": "University of Southern Denmark, Denmark"
+      },
+      {
+        "name": "Yu-Fang Chung",
+        "affiliation": "Tunghai University, Taiwan"
+      },
+      {
+        "name": "Baojiang Cui",
+        "affiliation": "BUPT, China"
+      },
+      {
+        "name": "Steven Duong",
+        "affiliation": "University of Wollongong, Australia"
+      },
+      {
+        "name": "Jianfeng Guan",
+        "affiliation": "BUPT, China"
+      },
+      {
+        "name": "Shoichi Hirose",
+        "affiliation": "University of Fukui, Japan"
+      },
+      {
+        "name": "Huisu Jang",
+        "affiliation": "Soongsil University, South Korea"
+      },
+      {
+        "name": "Sanghoon Jeon",
+        "affiliation": "Kookmin University, South Korea"
+      },
+      {
+        "name": "Anuchit Jitpattanakul",
+        "affiliation": "KMUTNB, Thailand"
+      },
+      {
+        "name": "Jongkil Kim",
+        "affiliation": "Ewha Womans University, South Korea"
+      },
+      {
+        "name": "Taeguen Kim",
+        "affiliation": "Korea University, South Korea"
+      },
+      {
+        "name": "Youngsoo Kim",
+        "affiliation": "Electronics and Telecommunications Research Institute (ETRI), South Korea"
+      },
+      {
+        "name": "Dowon Kim",
+        "affiliation": "KISA, South Korea"
+      },
+      {
+        "name": "Hyun Kwon",
+        "affiliation": "Korea Military Academy, South Korea"
+      },
+      {
+        "name": "Mun-Kyu Lee",
+        "affiliation": "Inha University, South Korea"
+      },
+      {
+        "name": "C. Mala",
+        "affiliation": "National Institute of Technology Tiruchirapalli, India"
+      },
+      {
+        "name": "Sakorn Mekruksavanich",
+        "affiliation": "University of Phayao, Thailand"
+      },
+      {
+        "name": "Alessio Merlo",
+        "affiliation": "CASD School of Advanced Defense Studies, Italy"
+      },
+      {
+        "name": "Moohong Min",
+        "affiliation": "SKKU, South Korea"
+      },
+      {
+        "name": "Hoonyong Park",
+        "affiliation": "AUTOCRYPT, South Korea"
+      },
+      {
+        "name": "Seongmin Park",
+        "affiliation": "KISA, South Korea"
+      },
+      {
+        "name": "Marek Pawlicki",
+        "affiliation": "Bydgoszcz University of Science and Technology, Poland"
+      },
+      {
+        "name": "SeogChung Seo",
+        "affiliation": "Kookmin University, South Korea"
+      },
+      {
+        "name": "DaeMin Shin",
+        "affiliation": "Financial Security Institute, South Korea"
+      },
+      {
+        "name": "Kunwar Singh",
+        "affiliation": "NIT Trichy, India"
+      },
+      {
+        "name": "Toi Tomita",
+        "affiliation": "Yokohama National University, Japan"
+      },
+      {
+        "name": "Kunlin Tsai",
+        "affiliation": "Tunghai University, Taiwan"
+      },
+      {
+        "name": "Noriki Uchida",
+        "affiliation": "Fukuoka Institute of Technology, Japan"
+      },
+      {
+        "name": "Sang Uk Shin",
+        "affiliation": "Pukyong National University, South Korea"
+      },
+      {
+        "name": "Fulvio Valenza",
+        "affiliation": "Polytechnic University of Turin, Italy"
+      },
+      {
+        "name": "Luca Verderame",
+        "affiliation": "DIBRIS, University of Genova, Italy"
+      },
+      {
+        "name": "Elena Vlahu-Gjorgievska",
+        "affiliation": "University of Wollongong, Australia"
+      },
+      {
+        "name": "Yohei Watanabe",
+        "affiliation": "The University of Electro-Communications, Japan"
+      },
+      {
+        "name": "Jie Xu",
+        "affiliation": "BUPT, China"
+      },
+      {
+        "name": "Akihiro Yamamura",
+        "affiliation": "Akita University, Japan"
+      },
+      {
+        "name": "Toshihiro Yamauchi",
+        "affiliation": "Okayama University, Japan"
+      },
+      {
+        "name": "Baokang Zhao",
+        "affiliation": "NUDT, China"
+      }
     ]
   }
 ]

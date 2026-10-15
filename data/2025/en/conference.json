@@ -1,15 +1,16 @@
 {
   "conferenceName": "MOBISEC 2025",
-  "conferenceFullTitle": "The 1st KIISC International Conference on Mobile Internet Security",
-  "dates": "December 16–18, 2025",
+  "conferenceFullTitle": "The 9th KIISC International Conference on Mobile Internet Security",
+  "dates": "December 16–19, 2025",
   "venue": "Hotel Emisia Sapporo",
   "location": "Sapporo, Japan",
   "collaborators": [
     {
       "name": "KIISC",
       "subtitle": "Mobile Internet Security",
-      "role": "Organizer",
-      "logo": "/assets/logo/mobisec-logo.png"
+      "role": "Hosted By",
+      "logo": "/assets/logo/kiisc-logo-black.png",
+      "logoDark": "/assets/logo/kiisc-logo-white.png"
     }
   ]
 }

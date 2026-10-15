@@ -85,19 +85,18 @@ export function Navbar() {
   const programDisabled = PROGRAM_SUBNAV.every((item) => item.disabled);
 
   const AWARDS_SUBNAV: NavItem[] = [
-    { key: "announcement", href: `/${year}/announcement`, disabled: isDisabled("announcement") },
-    { key: "rollOfHonors", href: `/${year}/roll-of-honors`, disabled: isDisabled("rollOfHonors") },
-  ];
-  const awardsDisabled = AWARDS_SUBNAV.every((item) => item.disabled);
-
-  // Remaining top-level links. Lifetime Achievement is hidden on desktop to save
-  // space; it still appears in the mobile sheet and footer.
-  const NAV_LINKS: NavItem[] = [
     {
       key: "lifetimeAchievement",
       href: `/${year}/lifetime-achievement`,
       disabled: isDisabled("lifetimeAchievement"),
     },
+    { key: "announcement", href: `/${year}/announcement`, disabled: isDisabled("announcement") },
+    { key: "rollOfHonors", href: `/${year}/roll-of-honors`, disabled: isDisabled("rollOfHonors") },
+  ];
+  const awardsDisabled = AWARDS_SUBNAV.every((item) => item.disabled);
+
+  // Remaining top-level links.
+  const NAV_LINKS: NavItem[] = [
     {
       key: "authorInstructions",
       href: `/${year}/author-instruction`,

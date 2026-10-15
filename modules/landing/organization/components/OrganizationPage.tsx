@@ -16,14 +16,14 @@ const glassCard = "bg-card/60 backdrop-blur-xl border border-border/60 rounded-l
 
 const organizedBy = [
   "KIISC Research Group on 6G Security",
-  "ETRI",
+  "Electronics and Telecommunications Research Institute (ETRI)",
   "Tunghai University",
   "Asia University",
 ];
 
 const collaborators = [
   "KIISC Research Group on 6G Security",
-  "ETRI",
+  "Electronics and Telecommunications Research Institute (ETRI)",
   "Tunghai University",
   "Asia University",
   "Kookmin University",

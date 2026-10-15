@@ -55,9 +55,9 @@ export const YEAR_CONFIG: Record<
   2025: {
     conferenceName: "MOBISEC 2025",
     edition: "9th",
-    dates: "December 16–18, 2025",
+    dates: "December 16–19, 2025",
     startDate: "2025-12-16",
-    endDate: "2025-12-18",
+    endDate: "2025-12-19",
     location: "Sapporo, Japan",
     city: "Sapporo",
     countryCode: "JP",
@@ -67,7 +67,7 @@ export const YEAR_CONFIG: Record<
     cfpLeafletUrl: "/assets/files/2025/mobisec-cfp-2025.pdf",
     programBookUrl: "/data/2025/program-book-table.csv",
     registrationUrl: "",
-    disabledRoutes: ["featuredSpeakers", "programFlow"],
+    disabledRoutes: ["featuredSpeakers", "programFlow", "rollOfHonors"],
   },
   2026: {
     conferenceName: "MOBISEC 2026",

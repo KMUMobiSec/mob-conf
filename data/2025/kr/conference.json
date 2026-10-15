@@ -1,7 +1,7 @@
 {
   "conferenceName": "MOBISEC 2025",
-  "conferenceFullTitle": "제1회 KIISC 모바일 인터넷 보안 국제 학술대회",
-  "dates": "2025년 12월 16~18일",
+  "conferenceFullTitle": "제9회 KIISC 모바일 인터넷 보안 국제 학술대회",
+  "dates": "2025년 12월 16~19일",
   "venue": "호텔 에미시아 삿포로",
   "location": "일본 삿포로",
   "collaborators": [
@@ -9,7 +9,8 @@
       "name": "KIISC",
       "subtitle": "모바일 인터넷 보안",
       "role": "주최",
-      "logo": "/assets/logo/mobisec-logo.png"
+      "logo": "/assets/logo/kiisc-logo-black.png",
+      "logoDark": "/assets/logo/kiisc-logo-white.png"
     }
   ]
 }

@@ -18,11 +18,15 @@ export const dbClient =
   globalForDb.postgresClient ??
   postgres(databaseUrl, {
     prepare: false,
+    // Supabase's session-mode pooler caps the whole project at 15 concurrent connections.
+    // Each serverless instance gets its own client, so keep per-instance usage minimal and
+    // release connections quickly instead of holding them open for the lifetime of the instance.
+    max: 1,
+    idle_timeout: 20,
+    connect_timeout: 10,
   });
 
-if (process.env.NODE_ENV !== "production") {
-  globalForDb.postgresClient = dbClient;
-}
+globalForDb.postgresClient = dbClient;
 
 export const db = drizzle(dbClient, { schema });
 

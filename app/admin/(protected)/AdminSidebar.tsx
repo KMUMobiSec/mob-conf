@@ -237,7 +237,11 @@ export function AdminSidebar({ user }: { user: { name?: string | null; email: st
                   tooltip={item.label}
                   className={ACTIVE_NAV_CLASS}
                 >
-                  <Link href={item.href}>
+                  {/* prefetch off: the sidebar's links are always on-screen, and the realtime poll
+                      on the QR check-ins page calls router.refresh() every few seconds — which
+                      invalidates the whole Router Cache and (with prefetch on) re-fetches every
+                      visible link's RSC payload in a loop, hammering the DB connection pool. */}
+                  <Link href={item.href} prefetch={false}>
                     <item.icon />
                     <span>{item.label}</span>
                   </Link>
@@ -257,7 +261,7 @@ export function AdminSidebar({ user }: { user: { name?: string | null; email: st
                 tooltip={tNav("setup")}
                 className={ACTIVE_NAV_CLASS}
               >
-                <Link href="/admin/setup">
+                <Link href="/admin/setup" prefetch={false}>
                   <Settings />
                   <span>{tNav("setup")}</span>
                 </Link>

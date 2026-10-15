@@ -32,6 +32,10 @@ const POLL_INTERVAL_MS = 3_000;
 export function useRegistrationsRealtime(year: number, label: string): void {
   const router = useRouter();
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Tracks whether the socket is actually delivering updates. Starts "unhealthy" so the poll
+  // covers the connection-in-progress window, then flips once SUBSCRIBED — at which point the
+  // poll goes idle instead of calling router.refresh() on a timer regardless of socket health.
+  const connectedRef = useRef(false);
 
   const scheduleRefresh = useCallback(() => {
     if (timerRef.current) clearTimeout(timerRef.current);
@@ -39,6 +43,7 @@ export function useRegistrationsRealtime(year: number, label: string): void {
   }, [router]);
 
   useEffect(() => {
+    connectedRef.current = false;
     let removeChannel: (() => void) | undefined;
     try {
       const supabase = createSupabaseBrowserClient();
@@ -50,6 +55,7 @@ export function useRegistrationsRealtime(year: number, label: string): void {
           scheduleRefresh,
         )
         .subscribe((status, error) => {
+          connectedRef.current = status === "SUBSCRIBED";
           if (status === "CHANNEL_ERROR" || status === "TIMED_OUT" || status === "CLOSED") {
             console.warn(`${label} realtime status: ${status}`, error ?? "");
           }
@@ -67,9 +73,10 @@ export function useRegistrationsRealtime(year: number, label: string): void {
     window.addEventListener("focus", onFocusOrVisible);
 
     // Reliable fallback, independent of the socket: poll while visible so a dead socket can't leave
-    // the dashboard stale for more than POLL_INTERVAL_MS.
+    // the dashboard stale for more than POLL_INTERVAL_MS. Skipped once the socket reports healthy,
+    // so a working connection doesn't also pay for a redundant full-page refresh every few seconds.
     const pollTimer = setInterval(() => {
-      if (document.visibilityState === "visible") scheduleRefresh();
+      if (!connectedRef.current && document.visibilityState === "visible") scheduleRefresh();
     }, POLL_INTERVAL_MS);
 
     return () => {

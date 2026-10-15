@@ -10,6 +10,12 @@ export interface BlastSendResult {
   failed: { email: string; error: string }[];
 }
 
+export interface BlastAttachment {
+  filename: string;
+  /** Raw file bytes. The same attachment is sent to every recipient in the batch. */
+  content: Buffer;
+}
+
 /** The no-reply sender all email blasts go out from. Throws if the env var is unset. */
 export function noreplyFromAddress(): string {
   const from = process.env.RESEND_EMAIL_FROM_NOREPLY;
@@ -34,6 +40,7 @@ export async function sendEmailBlastMessages(input: {
   subject: string;
   html: string;
   recipients: string[];
+  attachments?: BlastAttachment[];
 }): Promise<BlastSendResult> {
   const from = noreplyFromAddress();
   const resend = getResendClient();
@@ -45,6 +52,7 @@ export async function sendEmailBlastMessages(input: {
       to,
       subject: input.subject,
       html: input.html,
+      ...(input.attachments?.length ? { attachments: input.attachments } : {}),
     }));
     try {
       // Permissive validation delivers every valid message and returns a per-index error list,
@@ -77,6 +85,7 @@ export async function sendSingleBlastMessage(input: {
   to: string;
   subject: string;
   html: string;
+  attachments?: BlastAttachment[];
 }): Promise<void> {
   const from = noreplyFromAddress();
   const resend = getResendClient();
@@ -85,6 +94,7 @@ export async function sendSingleBlastMessage(input: {
     to: input.to,
     subject: input.subject,
     html: input.html,
+    ...(input.attachments?.length ? { attachments: input.attachments } : {}),
   });
   if (error) {
     throw new Error(`Resend failed to send email blast test: ${error.message}`);

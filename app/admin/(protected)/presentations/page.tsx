@@ -27,6 +27,7 @@ import { SearchInput } from "../SearchInput";
 import { TablePagination } from "../TablePagination";
 import { PresentationsViewTabs } from "./PresentationsViewTabs";
 import { ProgramView } from "./ProgramView";
+import { RosterStatusTable } from "./RosterStatusTable";
 
 export const metadata: Metadata = { title: "Presentations — Admin" };
 
@@ -85,6 +86,8 @@ async function TableSection({
 
   return (
     <div className="flex min-h-0 flex-1 flex-col gap-4 sm:gap-6">
+      <RosterStatusTable year={year} />
+
       <div className="flex flex-wrap items-center gap-3">
         <SearchInput
           placeholder={t("searchPlaceholder")}

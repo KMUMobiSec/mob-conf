@@ -1,8 +1,7 @@
 import "server-only";
 
 import { type ValidYear, YEAR_CONFIG } from "@/constants/config";
-import { publicBaseUrl, requirePublicBaseUrl } from "@/lib/routes/base-url";
-import { gettingAroundUrl } from "@/lib/routes/getting-around";
+import { requirePublicBaseUrl } from "@/lib/routes/base-url";
 import { registrationPassUrl } from "@/lib/routes/registration-pass";
 import { emailLogoUrl } from "./assets";
 import {
@@ -59,7 +58,6 @@ export async function sendCheckInWelcome(
   input: CheckInWelcomeEmailInput & { to: string | string[] },
 ): Promise<void> {
   const resend = getResendClient();
-  const baseUrl = publicBaseUrl();
   const { error } = await resend.emails.send({
     from: registrationFromAddress(),
     to: input.to,
@@ -67,7 +65,6 @@ export async function sendCheckInWelcome(
     html: renderCheckInWelcomeHtml({
       ...input,
       logoUrl: emailLogoUrl(),
-      gettingAroundUrl: baseUrl ? gettingAroundUrl(baseUrl, input.year) : undefined,
     }),
   });
 

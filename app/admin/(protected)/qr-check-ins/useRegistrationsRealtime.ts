@@ -21,6 +21,13 @@ const POLL_INTERVAL_MS = 3_000;
 /**
  * Subscribe an admin view to live registration updates for one conference year.
  *
+ * Requires `registrations` to be added to the `supabase_realtime` publication in Postgres
+ * (`ALTER PUBLICATION supabase_realtime ADD TABLE public.registrations;`, or toggle it on in
+ * Supabase Studio under Database → Replication). Without that, the channel subscribes
+ * successfully (no error, `status` reports SUBSCRIBED) but never receives a single event — it
+ * just silently never fires, which looks identical to "working but nothing ever changed" and is
+ * easy to miss since nothing here can detect it from the client.
+ *
  * Primary path is Supabase Postgres changes: any insert/update on `registrations` for this year —
  * a scan setting `checked_in_at`, a new registration, an edit, an undo — is delivered by the DB's
  * replication stream (no server-side "send" step that can fail), and schedules a debounced

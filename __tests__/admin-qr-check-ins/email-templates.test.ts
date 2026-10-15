@@ -50,22 +50,4 @@ describe("check-in welcome email", () => {
     expect(html).toContain("Welcome to MOBISEC 2026");
     expect(checkInWelcomeSubject(2026)).toContain("2026");
   });
-
-  it("includes the campus guide deep link when a getting-around URL is provided", () => {
-    const html = renderCheckInWelcomeHtml({
-      year: 2026,
-      name: "Grace Hopper",
-      gettingAroundUrl: "https://mobisec.example/2026#getting-around",
-    });
-
-    expect(html).toContain("Getting around");
-    expect(html).toContain("View the campus guide");
-    expect(html).toContain("https://mobisec.example/2026#getting-around");
-  });
-
-  it("omits the campus guide block when no getting-around URL is set", () => {
-    const html = renderCheckInWelcomeHtml({ year: 2026, name: "Grace Hopper" });
-
-    expect(html).not.toContain("View the campus guide");
-  });
 });

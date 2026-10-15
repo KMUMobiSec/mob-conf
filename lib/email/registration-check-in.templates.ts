@@ -124,8 +124,6 @@ export interface CheckInWelcomeEmailInput {
   year: number;
   name: string;
   logoUrl?: string;
-  /** Deep link to the campus "Getting Around" wayfinder section (omitted if no base URL). */
-  gettingAroundUrl?: string;
 }
 
 export function checkInWelcomeSubject(year: number): string {
@@ -133,29 +131,10 @@ export function checkInWelcomeSubject(year: number): string {
 }
 
 export function renderCheckInWelcomeHtml(input: CheckInWelcomeEmailInput): string {
-  const locationBlock = input.gettingAroundUrl
-    ? `
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 20px;border:1px solid ${BORDER};border-radius:10px;background:${PANEL};">
-        <tr>
-          <td style="padding:16px 18px;">
-            <p style="${LABEL}">Getting around</p>
-            <p style="margin:0 0 14px;font-size:15px;line-height:1.55;color:${INK};">First time on campus? Follow the step-by-step walk from Kookmin University's Main Gate to the MOBISEC venue buildings.</p>
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td style="border-radius:8px;background:${BRAND};">
-                  <a href="${escapeHtml(input.gettingAroundUrl)}" style="display:inline-block;padding:11px 22px;font-size:14px;font-weight:650;color:#ffffff;text-decoration:none;border-radius:8px;">View the campus guide</a>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>`
-    : "";
   const body = `
       <p style="${P}">Dear ${escapeHtml(input.name)},</p>
       <p style="${P}"><strong>Welcome to MOBISEC ${input.year}</strong>. Your check-in is complete, and we're glad to have you with us.</p>
       <p style="${P}">We hope you have a productive and inspiring conference experience.</p>
-      ${locationBlock}
       <p style="margin:0;font-size:15px;line-height:1.55;">Warm regards,<br />The MOBISEC ${input.year} Organizing Committee</p>`;
   return shell({
     year: input.year,

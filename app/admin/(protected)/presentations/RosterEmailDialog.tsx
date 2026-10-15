@@ -66,15 +66,7 @@ async function fileToBase64(file: File): Promise<string> {
   return dataUrl.slice(dataUrl.indexOf(",") + 1);
 }
 
-export function RosterEmailDialog({
-  year,
-  rows,
-  adminEmail,
-}: {
-  year: ValidYear;
-  rows: RosterStatusRow[];
-  adminEmail: string;
-}) {
+export function RosterEmailDialog({ year, rows }: { year: ValidYear; rows: RosterStatusRow[] }) {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [open, setOpen] = useState(false);
   const [subject, setSubject] = useState(DEFAULT_SUBJECT);
@@ -179,7 +171,7 @@ export function RosterEmailDialog({
           ? { filename: attachment.name, contentBase64: attachment.base64 }
           : undefined,
       });
-      if (res.ok) setMessage(`Test email sent to ${adminEmail}.`);
+      if (res.ok) setMessage("Test email sent.");
       else setError(res.error ?? "Could not send the test email.");
     });
   }

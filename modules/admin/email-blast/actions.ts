@@ -95,6 +95,9 @@ export async function sendTestEmailBlast(input: {
   const session = await getCurrentAdminSession();
   if (!session) return fail("Not authorized.");
 
+  const testEmail = process.env.TEST_EMAIL;
+  if (!testEmail) return fail("TEST_EMAIL is not configured.");
+
   const year = parseAdminYear(input.year);
   const content = prepareContent(input.subject, input.html);
   if (!content.ok) return fail(content.error);
@@ -107,7 +110,7 @@ export async function sendTestEmailBlast(input: {
   });
 
   try {
-    await sendSingleBlastMessage({ to: session.user.email, subject: content.subject, html });
+    await sendSingleBlastMessage({ to: testEmail, subject: content.subject, html });
     return { ok: true, sent: 1, failed: [], skipped: 0 };
   } catch (error) {
     console.error("Failed to send test email blast", error);

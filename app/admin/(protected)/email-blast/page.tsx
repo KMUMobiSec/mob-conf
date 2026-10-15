@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { getCurrentAdminSession } from "@/lib/auth/session";
 import { listRegistrationRecipients } from "@/modules/admin/email-blast/lib/queries";
 import { parseAdminYear } from "@/modules/admin/lib/year";
 import { EmailBlastComposer } from "./EmailBlastComposer";
@@ -17,7 +16,6 @@ export default async function EmailBlastPage({
 }) {
   const sp = await searchParams;
   const year = parseAdminYear(first(sp.year));
-  const session = await getCurrentAdminSession();
   const recipients = await listRegistrationRecipients(year);
 
   return (
@@ -29,11 +27,7 @@ export default async function EmailBlastPage({
           address. Import registrations to add more recipients.
         </p>
       </div>
-      <EmailBlastComposer
-        year={year}
-        recipients={recipients}
-        adminEmail={session?.user.email ?? ""}
-      />
+      <EmailBlastComposer year={year} recipients={recipients} />
     </div>
   );
 }

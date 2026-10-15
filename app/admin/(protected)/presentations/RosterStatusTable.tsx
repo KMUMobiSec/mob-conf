@@ -11,7 +11,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import type { ValidYear } from "@/constants/config";
-import { getCurrentAdminSession } from "@/lib/auth/session";
 import { formatAdminDate } from "@/modules/admin/lib/intl";
 import {
   listPresentationRosterStatus,
@@ -21,11 +20,7 @@ import { RosterEmailDialog } from "./RosterEmailDialog";
 import { RosterImportDialog } from "./RosterImportDialog";
 
 export async function RosterStatusTable({ year }: { year: ValidYear }) {
-  const [rows, session, locale] = await Promise.all([
-    listPresentationRosterStatus(year),
-    getCurrentAdminSession(),
-    getLocale(),
-  ]);
+  const [rows, locale] = await Promise.all([listPresentationRosterStatus(year), getLocale()]);
   const summary = summarizeRoster(rows);
 
   return (
@@ -54,9 +49,7 @@ export async function RosterStatusTable({ year }: { year: ValidYear }) {
             </a>
           </Button>
           <RosterImportDialog year={year} />
-          {rows.length > 0 ? (
-            <RosterEmailDialog year={year} rows={rows} adminEmail={session?.user.email ?? ""} />
-          ) : null}
+          {rows.length > 0 ? <RosterEmailDialog year={year} rows={rows} /> : null}
         </div>
       </div>
 

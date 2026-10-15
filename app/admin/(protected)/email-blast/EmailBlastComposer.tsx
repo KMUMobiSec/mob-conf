@@ -34,11 +34,9 @@ interface SendResult {
 export function EmailBlastComposer({
   year,
   recipients,
-  adminEmail,
 }: {
   year: ValidYear;
   recipients: RecipientEntry[];
-  adminEmail: string;
 }) {
   const [subject, setSubject] = useState("");
   const [html, setHtml] = useState(EMPTY_BODY);
@@ -93,7 +91,7 @@ export function EmailBlastComposer({
     reset();
     startTransition(async () => {
       const res = await sendTestEmailBlast({ year, subject, html });
-      if (res.ok) setMessage(`Test email sent to ${adminEmail}.`);
+      if (res.ok) setMessage("Test email sent.");
       else setError(res.error ?? "Could not send the test email.");
     });
   }

@@ -9,7 +9,17 @@ export interface SupabaseBrowserConfig {
   anonKey: string;
 }
 
-export function getSupabaseBrowserConfig(env: BrowserEnv = process.env): SupabaseBrowserConfig {
+// Next.js only inlines NEXT_PUBLIC_* values into the client bundle when they appear as a literal
+// `process.env.NEXT_PUBLIC_X` expression. Passing the whole `process.env` object through a variable
+// (as the old default parameter did) defeats that static replacement, so the browser always saw
+// these as undefined — which silently disabled realtime and forced qr-check-ins onto a perpetual
+// polling fallback instead of a live socket.
+const BROWSER_ENV: BrowserEnv = {
+  NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+};
+
+export function getSupabaseBrowserConfig(env: BrowserEnv = BROWSER_ENV): SupabaseBrowserConfig {
   const url = env.NEXT_PUBLIC_SUPABASE_URL?.trim();
   if (!url) {
     throw new Error("NEXT_PUBLIC_SUPABASE_URL is required for Supabase browser realtime");

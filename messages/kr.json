@@ -649,6 +649,7 @@
         "video": "동영상",
         "view": "보기",
         "summary": "총 {total}건",
+        "unmatchedHeading": "로스터와 일치하지 않는 제출물",
         "columns": {
           "paperNumber": "논문 번호",
           "title": "제목",

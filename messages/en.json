@@ -649,6 +649,7 @@
         "video": "Video",
         "view": "View",
         "summary": "{total} presentations",
+        "unmatchedHeading": "Submissions without a roster match",
         "columns": {
           "paperNumber": "Paper #",
           "title": "Title",

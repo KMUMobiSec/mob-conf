@@ -1,4 +1,5 @@
-import { CheckCircle2, Download } from "lucide-react";
+import { CheckCircle2, Download, Video } from "lucide-react";
+import Link from "next/link";
 import { getLocale } from "next-intl/server";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -64,7 +65,10 @@ export async function RosterStatusTable({ year }: { year: ValidYear }) {
                   <TableHead>Author</TableHead>
                   <TableHead>Contact Email</TableHead>
                   <TableHead>Uploaded</TableHead>
+                  <TableHead>Files</TableHead>
+                  <TableHead>Reviewed</TableHead>
                   <TableHead>Status</TableHead>
+                  <TableHead className="w-0" />
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -83,12 +87,51 @@ export async function RosterStatusTable({ year }: { year: ValidYear }) {
                     </TableCell>
                     <TableCell>
                       {row.presentationId ? (
+                        <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                          <span className="tabular-nums">{row.materialCount} files</span>
+                          {row.hasVideo && (
+                            <Badge variant="secondary">
+                              <Video className="size-3" />
+                              Video
+                            </Badge>
+                          )}
+                        </span>
+                      ) : (
+                        <span className="text-muted-foreground">—</span>
+                      )}
+                    </TableCell>
+                    <TableCell>
+                      {row.presentationId ? (
+                        row.isReviewed ? (
+                          <Badge>
+                            <CheckCircle2 className="size-3" />
+                            Reviewed
+                          </Badge>
+                        ) : (
+                          <span className="text-muted-foreground">—</span>
+                        )
+                      ) : (
+                        <span className="text-muted-foreground">—</span>
+                      )}
+                    </TableCell>
+                    <TableCell>
+                      {row.presentationId ? (
                         <Badge>
                           <CheckCircle2 className="size-3" />
                           Uploaded
                         </Badge>
                       ) : (
                         <Badge variant="secondary">Not uploaded</Badge>
+                      )}
+                    </TableCell>
+                    <TableCell>
+                      {row.presentationId && (
+                        <Link
+                          href={`/admin/presentations/${row.presentationId}`}
+                          className="text-sm font-medium text-primary hover:underline"
+                        >
+                          View
+                        </Link>
                       )}
                     </TableCell>
                   </TableRow>

@@ -1,8 +1,13 @@
 import "server-only";
 
-import { eq } from "drizzle-orm";
+import { eq, inArray } from "drizzle-orm";
 import { db } from "@/db";
-import { type PresentationRosterRow, presentationRoster, presentations } from "@/db/schema";
+import {
+  type PresentationRosterRow,
+  presentationFiles,
+  presentationRoster,
+  presentations,
+} from "@/db/schema";
 
 /** Normalize a paper number for matching (case/whitespace-insensitive). */
 function normalizePaperNumber(value: string): string {
@@ -18,12 +23,24 @@ export interface RosterStatusRow {
   /** The matched submission, if the author has already uploaded. */
   presentationId: string | null;
   submittedAt: Date | null;
+  materialCount: number;
+  hasVideo: boolean;
+  isReviewed: boolean;
 }
 
 export interface RosterSummary {
   total: number;
   uploaded: number;
   pending: number;
+}
+
+/** Paper numbers (normalized) already tracked on a year's roster. */
+export async function getRosterPaperNumbers(year: number): Promise<string[]> {
+  const rows = await db
+    .select({ paperNumber: presentationRoster.paperNumber })
+    .from(presentationRoster)
+    .where(eq(presentationRoster.year, year));
+  return rows.map((r) => normalizePaperNumber(r.paperNumber));
 }
 
 /** The roster for a year, each row annotated with whether (and when) it was uploaded. */
@@ -35,16 +52,44 @@ export async function listPresentationRosterStatus(year: number): Promise<Roster
         id: presentations.id,
         paperNumber: presentations.paperNumber,
         createdAt: presentations.createdAt,
+        isReviewed: presentations.isReviewed,
+        videoUrl: presentations.videoUrl,
       })
       .from(presentations)
       .where(eq(presentations.year, year)),
   ]);
 
-  const byPaperNumber = new Map<string, { id: string; createdAt: Date }>();
+  const submissionIds = submissions.map((s) => s.id);
+  const materialCounts = new Map<string, number>();
+  const videoIds = new Set<string>();
+
+  if (submissionIds.length) {
+    const fileRows = await db
+      .select({
+        presentationId: presentationFiles.presentationId,
+        kind: presentationFiles.kind,
+      })
+      .from(presentationFiles)
+      .where(inArray(presentationFiles.presentationId, submissionIds));
+
+    for (const file of fileRows) {
+      if (file.kind === "video") videoIds.add(file.presentationId);
+      else
+        materialCounts.set(file.presentationId, (materialCounts.get(file.presentationId) ?? 0) + 1);
+    }
+  }
+
+  const byPaperNumber = new Map<
+    string,
+    { id: string; createdAt: Date; isReviewed: boolean; hasVideo: boolean; materialCount: number }
+  >();
   for (const submission of submissions) {
     byPaperNumber.set(normalizePaperNumber(submission.paperNumber), {
       id: submission.id,
       createdAt: submission.createdAt,
+      isReviewed: submission.isReviewed,
+      hasVideo: videoIds.has(submission.id) || Boolean(submission.videoUrl),
+      materialCount: materialCounts.get(submission.id) ?? 0,
     });
   }
 
@@ -59,6 +104,9 @@ export async function listPresentationRosterStatus(year: number): Promise<Roster
         contactEmail: row.contactEmail,
         presentationId: match?.id ?? null,
         submittedAt: match?.createdAt ?? null,
+        materialCount: match?.materialCount ?? 0,
+        hasVideo: match?.hasVideo ?? false,
+        isReviewed: match?.isReviewed ?? false,
       };
     })
     .sort((a, b) => a.paperNumber.localeCompare(b.paperNumber, undefined, { numeric: true }));

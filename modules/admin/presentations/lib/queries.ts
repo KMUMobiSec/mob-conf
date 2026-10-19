@@ -1,6 +1,18 @@
 import "server-only";
 
-import { and, asc, count, desc, eq, ilike, inArray, or, type SQL } from "drizzle-orm";
+import {
+  and,
+  asc,
+  count,
+  desc,
+  eq,
+  ilike,
+  inArray,
+  notInArray,
+  or,
+  type SQL,
+  sql,
+} from "drizzle-orm";
 import { db } from "@/db";
 import { type PresentationFile, presentationFiles, presentations } from "@/db/schema";
 
@@ -28,6 +40,8 @@ export interface PresentationListFilters {
   q?: string;
   page?: number;
   pageSize?: number;
+  /** Paper numbers to exclude (case/whitespace-insensitive), e.g. ones already shown via the roster. */
+  excludePaperNumbers?: string[];
 }
 
 export interface PresentationListResult {
@@ -55,6 +69,11 @@ export async function listPresentations(
       ilike(presentations.contactEmail, like),
     );
     if (search) conditions.push(search);
+  }
+
+  if (filters.excludePaperNumbers?.length) {
+    const normalized = filters.excludePaperNumbers.map((p) => p.trim().toLowerCase());
+    conditions.push(notInArray(sql`lower(trim(${presentations.paperNumber}))`, normalized));
   }
 
   const whereClause = conditions.length ? and(...conditions) : undefined;

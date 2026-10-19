@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { RegistrationComingSoon } from "@/components/ui/RegistrationComingSoon";
 import { CURRENT_YEAR, type ValidYear, YEAR_CONFIG } from "@/constants/config";
 import { loadData } from "@/lib/data";
+import Accommodations from "./Accommodations";
 import CallForPapers from "./CallForPapers";
 import ImageCarousel from "./ImageCarousel";
 import Venue from "./Venue";
@@ -186,6 +187,16 @@ const HomePage = async ({ year }: { year: ValidYear }) => {
       <section className="px-4 sm:px-8 lg:px-12 py-16 sm:py-24">
         <div className="max-w-8xl mx-auto">
           <Venue year={year} />
+        </div>
+      </section>
+
+      {/* ── Accommodations Section ── */}
+      <section
+        id="stay"
+        className="scroll-mt-24 px-4 sm:px-8 lg:px-12 py-16 sm:py-24 border-t border-border/40"
+      >
+        <div className="max-w-8xl mx-auto">
+          <Accommodations year={year} />
         </div>
       </section>
 

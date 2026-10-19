@@ -1,0 +1,70 @@
+{
+  "primary": [
+    {
+      "name": "The Splendor Hotel Taichung",
+      "address": "No. 1049, Jianxing Rd., West District, Taichung City 403, Taiwan",
+      "websiteUrl": "https://www.splendor-taichung.com.tw/",
+      "image": "/assets/accommodations/splendor.jpg",
+      "isVenue": true,
+      "distanceMeters": 0,
+      "walkMinutes": 0,
+      "carMinutes": 0
+    },
+    {
+      "name": "Evergreen Laurel Hotel Taichung",
+      "address": "No. 666, Sec. 2, Taiwan Blvd., Xitun District, Taichung City 407, Taiwan",
+      "websiteUrl": "https://www.evergreen-hotels.com/branch/taichung",
+      "image": "/assets/accommodations/evergreen.webp",
+      "distanceMeters": 795,
+      "walkMinutes": 10,
+      "carMinutes": 3
+    },
+    {
+      "name": "Hotel National",
+      "address": "No. 57, Guanqian Rd., West District, Taichung City 403, Taiwan, near Calligraphy Greenway",
+      "websiteUrl": "https://hotel-national.com.tw/en/",
+      "image": "/assets/accommodations/hotel-national.webp",
+      "distanceMeters": 462,
+      "walkMinutes": 6,
+      "carMinutes": 3
+    }
+  ],
+  "additional": [
+    {
+      "name": "Airline Inn Green Park Way",
+      "address": "No. 22, Sec. 1, Meicun Rd., West District, Taichung City 403, Taiwan",
+      "websiteUrl": "https://www.airlineinn.com/GPW/en/",
+      "image": "/assets/accommodations/airline-inn-green-park-way.webp",
+      "distanceMeters": 2445,
+      "walkMinutes": 31,
+      "carMinutes": 5
+    },
+    {
+      "name": "Hotel Elizabeth",
+      "address": "No. 471, Zhongmei St., West District, Taichung City 403, Taiwan",
+      "websiteUrl": "https://hotelelizabeth.tw-taiwan.com/en/",
+      "image": "/assets/accommodations/hotel-elizabeth.webp",
+      "distanceMeters": 336,
+      "walkMinutes": 5,
+      "carMinutes": 3
+    },
+    {
+      "name": "Time Flyer Hotel",
+      "address": "No. 71, Mingyi St., West District, Taichung City 403, Taiwan",
+      "websiteUrl": "https://www.timeflyer.com.tw/",
+      "image": "/assets/accommodations/time-flyer-hotel.webp",
+      "distanceMeters": 324,
+      "walkMinutes": 5,
+      "carMinutes": 3
+    },
+    {
+      "name": "Green Hotel - West District",
+      "address": "No. 126, Minsheng North Rd., West District, Taichung City 403, Taiwan",
+      "websiteUrl": "https://www.greenhotel.com.tw/en/green-hotel/home/",
+      "image": "/assets/accommodations/green-hotel-west-district.png",
+      "distanceMeters": 1556,
+      "walkMinutes": 20,
+      "carMinutes": 3
+    }
+  ]
+}

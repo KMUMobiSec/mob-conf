@@ -309,6 +309,19 @@
     "gettingThere": "Getting There",
     "visitOfficialWebsite": "Visit Official Website"
   },
+  "Accommodations": {
+    "tag": "Stay",
+    "title": "Recommended Accommodations",
+    "description": "For your convenience, we have selected several hotels located within short walking distance of the venue.",
+    "primaryHeading": "Primary Hotels",
+    "additionalHeading": "Additional Nearby Options",
+    "additionalDescription": "The following accommodations are also situated within walking distance:",
+    "conferenceVenueBadge": "Conference Venue",
+    "distanceApprox": "≈ {meters} m from the venue",
+    "walkApprox": "≈ {minutes} min walk",
+    "carApprox": "≈ {minutes} min by car",
+    "note": "Note: Room availability and rates may vary. We recommend booking early to secure your preferred accommodation. Distances and travel times are approximate (straight-line/road-network estimates), not guaranteed."
+  },
   "Wayfinder": {
     "sectionLabel": "Getting Around",
     "title": "From the Main Gate to the Venue",

@@ -1,4 +1,4 @@
-import { BookOpen, Calendar, ExternalLink, MapPin, Users } from "lucide-react";
+import { BookOpen, Building2, Calendar, ExternalLink, MapPin, Users } from "lucide-react";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
@@ -17,7 +17,8 @@ interface PreviousEventsData {
     venue: string;
     status: string;
     website: string;
-    image: string;
+    /** Absent when no rights-cleared photo is available — renders a placeholder instead. */
+    image?: string;
     description: string;
     proceedings: string;
     topics: string[];
@@ -29,6 +30,11 @@ interface PreviousEventsData {
     countries: number;
     description: string;
   };
+}
+
+/** External editions aren't hosted on this site; internal ones (within VALID_YEARS) are. */
+function isExternalWebsite(website: string): boolean {
+  return /^https?:\/\//.test(website);
 }
 
 const PreviousEventsPage = async ({ year }: { year: ValidYear }) => {
@@ -200,16 +206,24 @@ const PreviousEventsPage = async ({ year }: { year: ValidYear }) => {
                   className={`flex flex-col gap-8 ${index % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"}`}
                 >
                   {/* Event Image */}
-                  <div className="relative w-full lg:w-1/2 aspect-video rounded-lg overflow-hidden">
-                    <Image
-                      src={conference.image}
-                      alt={`MOBISEC ${conference.year}`}
-                      fill
-                      className="object-cover"
-                    />
+                  <div className="relative w-full lg:w-1/2 aspect-video rounded-lg overflow-hidden bg-muted">
+                    {conference.image ? (
+                      <Image
+                        src={conference.image}
+                        alt={`MOBISEC ${conference.year}`}
+                        fill
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center">
+                        <Building2 className="h-10 w-10 text-muted-foreground/50" />
+                      </div>
+                    )}
                     <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8">
-                      <h3 className="subheading text-white mb-1">{conference.venue}</h3>
+                      {conference.venue && (
+                        <h3 className="subheading text-white mb-1">{conference.venue}</h3>
+                      )}
                       <p className="body text-white/80 flex items-center gap-1.5">
                         <MapPin className="h-3.5 w-3.5 shrink-0" />
                         {conference.location}
@@ -256,7 +270,13 @@ const PreviousEventsPage = async ({ year }: { year: ValidYear }) => {
                       </div>
                     </div>
                     <Button asChild variant="outline" className="w-fit">
-                      <a href={`/${conference.year}`}>
+                      <a
+                        href={conference.website}
+                        target={isExternalWebsite(conference.website) ? "_blank" : undefined}
+                        rel={
+                          isExternalWebsite(conference.website) ? "noopener noreferrer" : undefined
+                        }
+                      >
                         {t("visitWebsite", { year: conference.year })}
                         <ExternalLink className="h-3.5 w-3.5" />
                       </a>

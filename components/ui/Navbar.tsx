@@ -98,6 +98,11 @@ export function Navbar() {
   // Remaining top-level links.
   const NAV_LINKS: NavItem[] = [
     {
+      key: "specialSessions",
+      href: `/${year}/special-sessions`,
+      disabled: isDisabled("specialSessions"),
+    },
+    {
       key: "authorInstructions",
       href: `/${year}/author-instruction`,
       disabled: isDisabled("authorInstructions"),

@@ -20,6 +20,7 @@ const ROUTE_CONFIG: Record<
   rollOfHonors: { path: "/roll-of-honors", priority: 0.7, changeFrequency: "yearly" },
   authorInstructions: { path: "/author-instruction", priority: 0.9, changeFrequency: "monthly" },
   contact: { path: "/contact", priority: 0.5, changeFrequency: "yearly" },
+  specialSessions: { path: "/special-sessions", priority: 0.8, changeFrequency: "monthly" },
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -27,7 +27,8 @@ export type NavRouteKey =
   | "rollOfHonors"
   | "authorInstructions"
   | "contact"
-  | "lifetimeAchievement";
+  | "lifetimeAchievement"
+  | "specialSessions";
 
 export const YEAR_CONFIG: Record<
   ValidYear,
@@ -67,7 +68,7 @@ export const YEAR_CONFIG: Record<
     cfpLeafletUrl: "/assets/files/2025/mobisec-cfp-2025.pdf",
     programBookUrl: "/data/2025/program-book-table.csv",
     registrationUrl: "",
-    disabledRoutes: ["featuredSpeakers", "programFlow", "rollOfHonors"],
+    disabledRoutes: ["featuredSpeakers", "programFlow", "rollOfHonors", "specialSessions"],
   },
   2026: {
     conferenceName: "MOBISEC 2026",

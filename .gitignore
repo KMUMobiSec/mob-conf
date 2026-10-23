@@ -53,5 +53,8 @@ next-env.d.ts
 # Generated email preview (regenerate with scripts/preview-emails.ts)
 email-preview.html
 
+# Self-contained static export for handing off to other domains (see /html)
+/html/
+
 .vercel
 .env*

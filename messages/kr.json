@@ -34,6 +34,7 @@
     "announcement": "공지사항",
     "rollOfHonors": "명예의 전당",
     "awardRecipients": "시상 수상자",
+    "specialSessions": "스페셜 세션",
     "authorInstructions": "저자 안내",
     "registration": "등록",
     "adminLogin": "관리자 로그인",
@@ -217,6 +218,16 @@
     "responseNote": "문의해 주셔서 감사합니다. 가능한 빠른 시일 내에 답변 드리겠습니다.",
     "ctaTitle": "연구에 기여할 준비가 되셨나요?",
     "ctaDescription": "MOBISEC {year}에 연구를 제출하고 모바일 인터넷 보안 발전을 선도하는 연구자들과 함께하세요."
+  },
+  "SpecialSessionsPage": {
+    "label": "논문 모집",
+    "title": "스페셜 세션",
+    "subtitle": "MOBISEC {year}에서는 다음과 같은 스페셜 세션을 운영하며, 각 세션은 별도의 세션 의장과 제출 페이지를 갖습니다.",
+    "chairsHeading": "세션 의장",
+    "deadlineLabel": "제출 마감일",
+    "submitButton": "이 세션에 제출하기",
+    "empty": "이번 행사에서는 등록된 스페셜 세션이 없습니다.",
+    "note": "참고: 제출 마감일 및 링크는 ManuscriptLink를 통해 외부에서 관리되며 세션 의장에 의해 변경될 수 있습니다."
   },
   "KeynotesPage": {
     "title": "기조연설자",

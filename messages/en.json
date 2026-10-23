@@ -34,6 +34,7 @@
     "announcement": "Announcement",
     "rollOfHonors": "Roll of Honors",
     "awardRecipients": "Award Recipients",
+    "specialSessions": "Special Sessions",
     "authorInstructions": "Author Instructions",
     "registration": "Registration",
     "adminLogin": "Admin Login",
@@ -217,6 +218,16 @@
     "responseNote": "We look forward to hearing from you and will respond to your inquiry as soon as possible.",
     "ctaTitle": "Ready to Contribute?",
     "ctaDescription": "Submit your research to MOBISEC {year} and join leading researchers in advancing Mobile Internet Security."
+  },
+  "SpecialSessionsPage": {
+    "label": "Call for Papers",
+    "title": "Special Sessions",
+    "subtitle": "MOBISEC {year} hosts the following special sessions, each with its own chairs and submission page.",
+    "chairsHeading": "Session Chairs",
+    "deadlineLabel": "Submission deadline",
+    "submitButton": "Submit to this session",
+    "empty": "No special sessions are listed for this edition.",
+    "note": "Note: submission deadlines and links are managed externally via ManuscriptLink and may be updated by the session chairs."
   },
   "KeynotesPage": {
     "title": "Keynote Speakers",

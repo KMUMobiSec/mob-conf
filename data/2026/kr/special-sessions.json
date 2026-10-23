@@ -1,0 +1,38 @@
+{
+  "sessions": [
+    {
+      "code": "SECON'26",
+      "title": "Special Session on Secure and Cognitive Continuum",
+      "chairs": [
+        { "name": "Antonio Skarmeta", "affiliation": "University of Murcia, Spain" },
+        {
+          "name": "Manos Varvarigos",
+          "affiliation": "National Technical University of Athens, Greece"
+        }
+      ],
+      "submissionDeadline": "October 16, 2026 (KST/JST)",
+      "submissionUrl": "https://www.manuscriptlink.com/society/kiisc/conference/mobisec2026/secon26.htm"
+    },
+    {
+      "code": "FSA'26",
+      "title": "Special Session on Formal Security Verification",
+      "chairs": [
+        { "name": "Jiyoon Kim", "affiliation": "Gyeongsang National University, South Korea" },
+        { "name": "Hideki Sakurada", "affiliation": "ZEN University, Japan" }
+      ],
+      "submissionDeadline": "October 16, 2026 (KST/JST)",
+      "submissionUrl": "https://www.manuscriptlink.com/society/kiisc/conference/mobisec2026/fsv26_20260921.htm"
+    },
+    {
+      "code": "QuoUSKWe 2026",
+      "title": "Special Session on Quantum Software Stacks and Security Convergence Applications",
+      "chairs": [
+        { "name": "Gerardo Pelosi", "affiliation": "Polytechnic University of Milan, Italy" },
+        { "name": "Giovanni Agosta", "affiliation": "Polytechnic University of Milan, Italy" },
+        { "name": "Ilsun You", "affiliation": "Kookmin University, South Korea" }
+      ],
+      "submissionDeadline": "October 16, 2026 (KST/JST)",
+      "submissionUrl": "https://www.manuscriptlink.com/society/kiisc/conference/mobisec2026/QuoUSKWe26.htm"
+    }
+  ]
+}

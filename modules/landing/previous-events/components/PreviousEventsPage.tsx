@@ -44,18 +44,31 @@ const PreviousEventsPage = async ({ year }: { year: ValidYear }) => {
 
   const currentConfig = YEAR_CONFIG[CURRENT_YEAR];
 
-  // Build host locations from YEAR_CONFIG — current year is upcoming, rest are past
-  const hostLocations = [...VALID_YEARS]
-    .sort((a, b) => b - a) // newest first
+  // Host locations across the full MOBISEC history: years with a microsite on this domain
+  // (VALID_YEARS, with a real venue photo) plus every earlier edition from the archive data.
+  const hostedYears = new Set<ValidYear>(VALID_YEARS);
+  const hostedLocations = [...VALID_YEARS]
+    .sort((a, b) => b - a)
     .map((y) => {
       const config = YEAR_CONFIG[y];
       return {
-        year: y,
-        city: config.city,
+        year: String(y),
         location: config.location,
+        image: `/assets/venue/${y}/venue.jpg`,
         isUpcoming: y === CURRENT_YEAR,
       };
     });
+  const archiveLocations = previousEventsData.conferences
+    .filter((c) => !hostedYears.has(Number(c.year) as ValidYear))
+    .map((c) => ({
+      year: c.year,
+      location: c.location,
+      image: c.image,
+      isUpcoming: false,
+    }));
+  const hostLocations = [...hostedLocations, ...archiveLocations].sort(
+    (a, b) => Number(b.year) - Number(a.year),
+  );
 
   return (
     <div className="flex flex-col">
@@ -81,13 +94,19 @@ const PreviousEventsPage = async ({ year }: { year: ValidYear }) => {
             {hostLocations.map((loc) => (
               <div key={loc.year} className={`${glassCard} p-5 flex items-center justify-between`}>
                 <div className="flex items-center gap-3">
-                  <div className="relative w-12 h-8 rounded overflow-hidden shrink-0">
-                    <Image
-                      src={`/assets/venue/${loc.year}/venue.jpg`}
-                      alt={`MOBISEC ${loc.year}`}
-                      fill
-                      className="object-cover"
-                    />
+                  <div className="relative w-12 h-8 rounded overflow-hidden shrink-0 bg-muted">
+                    {loc.image ? (
+                      <Image
+                        src={loc.image}
+                        alt={`MOBISEC ${loc.year}`}
+                        fill
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center">
+                        <Building2 className="h-3.5 w-3.5 text-muted-foreground/50" />
+                      </div>
+                    )}
                   </div>
                   <div>
                     <p className="body text-foreground">{loc.location}</p>

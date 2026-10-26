@@ -49,7 +49,8 @@
       "proceedings": "온라인 논문집",
       "topics": [],
       "organizedBy": "KIISC",
-      "inConjunction": ""
+      "inConjunction": "",
+      "image": "/assets/venue/past/novotel-okinawa.jpg"
     },
     {
       "year": "2022",
@@ -63,7 +64,8 @@
       "proceedings": "Springer CCIS(Communications in Computer and Information Science) 수정 논문집",
       "topics": [],
       "organizedBy": "KIISC",
-      "inConjunction": ""
+      "inConjunction": "",
+      "image": "/assets/venue/past/jeju-oriental-hotel.jpg"
     },
     {
       "year": "2021",
@@ -77,7 +79,8 @@
       "proceedings": "Springer CCIS(Communications in Computer and Information Science) 수정 논문집",
       "topics": [],
       "organizedBy": "KIISC",
-      "inConjunction": ""
+      "inConjunction": "",
+      "image": "/assets/venue/past/jeju-oriental-hotel.jpg"
     },
     {
       "year": "2019",
@@ -118,7 +121,8 @@
       "proceedings": "학회 논문집",
       "topics": [],
       "organizedBy": "KIISC 5G 보안 연구회, 산카를로스 대학교",
-      "inConjunction": ""
+      "inConjunction": "",
+      "image": "/assets/venue/past/cebu-phillipines.jpg"
     },
     {
       "year": "2017",
@@ -140,7 +144,8 @@
         "모바일 애플리케이션 보안"
       ],
       "organizedBy": "Innovative Information Science & Technology Research Group",
-      "inConjunction": ""
+      "inConjunction": "",
+      "image": "/assets/venue/past/international-convention-center-jeju.webp"
     },
     {
       "year": "2016",
@@ -154,7 +159,8 @@
       "proceedings": "Springer CCIS(Communications in Computer and Information Science) 수정 논문집",
       "topics": [],
       "organizedBy": "SCH 모바일 인터넷 보안 연구실",
-      "inConjunction": ""
+      "inConjunction": "",
+      "image": "/assets/venue/past/taichung-taiwan.jpg"
     }
   ],
   "statistics": {

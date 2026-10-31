@@ -84,7 +84,7 @@ export const YEAR_CONFIG: Record<
     cfpUrl: "/assets/files/2026/mobisec-cfp-2026.pdf",
     cfpLeafletUrl: "/assets/files/2026/mobisec-cfp-2026.pdf",
     programBookUrl: "",
-    registrationUrl: "",
+    registrationUrl: "/2026/registration-guide",
     disabledRoutes: ["program", "programFlow", "announcement", "rollOfHonors"],
   },
 };

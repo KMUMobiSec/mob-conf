@@ -255,18 +255,29 @@ export function Navbar() {
 
                     {NAV_LINKS.map((item) => renderMobileLink(item, mobileTopClass))}
 
-                    <RegistrationComingSoon
-                      title={tCommon("registrationComingSoonTitle")}
-                      description={tCommon("registrationComingSoonDescription", { year })}
-                      closeLabel={tCommon("close")}
-                    >
-                      <button
-                        type="button"
-                        className="px-3 py-2.5 rounded-md text-sm font-semibold text-primary hover:text-primary/80 hover:bg-primary/5 transition-colors text-left"
+                    {yearConfig.registrationUrl ? (
+                      <SheetClose asChild>
+                        <Link
+                          href={yearConfig.registrationUrl}
+                          className="px-3 py-2.5 rounded-md text-sm font-semibold text-primary hover:text-primary/80 hover:bg-primary/5 transition-colors text-left"
+                        >
+                          {t("registration")}
+                        </Link>
+                      </SheetClose>
+                    ) : (
+                      <RegistrationComingSoon
+                        title={tCommon("registrationComingSoonTitle")}
+                        description={tCommon("registrationComingSoonDescription", { year })}
+                        closeLabel={tCommon("close")}
                       >
-                        {t("registration")}
-                      </button>
-                    </RegistrationComingSoon>
+                        <button
+                          type="button"
+                          className="px-3 py-2.5 rounded-md text-sm font-semibold text-primary hover:text-primary/80 hover:bg-primary/5 transition-colors text-left"
+                        >
+                          {t("registration")}
+                        </button>
+                      </RegistrationComingSoon>
+                    )}
 
                     {/* Admin sign-in — mobile menu only. */}
                     <SheetClose asChild>
@@ -400,15 +411,21 @@ export function Navbar() {
 
         {/* Language & mode toggles */}
         <div className="flex items-center gap-2 shrink-0 px-4 lg:px-0 lg:pr-4">
-          <RegistrationComingSoon
-            title={tCommon("registrationComingSoonTitle")}
-            description={tCommon("registrationComingSoonDescription", { year })}
-            closeLabel={tCommon("close")}
-          >
-            <Button size="sm" className="hidden lg:inline-flex">
-              {t("registration")}
+          {yearConfig.registrationUrl ? (
+            <Button asChild size="sm" className="hidden lg:inline-flex">
+              <Link href={yearConfig.registrationUrl}>{t("registration")}</Link>
             </Button>
-          </RegistrationComingSoon>
+          ) : (
+            <RegistrationComingSoon
+              title={tCommon("registrationComingSoonTitle")}
+              description={tCommon("registrationComingSoonDescription", { year })}
+              closeLabel={tCommon("close")}
+            >
+              <Button size="sm" className="hidden lg:inline-flex">
+                {t("registration")}
+              </Button>
+            </RegistrationComingSoon>
+          )}
           <LanguageToggle />
           <ModeToggle />
           <Button

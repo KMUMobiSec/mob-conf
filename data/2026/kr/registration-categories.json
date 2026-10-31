@@ -1,0 +1,37 @@
+{
+  "registrationStart": "2026-11-08",
+  "registrationEnd": "2026-12-08",
+  "localRegistrationUrl": "https://kiisc.or.kr/payment/pay/302",
+  "categories": [
+    {
+      "name": "저자등록 (Author Registration)",
+      "krw": 700000,
+      "usd": 480,
+      "requiresPaper": true
+    },
+    {
+      "name": "참가자 등록(일반) (General Attendee)",
+      "krw": 600000,
+      "usd": 415,
+      "requiresPaper": false
+    },
+    {
+      "name": "참가자 등록(학생) (Student Attendee)",
+      "krw": 500000,
+      "usd": 345,
+      "requiresPaper": false
+    },
+    {
+      "name": "온라인 저자 등록 (Online Author Registration)",
+      "krw": 500000,
+      "usd": 345,
+      "requiresPaper": true
+    },
+    {
+      "name": "온라인 참가자 등록 (Online Attendee)",
+      "krw": 300000,
+      "usd": 210,
+      "requiresPaper": false
+    }
+  ]
+}

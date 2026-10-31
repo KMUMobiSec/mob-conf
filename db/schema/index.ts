@@ -5,4 +5,5 @@ export * from "./nominations";
 export * from "./presentation-files";
 export * from "./presentation-roster";
 export * from "./presentations";
+export * from "./registration-orders";
 export * from "./registrations";
